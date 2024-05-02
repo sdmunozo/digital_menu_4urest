@@ -1,7 +1,10 @@
+import 'dart:convert';
+
 import 'package:digital_menu_4urest/api/api_4uRest.dart';
 import 'package:digital_menu_4urest/models/branch_catalog_model.dart';
 import 'package:digital_menu_4urest/providers/global_config_provider.dart';
-import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class BranchCatalogProvider extends ChangeNotifier {
   static BranchCatalogProvider? _instance;
@@ -36,14 +39,27 @@ class BranchCatalogProvider extends ChangeNotifier {
     notifyListeners();
 
     try {
-      final response = await Api4uRest.httpGet(
-          '/digital-menu/get-digital-menu/${GlobalConfigProvider.lastUrlSegment}');
-      _branchCatalog = BranchCatalogModel.fromJson(response);
-      GlobalConfigProvider.setBranchCatalog(
-          BranchCatalogModel.fromJson(response));
+      GlobalConfigProvider.logError(
+          '- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -');
+      GlobalConfigProvider.logError(
+          '- - - - - - - - - - MODO DESARROLLO - - - - - - - - - - - - - - -');
+      GlobalConfigProvider.logError(
+          '- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -');
+      if (GlobalConfigProvider.develop) {
+        final jsonString =
+            await rootBundle.loadString('assets/dev/branch_catalog.json');
+        final jsonData = json.decode(jsonString);
+        _branchCatalog = BranchCatalogModel.fromJson(jsonData);
+      } else {
+        final response = await Api4uRest.httpGet(
+            '/digital-menu/get-digital-menu/${GlobalConfigProvider.lastUrlSegment}');
+        _branchCatalog = BranchCatalogModel.fromJson(response);
+      }
+      GlobalConfigProvider.setBranchCatalog(_branchCatalog);
       _isCatalogLoaded = true;
     } catch (e) {
       _hasError = true;
+      GlobalConfigProvider.logError('Error fetching branch catalog: $e');
     } finally {
       _isLoading = false;
       notifyListeners();

@@ -1,12 +1,9 @@
-import 'package:digital_menu_4urest/models/branch_catalog_model.dart';
+import 'package:digital_menu_4urest/providers/global_config_provider.dart';
 import 'package:flutter/material.dart';
 
 class TitleWidget extends StatelessWidget {
-  final BranchCatalogModel branchCatalogModel;
-
   const TitleWidget({
     super.key,
-    required this.branchCatalogModel,
   });
 
   @override
@@ -18,7 +15,7 @@ class TitleWidget extends StatelessWidget {
             children: [
               Center(
                 child: Text(
-                  branchCatalogModel.brandName,
+                  GlobalConfigProvider.branchCatalog!.brandName,
                   textAlign: TextAlign.center,
                   style: const TextStyle(fontSize: 45, color: Colors.white),
                 ),
@@ -26,7 +23,7 @@ class TitleWidget extends StatelessWidget {
               const SizedBox(height: 10),
               Center(
                 child: Text(
-                  branchCatalogModel.branchName,
+                  GlobalConfigProvider.branchCatalog!.branchName,
                   textAlign: TextAlign.center,
                   style: const TextStyle(fontSize: 35, color: Colors.white),
                 ),
@@ -37,7 +34,7 @@ class TitleWidget extends StatelessWidget {
           Column(
             children: [
               Text(
-                branchCatalogModel.brandSlogan,
+                GlobalConfigProvider.branchCatalog!.brandSlogan,
                 style: TextStyle(
                     color: Colors.white.withOpacity(0.8),
                     fontSize: 25,

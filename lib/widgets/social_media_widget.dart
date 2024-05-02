@@ -1,14 +1,10 @@
-import 'package:digital_menu_4urest/models/branch_catalog_model.dart';
 import 'package:digital_menu_4urest/providers/global_config_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SocialMediaWidget extends StatelessWidget {
-  final BranchCatalogModel branchCatalogModel;
-
   const SocialMediaWidget({
     super.key,
-    required this.branchCatalogModel,
   });
 
   @override
@@ -16,14 +12,14 @@ class SocialMediaWidget extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        _buildCircularButton(
-            FontAwesomeIcons.instagram, branchCatalogModel.instagramLink),
+        _buildCircularButton(FontAwesomeIcons.instagram,
+            GlobalConfigProvider.branchCatalog!.instagramLink),
         const SizedBox(width: 20),
-        _buildCircularButton(
-            FontAwesomeIcons.facebook, branchCatalogModel.facebookLink),
+        _buildCircularButton(FontAwesomeIcons.facebook,
+            GlobalConfigProvider.branchCatalog!.facebookLink),
         const SizedBox(width: 20),
-        _buildCircularButton(
-            FontAwesomeIcons.paperclip, branchCatalogModel.websiteLink),
+        _buildCircularButton(FontAwesomeIcons.paperclip,
+            GlobalConfigProvider.branchCatalog!.websiteLink),
       ],
     );
   }

@@ -11,36 +11,37 @@ class MainLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        color: Colors.black,
-        height: double.infinity,
-        width: double.infinity,
-        child: Center(
-          child: LayoutBuilder(
-            builder: (BuildContext context, BoxConstraints constraints) {
-              double maxHeight = constraints.maxHeight;
-              double maxWidth = constraints.maxWidth;
+    return Material(
+      child: Center(
+        child: Container(
+          color: Colors.black,
+          height: double.infinity,
+          width: double.infinity,
+          child: Center(
+            child: LayoutBuilder(
+              builder: (BuildContext context, BoxConstraints constraints) {
+                double maxHeight = constraints.maxHeight;
+                double maxWidth = constraints.maxWidth;
 
-              double desiredHeight = 932;
-              double desiredWidth = 430;
+                double desiredHeight = 932;
+                double desiredWidth = 430;
 
-              return SizedBox(
-                height: maxHeight > desiredHeight ? desiredHeight : maxHeight,
-                width: maxWidth > desiredWidth ? desiredWidth : maxWidth,
-                child: Container(
-                    padding: const EdgeInsets.only(top: 100, bottom: 40),
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      image: DecorationImage(
-                        image: CustomImageProvider.getNetworkImageIP(
-                            GlobalConfigProvider.branchCatalog?.menuBackground),
-                        fit: BoxFit.cover,
+                return SizedBox(
+                  height: maxHeight > desiredHeight ? desiredHeight : maxHeight,
+                  width: maxWidth > desiredWidth ? desiredWidth : maxWidth,
+                  child: Container(
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: CustomImageProvider.getNetworkImageIP(
+                              GlobalConfigProvider
+                                  .branchCatalog?.menuBackground),
+                          fit: BoxFit.cover,
+                        ),
                       ),
-                    ),
-                    child: child),
-              );
-            },
+                      child: child),
+                );
+              },
+            ),
           ),
         ),
       ),

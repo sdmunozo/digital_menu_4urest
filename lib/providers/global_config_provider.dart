@@ -8,7 +8,7 @@ class GlobalConfigProvider {
   static String userId = '';
   static String sessionId = '';
   static String lastUrlSegment = '';
-  static bool develop = false;
+  static bool develop = true;
   static BranchCatalogModel? branchCatalog;
 
   static Future<bool> initialize(String segment) async {
