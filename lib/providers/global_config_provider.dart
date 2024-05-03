@@ -42,6 +42,9 @@ class GlobalConfigProvider {
           segment.contains('-')) {
         lastUrlSegment = segment;
         return true;
+      } else if (develop) {
+        lastUrlSegment = 'dev-mode';
+        return true;
       } else {
         lastUrlSegment = 'Invalid URL';
         logError('Error GlobalConfigProvider - Invalid URL: $segment');
