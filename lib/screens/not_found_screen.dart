@@ -68,48 +68,52 @@ class BuildNotFoundContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            CustomImageProvider.getImage(CustomImageProvider.png4uRestOriginal,
-                width: 200),
-            const SizedBox(height: 40),
-            const Text(
-              'Menú no encontrado',
-              style: TextStyle(fontSize: 24, color: Colors.white),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 20),
-            const Text(
-              'Lo sentimos, el menú que buscas no existe. Visita nuestras redes sociales.',
-              style: TextStyle(fontSize: 16, color: Colors.white),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 20),
-            Row(
+    return Expanded(
+      child: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Expanded(
+            child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CircularButtonWidget(
-                  iconData: FontAwesomeIcons.whatsapp,
-                  url: urlWhatsApp,
+                CustomImageProvider.getImage(
+                    CustomImageProvider.png4uRestOriginal,
+                    width: 200),
+                const SizedBox(height: 40),
+                const Text(
+                  'Menú no encontrado',
+                  style: TextStyle(fontSize: 24, color: Colors.white),
+                  textAlign: TextAlign.center,
                 ),
-                const SizedBox(width: 20),
-                CircularButtonWidget(
-                  iconData: FontAwesomeIcons.instagram,
-                  url: urlInstagram,
+                const SizedBox(height: 20),
+                const Text(
+                  'Lo sentimos, el menú que buscas no existe. Visita nuestras redes sociales.',
+                  style: TextStyle(fontSize: 16, color: Colors.white),
+                  textAlign: TextAlign.center,
                 ),
-                const SizedBox(width: 20),
-                CircularButtonWidget(
-                  iconData: FontAwesomeIcons.paperclip,
-                  url: urlWeb,
+                const SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    CircularButtonWidget(
+                      iconData: FontAwesomeIcons.whatsapp,
+                      url: urlWhatsApp,
+                    ),
+                    const SizedBox(width: 20),
+                    CircularButtonWidget(
+                      iconData: FontAwesomeIcons.instagram,
+                      url: urlInstagram,
+                    ),
+                    const SizedBox(width: 20),
+                    CircularButtonWidget(
+                      iconData: FontAwesomeIcons.paperclip,
+                      url: urlWeb,
+                    ),
+                  ],
                 ),
               ],
             ),
-            const SizedBox(height: 40),
-          ],
+          ),
         ),
       ),
     );

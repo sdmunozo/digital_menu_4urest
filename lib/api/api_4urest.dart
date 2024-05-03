@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'dart:convert';
 import 'package:digital_menu_4urest/providers/global_config_provider.dart';
 import 'package:dio/dio.dart';
@@ -14,13 +15,23 @@ class Api4uRest {
     try {
       final response = await _dio.get(path, queryParameters: queryParams);
       if (response.statusCode == 200) {
+        GlobalConfigProvider.logError(
+            'Respuesta 200: ${response.statusCode}, ${response.data}');
         return _parseResponse(response.data);
       } else {
+        var responseData = jsonDecode(response.data);
         GlobalConfigProvider.logError(
-            'Respuesta no exitosa: ${response.statusCode}, ${response.data}');
+            'Respuesta no exitosa: ${response.statusCode}, ${responseData['title']}: ${responseData['detail']}');
       }
     } on DioException catch (dioError) {
-      GlobalConfigProvider.logError('DioError en el GET: ${dioError.message}');
+      if (dioError.response != null) {
+        var responseData = jsonDecode(dioError.response!.data);
+        GlobalConfigProvider.logError(
+            'DioError en el GET: ${dioError.message}, ${responseData['title']}: ${responseData['detail']}');
+      } else {
+        GlobalConfigProvider.logError(
+            'DioError en el GET: ${dioError.message}');
+      }
     } catch (e) {
       GlobalConfigProvider.logError('Error en el GET: $e');
     }

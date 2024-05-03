@@ -24,8 +24,10 @@ class ModifiersGroupModel {
         description: json["description"],
         icon: json["icon"],
         isSelectable: json["isSelectable"],
-        modifiers: List<ItemModel>.from(
-            json["modifiers"].map((x) => ItemModel.fromJson(x))),
+        modifiers: json["modifiers"] == null
+            ? []
+            : List<ItemModel>.from(
+                json["modifiers"].map((x) => ItemModel.fromJson(x))),
       );
 
   Map<String, dynamic> toJson() => {

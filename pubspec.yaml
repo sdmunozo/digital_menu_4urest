@@ -55,6 +55,9 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
+    - assets/dev/
+    - assets/dev/branch_catalog.json
+    - assets/temp/
     - assets/tools/
     - assets/tools/logos/
   # assets:

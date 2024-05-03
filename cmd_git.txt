@@ -1,0 +1,82 @@
+Claro, aquí tienes un resumen para manejar tus ramas `develop` y `main` en tu flujo de trabajo de desarrollo, incluyendo comandos útiles:
+
+### 1. Subir solo a develop:
+Cuando estés trabajando en nuevas características o haciendo cambios, utiliza la rama `develop`. Los pasos para subir cambios son:
+
+```bash
+# Asegúrate de estar en la rama develop
+git checkout develop
+
+# Añade todos los cambios al staging area
+git add .
+
+# Haz un commit con tus cambios
+git commit -m "Descripción detallada de los cambios"
+
+# Empuja los cambios a GitHub
+git push origin develop
+```
+
+### 2. Subir lo de develop a main:
+Cuando estés listo para llevar los cambios de `develop` a `main` (producción), sigue estos pasos:
+
+```bash
+# Cambia a la rama main
+git checkout main
+
+# Fusiona los cambios de develop en main
+git merge develop
+
+# Empuja los cambios de main a GitHub para desplegar en producción
+git push origin main
+```
+
+### 3. Comandos útiles que puedes necesitar:
+Aquí te dejo algunos comandos adicionales que son útiles en el manejo de Git:
+
+- **Verificar el estado actual de tu repositorio:**
+  ```bash
+  git status
+  ```
+
+- **Listar todas las ramas en tu repositorio local y ver cuál está activa:**
+  ```bash
+  git branch
+  ```
+
+- **Cambiar entre ramas:**
+  ```bash
+  git checkout nombre_de_la_rama
+  ```
+
+- **Crear una nueva rama basada en la actual:**
+  ```bash
+  git checkout -b nueva_rama
+  ```
+
+- **Ver el historial de commits:**
+  ```bash
+  git log
+  ```
+
+- **Ver diferencias entre commits o ramas:**
+  ```bash
+  git diff
+  ```
+
+- **Revertir un commit específico (esto crea un nuevo commit que revierte los cambios):**
+  ```bash
+  git revert hash_del_commit
+  ```
+
+- **Actualizar tu rama local con los últimos cambios del repositorio remoto:**
+  ```bash
+  git pull origin nombre_de_la_rama
+  ```
+
+- **Agregar cambios específicos al próximo commit (útil si no quieres añadir todos los archivos que modificaste):**
+  ```bash
+  git add nombre_del_archivo
+  ```
+
+Estos comandos te ayudarán a gestionar tus proyectos de manera eficaz y a mantener un control sobre las diferentes versiones de tu código, facilitando el proceso de desarrollo y despliegue.
