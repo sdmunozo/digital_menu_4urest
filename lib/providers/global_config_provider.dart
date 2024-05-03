@@ -10,6 +10,24 @@ class GlobalConfigProvider {
   static String lastUrlSegment = '';
   static bool develop = true;
   static BranchCatalogModel? branchCatalog;
+  static double? maxHeight;
+  static double? maxWidth;
+
+  static void setMaxHeight(double height) {
+    maxHeight = height;
+  }
+
+  static double? getMaxHeight() {
+    return maxHeight;
+  }
+
+  static void setMaxWidth(double width) {
+    maxWidth = width;
+  }
+
+  static double? getMaxWidth() {
+    return maxWidth;
+  }
 
   static Future<bool> initialize(String segment) async {
     try {

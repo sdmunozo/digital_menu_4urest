@@ -26,9 +26,17 @@ class MainLayout extends StatelessWidget {
                 double desiredHeight = 932;
                 double desiredWidth = 430;
 
+                double height =
+                    maxHeight > desiredHeight ? desiredHeight : maxHeight;
+                double width =
+                    maxWidth > desiredWidth ? desiredWidth : maxWidth;
+
+                GlobalConfigProvider.setMaxHeight(height);
+                GlobalConfigProvider.setMaxWidth(width);
+
                 return SizedBox(
-                  height: maxHeight > desiredHeight ? desiredHeight : maxHeight,
-                  width: maxWidth > desiredWidth ? desiredWidth : maxWidth,
+                  height: height,
+                  width: width,
                   child: Container(
                       decoration: BoxDecoration(
                         image: DecorationImage(
