@@ -1,4 +1,7 @@
 import 'package:digital_menu_4urest/models/branch_catalog_model.dart';
+import 'package:digital_menu_4urest/models/category_model.dart';
+import 'package:digital_menu_4urest/models/item_model.dart';
+import 'package:digital_menu_4urest/models/section_size_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:uuid/uuid.dart';
@@ -12,6 +15,30 @@ class GlobalConfigProvider {
   static BranchCatalogModel? branchCatalog;
   static double? maxHeight;
   static double? maxWidth;
+  static List<SectionSizeModel> sectionSizes = [];
+
+  static void generateSectionSizes() {
+    List<SectionSizeModel> sizes = [];
+    if (branchCatalog != null) {
+      for (CategoryModel category in branchCatalog!.catalogs[0].categories) {
+        double totalHeight;
+
+        if (category.sectionType == 'horizontal') {
+          totalHeight = 300;
+        } else {
+          totalHeight = 109.5;
+          // ignore: unused_local_variable
+          for (ItemModel product in category.products) {
+            totalHeight += 120;
+          }
+        }
+
+        sizes.add(
+            SectionSizeModel(categoryName: category.name, height: totalHeight));
+      }
+    }
+    sectionSizes = sizes;
+  }
 
   static void setMaxHeight(double height) {
     maxHeight = height;

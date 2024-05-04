@@ -1,107 +1,102 @@
+import 'package:digital_menu_4urest/models/category_model.dart';
 import 'package:digital_menu_4urest/providers/global_config_provider.dart';
-import 'package:digital_menu_4urest/widgets/section_vertical_article.dart';
+import 'package:digital_menu_4urest/widgets/category_section_bold_title.dart';
+import 'package:digital_menu_4urest/widgets/custom_divider_widget.dart';
+import 'package:digital_menu_4urest/widgets/section_vertical_item.dart';
 import 'package:flutter/material.dart';
 
 class HorizontalSectionWidget extends StatelessWidget {
-  const HorizontalSectionWidget(
-      {super.key, required this.title, required this.description});
+  const HorizontalSectionWidget({super.key, required this.category});
 
-  final String title;
-  final String description;
+  final CategoryModel category;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 300,
       width: GlobalConfigProvider.maxWidth,
-      color: Colors.white,
       child: Column(
         children: [
           Expanded(
             child: Column(
               children: [
-                Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 15.0, left: 15),
-                      child: Text(
-                        title,
-                        style: const TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 15.0, bottom: 5),
-                  child: Text(
-                    description,
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(
-                      color: Color(0xff88888a),
-                      fontSize: 10,
-                    ),
-                  ),
+                CategorySectionBoldTitle(
+                  title: category.name,
+                  description: category.description,
                 ),
                 Expanded(
                   child: ListView(
                     scrollDirection: Axis.horizontal,
-                    children: const [
-                      SectionVerticalArticle(
-                        title: "McTrío Mediano McNuggets 10 McNuggets 10",
-                        image: "url",
-                        price: "135",
-                      ),
-                      SectionVerticalArticle(
-                        title: "McTrío Mediano McNuggets 10 McNuggets 10",
-                        image: "url",
-                        price: "135",
-                      ),
-                      SectionVerticalArticle(
-                        title: "McTrío Mediano McNuggets 10 McNuggets 10",
-                        image: "url",
-                        price: "135",
-                      ),
-                      SectionVerticalArticle(
-                        title: "McTrío Mediano McNuggets 10 McNuggets 10",
-                        image: "url",
-                        price: "135",
-                      ),
-                      SectionVerticalArticle(
-                        title: "McTrío Mediano McNuggets 10 McNuggets 10",
-                        image: "url",
-                        price: "135",
-                      ),
-                      SectionVerticalArticle(
-                        title: "McTrío Mediano McNuggets 10 McNuggets 10",
-                        image: "url",
-                        price: "135",
-                      ),
-                      SizedBox(
-                        width: 13,
-                      )
-                    ],
+                    children: category.products.map((item) {
+                      return SectionVerticalItem(
+                        title: item.alias,
+                        description: item.description,
+                        image: item.icon,
+                        price: item.price,
+                      );
+                    }).toList(),
                   ),
                 ),
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 2),
-            child: Container(
-              width: GlobalConfigProvider.maxWidth,
-              height: 1,
-              decoration: BoxDecoration(
-                color: const Color.fromARGB(45, 136, 136, 138),
-                borderRadius: BorderRadius.circular(5),
-              ),
-            ),
-          ),
+          const CustomDividerWidget(),
         ],
       ),
     );
   }
 }
+
+
+/*
+import 'package:digital_menu_4urest/models/category_model.dart';
+import 'package:digital_menu_4urest/providers/global_config_provider.dart';
+import 'package:digital_menu_4urest/widgets/category_section_bold_title.dart';
+import 'package:digital_menu_4urest/widgets/custom_divider_widget.dart';
+import 'package:digital_menu_4urest/widgets/section_vertical_item.dart';
+import 'package:flutter/material.dart';
+
+class HorizontalSectionWidget extends StatelessWidget {
+  const HorizontalSectionWidget({super.key, required this.category});
+
+  final CategoryModel category;
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 300,
+      width: GlobalConfigProvider.maxWidth,
+      child: Column(
+        children: [
+          Expanded(
+            child: Column(
+              children: [
+                CategorySectionBoldTitle(
+                  title: category.name,
+                  description: category.description,
+                ),
+                Expanded(
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: category.products.map((item) {
+                      return SectionVerticalItem(
+                        title: item.alias,
+                        description: item.description,
+                        image: item.icon,
+                        price: item.price,
+                      );
+                    }).toList(),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const CustomDividerWidget(),
+        ],
+      ),
+    );
+  }
+}
+
+
+ */

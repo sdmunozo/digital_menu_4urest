@@ -5,10 +5,10 @@ class CustomImageProvider {
   static String imageDefault = 'assets/tools/logos/4uRest-DM-3.png';
   static String imageDefaultBackground =
       'assets/tools/restaurant_background_op.png';
-  static String imageDefaultBackgroundTest = 'assets/temp/HomeScreen2.PNG';
+  static String imageDefaultBackgroundTest = 'assets/temp/HomeScreen3.PNG';
 
   static ImageProvider<Object> getNetworkImageIP(String? url) {
-    return AssetImage(imageDefaultBackgroundTest);
+    //return AssetImage(imageDefaultBackgroundTest);
     if (url != null && url.isNotEmpty) {
       return NetworkImage(url);
     } else {

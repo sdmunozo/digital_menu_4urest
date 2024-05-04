@@ -20,9 +20,8 @@ class ItemModel {
         id: json["id"],
         alias: json["alias"],
         description: json["description"],
-        //description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the ind",
         icon: json["icon"],
-        price: json["price"] ?? "0",
+        price: (json["price"] ?? "").isEmpty ? "0" : json["price"],
         modifiersGroups: List<ModifiersGroupModel>.from(json["modifiersGroups"]
                 ?.map((x) => ModifiersGroupModel.fromJson(x)) ??
             []),

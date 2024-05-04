@@ -6,7 +6,7 @@
     "instagramLink": "https://www.instagram.com/4urest/",
     "facebookLink": "https://www.facebook.com/Pos4uRest/",
     "websiteLink": "https://landing.4urest.mx/",
-    "brandLogo": "",
+    "brandLogo": "https://www.mcdonaldspuebla.com/img/banner-blog.png",
     "brandSlogan": "me entanta",
     "menuBackground": "https://api4urest.blob.core.windows.net/brands/9fc50501-ba29-4a6c-94e3-7c6f347cc34b.jpg",
     "catalogs": [
@@ -19,8 +19,9 @@
                 {
                     "id": "3f5b17ea-032c-4a5b-52d3-08dc68c792ce",
                     "name": "De Carne",
-                    "description": "",
+                    "description": "Las hamburguesas de carne de McDonald's son un deleite para los amantes de la carne. Cada hamburguesa se elabora con patties jugosos y sabrosos, combinados con ingredientes frescos y aderezos clásicos. Desde el icónico Big Mac hasta el Cuarto de Libra con Queso, estas hamburguesas ofrecen el sabor auténtico de McDonald's en cada bocado.",
                     "icon": "",
+                    "sectionType": "horizontal",
                     "items": [],
                     "products": [
                         {
@@ -72,7 +73,7 @@
                         {
                             "id": "273dfe97-5870-4a4e-b9db-08dc68c79337",
                             "alias": "Cuarto de libra con queso",
-                            "description": "",
+                            "description": "La icónica hamburguesa de McDonald's que todos adoran. El Cuarto de Libra con Queso cuenta con un jugoso pattie de 100% carne, acompañado de queso americano derretido, crujientes cebollas, pepinillos y ketchup, todo dentro de un pan con semillas de ajonjolí. Es la perfecta combinación de ingredientes para un sabor inolvidable.",
                             "icon": "https://api4urest.blob.core.windows.net/products/5af1a6a5-eac8-49c7-99bd-5230aafb4199.png",
                             "price": "0.00",
                             "modifiersGroups": [
@@ -104,7 +105,7 @@
                         {
                             "id": "830041a1-71a2-416e-b9dc-08dc68c79337",
                             "alias": "McNífica",
-                            "description": "",
+                            "description": "La McNífica es una hamburguesa deliciosa que combina lo mejor de McDonald's. Incluye una jugosa carne de res, acompañada de crujiente lechuga, tomate fresco, cebolla, queso y una salsa especial que realza su sabor. Todo esto se encuentra en un suave pan con semillas de ajonjolí, para una experiencia única.",
                             "icon": "https://api4urest.blob.core.windows.net/products/b0f888aa-54e7-4d3c-b573-086b79763d40.png",
                             "price": "0.00",
                             "modifiersGroups": [
@@ -136,7 +137,7 @@
                         {
                             "id": "09d86e43-2346-4cf0-b9dd-08dc68c79337",
                             "alias": "Hamburguesa",
-                            "description": "",
+                            "description": "La Hamburguesa clásica de McDonald's es simple y deliciosa. Con un pattie de 100% carne, cebollas, pepinillos, ketchup y mostaza, esta hamburguesa sencilla pero sabrosa es ideal para aquellos que buscan una opción básica pero satisfactoria. Todo esto se encuentra en un suave pan con semillas de ajonjolí.",
                             "icon": "https://api4urest.blob.core.windows.net/products/e4d62e17-e81b-4bf2-8a73-8f5294299833.png",
                             "price": "0.00",
                             "modifiersGroups": [
@@ -182,7 +183,7 @@
                         {
                             "id": "1e023866-05f5-4abb-b9de-08dc68c79337",
                             "alias": "Signature CBO",
-                            "description": "",
+                            "description": "La Signature CBO es una delicia gourmet de McDonald's. Incluye un pattie de jugosa carne de res, acompañado de crujiente tocino, cebolla caramelizada y queso cheddar, todo servido en un pan gourmet con semillas de ajonjolí. Esta hamburguesa es perfecta para aquellos que buscan una experiencia premium.",
                             "icon": "https://api4urest.blob.core.windows.net/products/e150f49d-c540-4212-be63-b38c2f000f2a.png",
                             "price": "0.00",
                             "modifiersGroups": [
@@ -216,14 +217,14 @@
                 {
                     "id": "35e604e1-b8f7-41bd-52d4-08dc68c792ce",
                     "name": "De Pollo",
-                    "description": "",
+                    "description": "Las hamburguesas de pollo de McDonald's son perfectas para los que buscan una opción más ligera pero igual de deliciosa. Con filetes de pollo empanizado o a la parrilla, estas hamburguesas vienen acompañadas de ingredientes frescos y salsas deliciosas. Disfruta de clásicos como el McPollo o prueba la opción picante con el Pollo McCrispy Spicy.",
                     "icon": "",
                     "items": [],
                     "products": [
                         {
                             "id": "929d0a36-f49a-4575-b9df-08dc68c79337",
                             "alias": "McPollo",
-                            "description": "",
+                            "description": "El McPollo es la elección perfecta para los amantes del pollo. Con un delicioso filete de pollo empanizado, crujiente lechuga y una suave mayonesa, todo servido en un suave pan con semillas de ajonjolí. Es una opción ligera y sabrosa que siempre satisface.",
                             "icon": "https://api4urest.blob.core.windows.net/products/16537082-1585-4ddf-8e53-3fcff5249812.png",
                             "price": "0.00",
                             "modifiersGroups": [
@@ -248,7 +249,7 @@
                         {
                             "id": "2a410271-601b-47ed-b9e0-08dc68c79337",
                             "alias": "Pollo McCrispy Spicy",
-                            "description": "",
+                            "description": "El Pollo McCrispy Spicy es una opción picante y deliciosa. Este sándwich de pollo crujiente incluye un filete de pollo empanizado con un toque de especias, acompañado de lechuga fresca y mayonesa, todo dentro de un suave pan con semillas de ajonjolí. Es perfecto para los amantes del sabor picante.",
                             "icon": "https://api4urest.blob.core.windows.net/products/4d259ce2-8917-4927-8076-ebd798f0c30c.png",
                             "price": "0.00",
                             "modifiersGroups": [
@@ -280,7 +281,7 @@
                         {
                             "id": "055bacac-a53c-413e-b9e1-08dc68c79337",
                             "alias": "McNuggets",
-                            "description": "",
+                            "description": "Los McNuggets de McDonald's son irresistibles bocados de pollo empanizado. Crujientes por fuera y tiernos por dentro, son perfectos para compartir o disfrutar solos. Vienen acompañados de una variedad de salsas para que puedas elegir tu favorita.",
                             "icon": "https://api4urest.blob.core.windows.net/products/6f23d3cb-7061-4f08-ad66-f44673f033f6.png",
                             "price": "0.00",
                             "modifiersGroups": [
@@ -328,14 +329,14 @@
                 {
                     "id": "b4c1fe3e-1ae7-48be-52d5-08dc68c792ce",
                     "name": "Bebidas",
-                    "description": "",
+                    "description": "Las bebidas de McDonald's son la opción perfecta para acompañar tu comida. Desde refrescos y jugos naturales hasta café y agua, McDonald's ofrece una amplia variedad de bebidas para todos los gustos. Elige tu favorita y disfruta de una experiencia refrescante con cada comida.",
                     "icon": "",
                     "items": [],
                     "products": [
                         {
                             "id": "ffa23a04-bb76-4b41-b9e2-08dc68c79337",
                             "alias": "Agua sin gas",
-                            "description": "",
+                            "description": "El Agua sin Gas de McDonald's es una opción refrescante y saludable. Perfecta para hidratarte, esta agua natural es ideal para acompañar cualquier comida.",
                             "icon": "https://api4urest.blob.core.windows.net/products/236891b6-9764-4a02-8b13-21f6e3adf6b2.png",
                             "price": "0.00",
                             "modifiersGroups": [
@@ -360,7 +361,7 @@
                         {
                             "id": "1b8301e9-a551-41ff-b9e3-08dc68c79337",
                             "alias": "Vaso Refil",
-                            "description": "",
+                            "description": "El Vaso Refil de McDonald's te permite disfrutar de tu refresco favorito. Puedes elegir entre una amplia variedad de bebidas gaseosas para acompañar tu comida y recargar tu vaso tantas veces como desees.",
                             "icon": "https://api4urest.blob.core.windows.net/products/4ee24559-8e90-4635-b4fd-ca5d6805a1bd.png",
                             "price": "0.00",
                             "modifiersGroups": [
@@ -399,7 +400,7 @@
                         {
                             "id": "04393dec-b109-4405-b9e4-08dc68c79337",
                             "alias": "Café Refil",
-                            "description": "",
+                            "description": "El Café Refil de McDonald's es perfecto para los amantes del café. Disfruta de un delicioso café recién hecho y recarga tu vaso tantas veces como desees para mantenerte despierto y lleno de energía.",
                             "icon": "https://api4urest.blob.core.windows.net/products/ad662084-ce67-40e3-b525-01cdf4f6be32.png",
                             "price": "0.00",
                             "modifiersGroups": [
@@ -431,7 +432,7 @@
                         {
                             "id": "d11330c8-b792-46db-b9e5-08dc68c79337",
                             "alias": "100% Jugo Natural",
-                            "description": "",
+                            "description": "El 100% Jugo Natural de McDonald's es una opción refrescante y saludable. Hecho con frutas frescas, es una bebida deliciosa y nutritiva que complementa perfectamente cualquier comida.",
                             "icon": "https://api4urest.blob.core.windows.net/products/85fe691b-5448-42dd-88df-26406d467982.png",
                             "price": "0.00",
                             "modifiersGroups": [
@@ -465,21 +466,21 @@
                 {
                     "id": "a7e16d89-0fb9-4176-52d6-08dc68c792ce",
                     "name": "Postres",
-                    "description": "",
+                    "description": "Los postres de McDonald's son la manera perfecta de terminar tu comida con un toque dulce. Desde helados y malteadas hasta pays y galletas, McDonald's ofrece una amplia selección de delicias para satisfacer tu antojo. Cada postre está hecho con ingredientes de calidad para un sabor inolvidable.",
                     "icon": "",
                     "items": [],
                     "products": [
                         {
                             "id": "7485c7d3-9665-49a7-b9e6-08dc68c79337",
                             "alias": "McFlurry",
-                            "description": "",
+                            "description": "El McFlurry de McDonald's es un postre helado que combina cremoso helado con deliciosos ingredientes, como galletas, caramelos o chocolates. Es el equilibrio perfecto entre dulzura y textura, y es ideal para refrescarte y disfrutar de un momento dulce.",
                             "icon": "https://api4urest.blob.core.windows.net/products/ad4d75be-8e7e-4946-8b22-eeb20df7ce2f.png",
                             "price": "0.00",
                             "modifiersGroups": [
                                 {
                                     "id": "8b010b2d-eec2-453b-f878-08dc68c793b9",
                                     "alias": "Sabores",
-                                    "description": "",
+                                    "description": "El McFlurry de McDonald's es un postre helado que combina cremoso helado con deliciosos ingredientes, como galletas, caramelos o chocolates. Es el equilibrio perfecto entre dulzura y textura, y es ideal para refrescarte y disfrutar de un momento dulce.",
                                     "icon": "",
                                     "isSelectable": "False",
                                     "modifiers": [
@@ -518,7 +519,7 @@
                         {
                             "id": "86e94ac3-4a03-4453-b9e7-08dc68c79337",
                             "alias": "Malteada",
-                            "description": "",
+                            "description": "La Malteada de McDonald's es un clásico que nunca pasa de moda. Disponible en varios sabores, esta bebida es cremosa y deliciosa, ideal para disfrutar como postre o para acompañar cualquier comida.",
                             "icon": "https://api4urest.blob.core.windows.net/products/11ee9fb5-1efc-4238-a0ae-996a1c876f05.png",
                             "price": "0.00",
                             "modifiersGroups": [
@@ -564,7 +565,7 @@
                         {
                             "id": "3dc96ef9-5f85-4d0c-b9e8-08dc68c79337",
                             "alias": "Sundae",
-                            "description": "",
+                            "description": "El Sundae de McDonald's es un postre helado clásico que todos aman. Con suave helado y una cobertura deliciosa, como chocolate, caramelo o fresa, es perfecto para disfrutar de un momento dulce y refrescante.",
                             "icon": "https://api4urest.blob.core.windows.net/products/be4df740-21ec-4bb8-8888-8ea0725a3230.png",
                             "price": "0.00",
                             "modifiersGroups": [
@@ -603,7 +604,7 @@
                         {
                             "id": "7a9e37b7-65ff-4375-b9e9-08dc68c79337",
                             "alias": "Pay",
-                            "description": "",
+                            "description": "El Pay de McDonald's es un postre tradicional que combina una crujiente corteza con un delicioso relleno de frutas o crema. Es ideal para disfrutar como un postre o snack, y siempre es un favorito entre los clientes.",
                             "icon": "https://api4urest.blob.core.windows.net/products/1f163297-fca0-4433-9ba5-a88e203968cc.png",
                             "price": "0.00",
                             "modifiersGroups": [

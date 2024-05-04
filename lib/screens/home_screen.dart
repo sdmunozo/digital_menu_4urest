@@ -1,54 +1,94 @@
+import 'package:digital_menu_4urest/bloc/home_screen_bloc.dart';
+import 'package:digital_menu_4urest/providers/global_config_provider.dart';
 import 'package:digital_menu_4urest/widgets/custom_tab_widget.dart';
 import 'package:digital_menu_4urest/widgets/horizontal_section_widget.dart';
-import 'package:digital_menu_4urest/widgets/search_widget.dart';
+import 'package:digital_menu_4urest/widgets/vertical_section_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:digital_menu_4urest/layout/main_layout.dart';
 
-class HomeScreen extends StatelessWidget {
+const _backgroundColor = Color(0xFFF6F9FA);
+const _blueColor = Color(0xFF0d1863);
+
+class HomeScreen extends StatefulWidget {
   const HomeScreen({
     super.key,
   });
 
   @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
+  final _bloc = HomeScreenBLoC();
+
+  @override
+  void initState() {
+    _bloc.init(this);
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _bloc.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
+    GlobalConfigProvider.generateSectionSizes();
+
     return MainLayout(
       child: Container(
-        //color: const Color(0xfffafafa),
-        child: Column(
-          children: [
-            Container(
-              color: const Color(0xfffafafa),
-              height: 26, //28
-            ),
-            Container(
-                color: const Color(0xfffafafa), child: const SearchWidget()),
-            Container(
-              color: const Color(0xfffafafa),
-              child: const Row(
-                children: [
-                  CustomTabWidget(
-                    title: "Promociones",
-                    isActive: true,
+        color: _backgroundColor,
+        child: AnimatedBuilder(
+          animation: _bloc,
+          builder: (_, __) => Column(
+            children: [
+              SizedBox(
+                height: 100,
+                child: Center(
+                  child: Text(
+                    '${GlobalConfigProvider.branchCatalog!.brandName} - ${GlobalConfigProvider.branchCatalog!.branchName}',
+                    style: const TextStyle(
+                        color: _blueColor,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold),
+                    overflow: TextOverflow.ellipsis,
                   ),
-                  CustomTabWidget(
-                    title: "Favoritos",
-                    isActive: false,
-                  ),
-                ],
+                ),
               ),
-            ),
-            const HorizontalSectionWidget(
-              title: "Promociones",
-              description:
-                  'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el ',
-            ),
-            const HorizontalSectionWidget(
-              title: "Favoritos",
-              description:
-                  'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el ',
-            ),
-          ],
+              SizedBox(
+                height: 45,
+                child: TabBar(
+                  onTap: _bloc.onCategorySelected,
+                  isScrollable: true,
+                  controller: _bloc.tabController,
+                  indicatorColor: const Color.fromARGB(0, 0, 0, 0),
+                  tabs: _bloc.tabs
+                      .map((e) =>
+                          CustomTabWidget(title: e.title, isActive: e.isActive))
+                      .toList(),
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  color: Colors.white,
+                  child: ListView.builder(
+                    controller: _bloc.scrollController,
+                    itemCount: GlobalConfigProvider
+                        .branchCatalog!.catalogs[0].categories.length,
+                    itemBuilder: (context, index) {
+                      final category = GlobalConfigProvider
+                          .branchCatalog!.catalogs[0].categories[index];
+                      return category.sectionType == "vertical"
+                          ? VerticalSectionWidget(category: category)
+                          : HorizontalSectionWidget(category: category);
+                    },
+                  ),
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
