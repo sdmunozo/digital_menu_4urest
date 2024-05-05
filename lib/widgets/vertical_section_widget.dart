@@ -23,10 +23,7 @@ class VerticalSectionWidget extends StatelessWidget {
         Column(
           children: category.products.map((item) {
             return SectionHorizontalItem(
-              title: item.alias,
-              description: item.description,
-              image: item.icon,
-              price: item.price,
+              item: item,
             );
           }).toList(),
         ),

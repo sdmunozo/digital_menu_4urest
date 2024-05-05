@@ -1,22 +1,29 @@
+import 'package:digital_menu_4urest/models/item_model.dart';
 import 'package:digital_menu_4urest/providers/image_provider.dart';
 import 'package:flutter/material.dart';
 
 class SectionHorizontalItem extends StatelessWidget {
   const SectionHorizontalItem({
     super.key,
-    required this.title,
-    required this.description,
-    required this.price,
-    required this.image,
+    required this.item,
   });
 
-  final String title;
-  final String description;
-  final String price;
-  final String image;
+  final ItemModel item;
 
   @override
   Widget build(BuildContext context) {
+    String modifiersDetails = "";
+    if (item.modifiersGroups.isNotEmpty &&
+        item.modifiersGroups.first.modifiers.isNotEmpty) {
+      for (var modifier in item.modifiersGroups.first.modifiers) {
+        if (modifiersDetails.isNotEmpty) {
+          modifiersDetails += " - ";
+        }
+        modifiersDetails +=
+            "${modifier.alias} \$${double.parse(modifier.price).toStringAsFixed(2)}";
+      }
+    }
+
     return SizedBox(
       height: 120,
       child: Padding(
@@ -25,13 +32,13 @@ class SectionHorizontalItem extends StatelessWidget {
           children: [
             Expanded(
                 child: Column(
-              mainAxisAlignment: MainAxisAlignment.start, //spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
                   padding: const EdgeInsets.only(top: 4.0),
                   child: Text(
-                    title,
+                    item.alias,
                     textAlign: TextAlign.start,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
@@ -46,7 +53,7 @@ class SectionHorizontalItem extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(bottom: 2, right: 15),
                   child: Text(
-                    description,
+                    item.description,
                     maxLines: 3,
                     overflow: TextOverflow.ellipsis,
                     style: const TextStyle(
@@ -56,9 +63,9 @@ class SectionHorizontalItem extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "MX\$${double.parse(price).toStringAsFixed(2)}",
+                  modifiersDetails,
                   textAlign: TextAlign.start,
-                  maxLines: 2,
+                  maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: const TextStyle(
                     color: Colors.black,
@@ -77,7 +84,7 @@ class SectionHorizontalItem extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 image: DecorationImage(
-                  image: CustomImageProvider.getNetworkImageIP(image),
+                  image: CustomImageProvider.getNetworkImageIP(item.icon),
                   fit: BoxFit.fitWidth,
                 ),
               ),
