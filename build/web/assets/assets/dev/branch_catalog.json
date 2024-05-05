@@ -1,0 +1,917 @@
+{
+    "brandId": "8f7cf354-4205-4cbe-e652-08dc68bda01f",
+    "branchId": "04ce83fa-407f-4c08-cf7f-08dc68bda02b",
+    "brandName": "McDonalds",
+    "branchName": "Macroplaza",
+    "instagramLink": "https://www.instagram.com/4urest/",
+    "facebookLink": "https://www.facebook.com/Pos4uRest/",
+    "websiteLink": "https://landing.4urest.mx/",
+    "brandLogo": "https://www.mcdonaldspuebla.com/img/banner-blog.png",
+    "brandSlogan": "me entanta",
+    "menuBackground": "https://api4urest.blob.core.windows.net/brands/9fc50501-ba29-4a6c-94e3-7c6f347cc34b.jpg",
+    "catalogs": [
+        {
+            "id": "8e228ad0-881f-4232-1f9f-08dc68c790d8",
+            "name": "Hamburguesas",
+            "description": "",
+            "icon": "",
+            "categories": [
+                {
+                    "id": "3f5b17ea-032c-4a5b-52d3-08dc68c792ce",
+                    "name": "De Carne",
+                    "description": "Las hamburguesas de carne de McDonald's son un deleite para los amantes de la carne. Cada hamburguesa se elabora con patties jugosos y sabrosos, combinados con ingredientes frescos y aderezos clásicos. Desde el icónico Big Mac hasta el Cuarto de Libra con Queso, estas hamburguesas ofrecen el sabor auténtico de McDonald's en cada bocado.",
+                    "icon": "",
+                    "sectionType": "horizontal",
+                    "items": [],
+                    "products": [
+                        {
+                            "id": "7736ed24-d5e4-485c-b9da-08dc68c79337",
+                            "alias": "Big Mac",
+                            "description": "La perfección hecha hamburguesa que te hace agua la boca comienza con dos patties de 100% carne y la salsa Big Mac®, todo dentro de un pan con semillas de ajonjolí. Viene cubierta con pepinillos, crujiente lechuga, cebollas y queso americano para lograr ese sabor único de la hamburguesa 100% de carne.",
+                            "icon": "https://api4urest.blob.core.windows.net/products/ea5c5d41-e084-4e94-8e1b-6925af26bfaf.png",
+                            "price": "",
+                            "modifiersGroups": [
+                                {
+                                    "id": "e570ff44-a885-4339-f86c-08dc68c793b9",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "72976829-c2ab-41e5-cb95-08dc68c793f7",
+                                            "alias": "Sencilla",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "79"
+                                        },
+                                        {
+                                            "id": "3bdfb248-c54e-47d3-cb96-08dc68c793f7",
+                                            "alias": "Doble",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "89"
+                                        },
+                                        {
+                                            "id": "0351c17a-ec1d-4d20-cb97-08dc68c793f7",
+                                            "alias": "Triple",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "99"
+                                        },
+                                        {
+                                            "id": "e51225fd-f4aa-44b5-cb98-08dc68c793f7",
+                                            "alias": "Sencilla con Tocino",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "89"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "273dfe97-5870-4a4e-b9db-08dc68c79337",
+                            "alias": "Cuarto de libra con queso",
+                            "description": "La icónica hamburguesa de McDonald's que todos adoran. El Cuarto de Libra con Queso cuenta con un jugoso pattie de 100% carne, acompañado de queso americano derretido, crujientes cebollas, pepinillos y ketchup, todo dentro de un pan con semillas de ajonjolí. Es la perfecta combinación de ingredientes para un sabor inolvidable.",
+                            "icon": "https://api4urest.blob.core.windows.net/products/5af1a6a5-eac8-49c7-99bd-5230aafb4199.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "e369ea71-6e3d-447a-f86d-08dc68c793b9",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "459c2062-b5f5-4ef6-cb99-08dc68c793f7",
+                                            "alias": "Sencilla",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "79"
+                                        },
+                                        {
+                                            "id": "1977ed2e-f946-4309-cb9a-08dc68c793f7",
+                                            "alias": "Doble con Queso",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "89"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "830041a1-71a2-416e-b9dc-08dc68c79337",
+                            "alias": "McNífica",
+                            "description": "La McNífica es una hamburguesa deliciosa que combina lo mejor de McDonald's. Incluye una jugosa carne de res, acompañada de crujiente lechuga, tomate fresco, cebolla, queso y una salsa especial que realza su sabor. Todo esto se encuentra en un suave pan con semillas de ajonjolí, para una experiencia única.",
+                            "icon": "https://api4urest.blob.core.windows.net/products/b0f888aa-54e7-4d3c-b573-086b79763d40.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "5b1678d7-71de-4101-f86e-08dc68c793b9",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "06bc88c8-7856-4c96-cb9b-08dc68c793f7",
+                                            "alias": "Sencilla",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "79"
+                                        },
+                                        {
+                                            "id": "4b1c3d01-71e9-47dc-cb9c-08dc68c793f7",
+                                            "alias": "Doble",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "89"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "09d86e43-2346-4cf0-b9dd-08dc68c79337",
+                            "alias": "Hamburguesa",
+                            "description": "La Hamburguesa clásica de McDonald's es simple y deliciosa. Con un pattie de 100% carne, cebollas, pepinillos, ketchup y mostaza, esta hamburguesa sencilla pero sabrosa es ideal para aquellos que buscan una opción básica pero satisfactoria. Todo esto se encuentra en un suave pan con semillas de ajonjolí.",
+                            "icon": "https://api4urest.blob.core.windows.net/products/e4d62e17-e81b-4bf2-8a73-8f5294299833.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "4b23792a-d7d0-4a03-f86f-08dc68c793b9",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "84df16e7-81dd-4ba2-cb9d-08dc68c793f7",
+                                            "alias": "Sencilla",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "29"
+                                        },
+                                        {
+                                            "id": "a2d913e9-b699-40c5-cb9e-08dc68c793f7",
+                                            "alias": "Con queso",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "39"
+                                        },
+                                        {
+                                            "id": "9a27e2bf-58bf-47ff-cb9f-08dc68c793f7",
+                                            "alias": "Doble con queso",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "49"
+                                        },
+                                        {
+                                            "id": "98ce41d1-02dd-4c0f-cba0-08dc68c793f7",
+                                            "alias": "Triple con queso",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "59"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "1e023866-05f5-4abb-b9de-08dc68c79337",
+                            "alias": "Signature CBO",
+                            "description": "La Signature CBO es una delicia gourmet de McDonald's. Incluye un pattie de jugosa carne de res, acompañado de crujiente tocino, cebolla caramelizada y queso cheddar, todo servido en un pan gourmet con semillas de ajonjolí. Esta hamburguesa es perfecta para aquellos que buscan una experiencia premium.",
+                            "icon": "https://api4urest.blob.core.windows.net/products/e150f49d-c540-4212-be63-b38c2f000f2a.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "609db11a-30c6-4faf-f870-08dc68c793b9",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "517652bd-7b09-4a04-cba1-08dc68c793f7",
+                                            "alias": "Sencilla",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "89"
+                                        },
+                                        {
+                                            "id": "3c0486d1-2d10-446e-cba2-08dc68c793f7",
+                                            "alias": "Doble",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "99"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "35e604e1-b8f7-41bd-52d4-08dc68c792ce",
+                    "name": "De Pollo",
+                    "description": "Las hamburguesas de pollo de McDonald's son perfectas para los que buscan una opción más ligera pero igual de deliciosa. Con filetes de pollo empanizado o a la parrilla, estas hamburguesas vienen acompañadas de ingredientes frescos y salsas deliciosas. Disfruta de clásicos como el McPollo o prueba la opción picante con el Pollo McCrispy Spicy.",
+                    "icon": "",
+                    "items": [],
+                    "products": [
+                        {
+                            "id": "929d0a36-f49a-4575-b9df-08dc68c79337",
+                            "alias": "McPollo",
+                            "description": "El McPollo es la elección perfecta para los amantes del pollo. Con un delicioso filete de pollo empanizado, crujiente lechuga y una suave mayonesa, todo servido en un suave pan con semillas de ajonjolí. Es una opción ligera y sabrosa que siempre satisface.",
+                            "icon": "https://api4urest.blob.core.windows.net/products/16537082-1585-4ddf-8e53-3fcff5249812.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "030eb134-562b-4cc2-f871-08dc68c793b9",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "047ae808-c7c1-449a-cba3-08dc68c793f7",
+                                            "alias": "Sencilla",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "79"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "2a410271-601b-47ed-b9e0-08dc68c79337",
+                            "alias": "Pollo McCrispy Spicy",
+                            "description": "El Pollo McCrispy Spicy es una opción picante y deliciosa. Este sándwich de pollo crujiente incluye un filete de pollo empanizado con un toque de especias, acompañado de lechuga fresca y mayonesa, todo dentro de un suave pan con semillas de ajonjolí. Es perfecto para los amantes del sabor picante.",
+                            "icon": "https://api4urest.blob.core.windows.net/products/4d259ce2-8917-4927-8076-ebd798f0c30c.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "c34e08b8-fb71-4c8d-f872-08dc68c793b9",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "a2da466a-1087-4c68-cba4-08dc68c793f7",
+                                            "alias": "Sencilla",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "89"
+                                        },
+                                        {
+                                            "id": "d8e0353a-ec7c-44a4-cba5-08dc68c793f7",
+                                            "alias": "Deluxe",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "109"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "055bacac-a53c-413e-b9e1-08dc68c79337",
+                            "alias": "McNuggets",
+                            "description": "Los McNuggets de McDonald's son irresistibles bocados de pollo empanizado. Crujientes por fuera y tiernos por dentro, son perfectos para compartir o disfrutar solos. Vienen acompañados de una variedad de salsas para que puedas elegir tu favorita.",
+                            "icon": "https://api4urest.blob.core.windows.net/products/6f23d3cb-7061-4f08-ad66-f44673f033f6.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "e2704a4a-895a-4ef9-f873-08dc68c793b9",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "a38682a8-2c67-4817-cba6-08dc68c793f7",
+                                            "alias": "4 Unidades",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "79"
+                                        },
+                                        {
+                                            "id": "89022cea-36b4-4c1b-cba7-08dc68c793f7",
+                                            "alias": "10 Unidades",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "89"
+                                        },
+                                        {
+                                            "id": "00be9a55-2628-4bf8-cba8-08dc68c793f7",
+                                            "alias": "20 Unidades",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "99"
+                                        },
+                                        {
+                                            "id": "fbc660b8-87d6-498c-cba9-08dc68c793f7",
+                                            "alias": "40 Unidades",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "139"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "b4c1fe3e-1ae7-48be-52d5-08dc68c792ce",
+                    "name": "Bebidas",
+                    "description": "Las bebidas de McDonald's son la opción perfecta para acompañar tu comida. Desde refrescos y jugos naturales hasta café y agua, McDonald's ofrece una amplia variedad de bebidas para todos los gustos. Elige tu favorita y disfruta de una experiencia refrescante con cada comida.",
+                    "icon": "",
+                    "items": [],
+                    "products": [
+                        {
+                            "id": "ffa23a04-bb76-4b41-b9e2-08dc68c79337",
+                            "alias": "Agua sin gas",
+                            "description": "El Agua sin Gas de McDonald's es una opción refrescante y saludable. Perfecta para hidratarte, esta agua natural es ideal para acompañar cualquier comida.",
+                            "icon": "https://api4urest.blob.core.windows.net/products/236891b6-9764-4a02-8b13-21f6e3adf6b2.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "ebeba092-bf17-461e-f874-08dc68c793b9",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "52414470-0e83-4f4c-cbaa-08dc68c793f7",
+                                            "alias": "600 ml",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "29"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "1b8301e9-a551-41ff-b9e3-08dc68c79337",
+                            "alias": "Vaso Refil",
+                            "description": "El Vaso Refil de McDonald's te permite disfrutar de tu refresco favorito. Puedes elegir entre una amplia variedad de bebidas gaseosas para acompañar tu comida y recargar tu vaso tantas veces como desees.",
+                            "icon": "https://api4urest.blob.core.windows.net/products/4ee24559-8e90-4635-b4fd-ca5d6805a1bd.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "874460dc-c0be-4c96-f875-08dc68c793b9",
+                                    "alias": "Medidas",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "44948ed5-d468-4897-cbab-08dc68c793f7",
+                                            "alias": "Chico",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "29"
+                                        },
+                                        {
+                                            "id": "c63ceb5a-0a20-4c80-cbac-08dc68c793f7",
+                                            "alias": "Mediano",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "39"
+                                        },
+                                        {
+                                            "id": "3f49ca9e-8276-48e2-cbad-08dc68c793f7",
+                                            "alias": "Grande",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "49"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "04393dec-b109-4405-b9e4-08dc68c79337",
+                            "alias": "Café Refil",
+                            "description": "El Café Refil de McDonald's es perfecto para los amantes del café. Disfruta de un delicioso café recién hecho y recarga tu vaso tantas veces como desees para mantenerte despierto y lleno de energía.",
+                            "icon": "https://api4urest.blob.core.windows.net/products/ad662084-ce67-40e3-b525-01cdf4f6be32.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "4f143dd7-dd2b-4e16-f876-08dc68c793b9",
+                                    "alias": "Medidas",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "9047c98c-6c3d-4c83-cbae-08dc68c793f7",
+                                            "alias": "Chico",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "29"
+                                        },
+                                        {
+                                            "id": "755bf270-77c5-48e7-cbaf-08dc68c793f7",
+                                            "alias": "Grande",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "39"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "d11330c8-b792-46db-b9e5-08dc68c79337",
+                            "alias": "100% Jugo Natural",
+                            "description": "El 100% Jugo Natural de McDonald's es una opción refrescante y saludable. Hecho con frutas frescas, es una bebida deliciosa y nutritiva que complementa perfectamente cualquier comida.",
+                            "icon": "https://api4urest.blob.core.windows.net/products/85fe691b-5448-42dd-88df-26406d467982.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "85a285c0-aa42-4ed0-f877-08dc68c793b9",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "1fa9980d-9e00-4ff5-cbb0-08dc68c793f7",
+                                            "alias": "Naranja 237ml",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "29"
+                                        },
+                                        {
+                                            "id": "098710a7-c134-40e4-cbb1-08dc68c793f7",
+                                            "alias": "Manzana 237ml",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "29"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "a7e16d89-0fb9-4176-52d6-08dc68c792ce",
+                    "name": "Postres",
+                    "description": "Los postres de McDonald's son la manera perfecta de terminar tu comida con un toque dulce. Desde helados y malteadas hasta pays y galletas, McDonald's ofrece una amplia selección de delicias para satisfacer tu antojo. Cada postre está hecho con ingredientes de calidad para un sabor inolvidable.",
+                    "icon": "",
+                    "items": [],
+                    "products": [
+                        {
+                            "id": "7485c7d3-9665-49a7-b9e6-08dc68c79337",
+                            "alias": "McFlurry",
+                            "description": "El McFlurry de McDonald's es un postre helado que combina cremoso helado con deliciosos ingredientes, como galletas, caramelos o chocolates. Es el equilibrio perfecto entre dulzura y textura, y es ideal para refrescarte y disfrutar de un momento dulce.",
+                            "icon": "https://api4urest.blob.core.windows.net/products/ad4d75be-8e7e-4946-8b22-eeb20df7ce2f.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "8b010b2d-eec2-453b-f878-08dc68c793b9",
+                                    "alias": "Sabores",
+                                    "description": "El McFlurry de McDonald's es un postre helado que combina cremoso helado con deliciosos ingredientes, como galletas, caramelos o chocolates. Es el equilibrio perfecto entre dulzura y textura, y es ideal para refrescarte y disfrutar de un momento dulce.",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "9a0d4a36-0562-418b-cbb2-08dc68c793f7",
+                                            "alias": "Pingüinos",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "36"
+                                        },
+                                        {
+                                            "id": "798e1b07-499b-4a74-cbb3-08dc68c793f7",
+                                            "alias": "Fresa Mix",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "36"
+                                        },
+                                        {
+                                            "id": "e2e18655-c4db-4ee5-cbb4-08dc68c793f7",
+                                            "alias": "Caramelo Mix",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "36"
+                                        },
+                                        {
+                                            "id": "5a9f8afa-f3bd-4e43-cbb5-08dc68c793f7",
+                                            "alias": "Oreo",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "36"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "86e94ac3-4a03-4453-b9e7-08dc68c79337",
+                            "alias": "Malteada",
+                            "description": "La Malteada de McDonald's es un clásico que nunca pasa de moda. Disponible en varios sabores, esta bebida es cremosa y deliciosa, ideal para disfrutar como postre o para acompañar cualquier comida.",
+                            "icon": "https://api4urest.blob.core.windows.net/products/11ee9fb5-1efc-4238-a0ae-996a1c876f05.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "ba200de9-a56b-4344-f879-08dc68c793b9",
+                                    "alias": "Sabores",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "75a2c949-94a9-46f6-cbb6-08dc68c793f7",
+                                            "alias": "Chocolate",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "36"
+                                        },
+                                        {
+                                            "id": "4ac93a49-2b83-4b0b-cbb7-08dc68c793f7",
+                                            "alias": "Caramelo",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "36"
+                                        },
+                                        {
+                                            "id": "a66edd53-a7dc-404a-cbb8-08dc68c793f7",
+                                            "alias": "Fresa",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "36"
+                                        },
+                                        {
+                                            "id": "9dbd90cb-b984-4e36-cbb9-08dc68c793f7",
+                                            "alias": "Vainilla",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "36"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "3dc96ef9-5f85-4d0c-b9e8-08dc68c79337",
+                            "alias": "Sundae",
+                            "description": "El Sundae de McDonald's es un postre helado clásico que todos aman. Con suave helado y una cobertura deliciosa, como chocolate, caramelo o fresa, es perfecto para disfrutar de un momento dulce y refrescante.",
+                            "icon": "https://api4urest.blob.core.windows.net/products/be4df740-21ec-4bb8-8888-8ea0725a3230.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "c9365344-1517-4735-f87a-08dc68c793b9",
+                                    "alias": "Sabores",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "874e817c-9a3b-43f8-cbba-08dc68c793f7",
+                                            "alias": "Chocolate",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "24"
+                                        },
+                                        {
+                                            "id": "ded98cde-c2db-453b-cbbb-08dc68c793f7",
+                                            "alias": "Caramelo",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "24"
+                                        },
+                                        {
+                                            "id": "e536c594-9cfa-4451-cbbc-08dc68c793f7",
+                                            "alias": "Fresa",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "24"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "7a9e37b7-65ff-4375-b9e9-08dc68c79337",
+                            "alias": "Pay",
+                            "description": "El Pay de McDonald's es un postre tradicional que combina una crujiente corteza con un delicioso relleno de frutas o crema. Es ideal para disfrutar como un postre o snack, y siempre es un favorito entre los clientes.",
+                            "icon": "https://api4urest.blob.core.windows.net/products/1f163297-fca0-4433-9ba5-a88e203968cc.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "9fe93ce5-5feb-44d7-f87b-08dc68c793b9",
+                                    "alias": "Sabores",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "f83846f2-2481-47e0-cbbd-08dc68c793f7",
+                                            "alias": "Manzana",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "25"
+                                        },
+                                        {
+                                            "id": "da186fe7-50ec-474c-cbbe-08dc68c793f7",
+                                            "alias": "Queso",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "25"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "97da1342-ada2-4a77-1fa0-08dc68c790d8",
+            "name": "Desayunos",
+            "description": "",
+            "icon": "",
+            "categories": [
+                {
+                    "id": "231ca194-ec99-487c-52d7-08dc68c792ce",
+                    "name": "Platillos",
+                    "description": "",
+                    "icon": "",
+                    "items": [],
+                    "products": [
+                        {
+                            "id": "1d017241-6814-499c-b9ea-08dc68c79337",
+                            "alias": "Hotcakes con Salchicha",
+                            "description": "",
+                            "icon": "https://api4urest.blob.core.windows.net/products/066a0fdf-6cb8-4712-931a-243576565395.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "6043c1b8-3844-4410-f87c-08dc68c793b9",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "75da944d-1772-4b51-cbbf-08dc68c793f7",
+                                            "alias": "Platillo",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "109"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "8cfab9a0-6acb-4d9a-b9eb-08dc68c79337",
+                            "alias": "Desayuno Deluxe",
+                            "description": "",
+                            "icon": "https://api4urest.blob.core.windows.net/products/56a187cc-b759-449c-8cdb-38f4d0106614.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "863879c8-1aca-433d-f87d-08dc68c793b9",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "d44cda6c-d20c-4044-cbc0-08dc68c793f7",
+                                            "alias": "Platillo",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "109"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "53460c0a-fbc2-4f02-b9ec-08dc68c79337",
+                            "alias": "Desayuno Especial Mexicano",
+                            "description": "",
+                            "icon": "https://api4urest.blob.core.windows.net/products/102f0a89-8dfc-4b96-8267-b82d157c0b31.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "ea3f61d1-0e11-421d-f87e-08dc68c793b9",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "092af460-c213-4620-cbc1-08dc68c793f7",
+                                            "alias": "Platillo",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "109"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "cf8e13be-82d3-4286-b9ed-08dc68c79337",
+                            "alias": "Desayuno Especial",
+                            "description": "",
+                            "icon": "https://api4urest.blob.core.windows.net/products/4e5be1fd-8abf-492f-bce7-a03464018bcc.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "e05fbb69-de4f-4b66-f87f-08dc68c793b9",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "d46e755a-af18-4d9c-cbc2-08dc68c793f7",
+                                            "alias": "Platillo",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "109"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "c6907bc0-09c1-4e34-52d8-08dc68c792ce",
+                    "name": "Individuales",
+                    "description": "",
+                    "icon": "",
+                    "items": [],
+                    "products": [
+                        {
+                            "id": "682e0000-5361-407f-b9ee-08dc68c79337",
+                            "alias": "McMuffin Huevo Tocino",
+                            "description": "",
+                            "icon": "https://api4urest.blob.core.windows.net/products/3efea2e5-cf3d-4a1a-8fce-d29bfabd75af.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "f5cd73b0-6d74-489d-f880-08dc68c793b9",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "63dcad9a-b4ac-4315-cbc3-08dc68c793f7",
+                                            "alias": "Pieza",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "39"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "19efc1bc-0021-4d5a-b9ef-08dc68c79337",
+                            "alias": "McMolletes",
+                            "description": "",
+                            "icon": "https://api4urest.blob.core.windows.net/products/fef5b33c-0aa2-44f1-971d-9ac08263f0de.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "b2942e60-1b4e-4518-f881-08dc68c793b9",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "1982e5ad-863a-47db-cbc4-08dc68c793f7",
+                                            "alias": "Pieza",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "39"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "7e94e7a4-ce01-4fcf-b9f0-08dc68c79337",
+                            "alias": "McMuffin Huevo Salchicha",
+                            "description": "",
+                            "icon": "https://api4urest.blob.core.windows.net/products/568a21ac-8335-4962-864c-3c2611016848.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "576b55ee-8223-45d8-f882-08dc68c793b9",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "080b801b-beb0-4a4e-cbc5-08dc68c793f7",
+                                            "alias": "Pieza",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "39"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "c1884c82-0bae-4a55-b9f1-08dc68c79337",
+                            "alias": "McMuffin a la Mexicana",
+                            "description": "",
+                            "icon": "https://api4urest.blob.core.windows.net/products/656cd6aa-dd22-4f3b-bb7d-d6d785e313c1.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "0acaab62-9c83-478d-f883-08dc68c793b9",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "ee49b39b-7288-4996-cbc6-08dc68c793f7",
+                                            "alias": "Pieza",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "39"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "3442fcba-5161-492e-b9f2-08dc68c79337",
+                            "alias": "Papa Hashbrown",
+                            "description": "",
+                            "icon": "https://api4urest.blob.core.windows.net/products/6fb994f8-fdb1-40cf-b724-00295ce10a27.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "b318a0d3-8707-43da-f884-08dc68c793b9",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "c2a0f8f6-f5c8-4d2a-cbc7-08dc68c793f7",
+                                            "alias": "Pieza",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "29"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "3bfaae8b-9d9f-4740-b9f3-08dc68c79337",
+                            "alias": "McBurrito a la Mexicana",
+                            "description": "",
+                            "icon": "https://api4urest.blob.core.windows.net/products/bd0c1107-8d06-4e84-827d-cde0e2d0d0b5.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "e5602cb0-8661-4944-f885-08dc68c793b9",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "icon": "",
+                                    "isSelectable": "False",
+                                    "modifiers": [
+                                        {
+                                            "id": "99f9c547-526c-4c81-cbc8-08dc68c793f7",
+                                            "alias": "Pieza",
+                                            "description": "",
+                                            "icon": "",
+                                            "price": "39"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
