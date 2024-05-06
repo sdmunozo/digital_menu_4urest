@@ -2,6 +2,7 @@ import 'package:digital_menu_4urest/models/branch_catalog_model.dart';
 import 'package:digital_menu_4urest/models/category_model.dart';
 import 'package:digital_menu_4urest/models/item_model.dart';
 import 'package:digital_menu_4urest/models/section_size_model.dart';
+import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:uuid/uuid.dart';
@@ -16,6 +17,7 @@ class GlobalConfigProvider {
   static double? maxHeight;
   static double? maxWidth;
   static List<SectionSizeModel> sectionSizes = [];
+  static Color backgroundColor = const Color(0xFFF6F9FA);
 
   static void generateSectionSizes() {
     List<SectionSizeModel> sizes = [];

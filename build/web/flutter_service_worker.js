@@ -3,12 +3,12 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"flutter_bootstrap.js": "d28f5e6219d0d3df9ade1008ac9b3cd3",
+const RESOURCES = {"flutter_bootstrap.js": "9ec34b019191fb107a10c363fffb9f2e",
 "version.json": "8d834b906ddd963a181cad2c77beed16",
 "index.html": "388b0942c5a615f060a9e0329d301750",
 "/": "388b0942c5a615f060a9e0329d301750",
 "vercel.json": "da8484efebd780414370117c48fcb6e4",
-"main.dart.js": "ba6175ec95d09b3ada357bbefaab01fe",
+"main.dart.js": "d4da26f80ea46116d70497517e1ee951",
 "flutter.js": "383e55f7f3cce5be08fcf1f3881f585c",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
@@ -26,7 +26,7 @@ const RESOURCES = {"flutter_bootstrap.js": "d28f5e6219d0d3df9ade1008ac9b3cd3",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "216b019b42c05e07ff7472b382efae72",
 "assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
 "assets/AssetManifest.bin": "615f9b58ec21eadd37c58a328a1ee920",
-"assets/fonts/MaterialIcons-Regular.otf": "e69067c9b8faf21b01bd8afb42a930b8",
+"assets/fonts/MaterialIcons-Regular.otf": "01debb9b5bf77640770e2144b17091f2",
 "assets/assets/temp/McDonalds_Banner_1.jpeg": "6c492e8164828c22b91d6b725113667c",
 "assets/assets/temp/McDonalds_Banner_4.jpeg": "a529879b6646a20f58ea3304ad8ca5a5",
 "assets/assets/temp/HomeScreen3.PNG": "d5e0686052e75cb120fc16170005ea98",

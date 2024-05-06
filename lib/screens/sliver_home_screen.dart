@@ -3,13 +3,11 @@ import 'package:digital_menu_4urest/layout/main_layout.dart';
 import 'package:digital_menu_4urest/providers/global_config_provider.dart';
 import 'package:digital_menu_4urest/widgets/custom_tab_widget.dart';
 import 'package:digital_menu_4urest/widgets/horizontal_section_widget.dart';
-import 'package:digital_menu_4urest/widgets/search_widget.dart';
+import 'package:digital_menu_4urest/widgets/static_search_widget.dart';
 import 'package:digital_menu_4urest/widgets/vertical_section_widget.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 import 'package:flutter/rendering.dart';
-
-const _backgroundColor = Color(0xFFF6F9FA);
 
 class SliverHomeScreen extends StatefulWidget {
   const SliverHomeScreen({super.key});
@@ -39,7 +37,7 @@ class _Test2HomeScreenState extends State<SliverHomeScreen>
     GlobalConfigProvider.generateSectionSizes();
     return MainLayout(
         child: Container(
-      color: _backgroundColor,
+      color: GlobalConfigProvider.backgroundColor,
       child: CustomScrollView(
         controller: _bloc.scrollController,
         slivers: [
@@ -80,48 +78,6 @@ class _Test2HomeScreenState extends State<SliverHomeScreen>
         ],
       ),
     ));
-  }
-}
-
-class ColumnColorsContainer extends StatelessWidget {
-  const ColumnColorsContainer({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: Container(
-            height: 300,
-            color: Colors.white,
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: Container(
-            height: 300,
-            color: Colors.red,
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: Container(
-            height: 300,
-            color: Colors.white,
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: Container(
-            height: 300,
-            color: Colors.red,
-          ),
-        ),
-      ],
-    );
   }
 }
 
@@ -191,15 +147,19 @@ class _TabAndSearchWidget extends StatelessWidget {
       opacity: percent,
       child: Container(
         height: 97,
-        color: _backgroundColor,
+        color: GlobalConfigProvider.backgroundColor,
         child: Column(
           children: [
-            const Align(
+            Align(
               alignment: Alignment.bottomCenter,
               child: SizedBox(
                 width: double.infinity,
                 height: 52,
-                child: SearchWidget(),
+                child: StaticSearchWidget(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                ),
               ),
             ),
             SizedBox(
@@ -240,8 +200,8 @@ class _DataBrandWidget extends StatelessWidget {
       child: Container(
         height: 50,
         width: GlobalConfigProvider.maxWidth,
-        decoration: const BoxDecoration(
-          color: _backgroundColor,
+        decoration: BoxDecoration(
+          color: GlobalConfigProvider.backgroundColor,
         ),
         child: Row(
           children: [
