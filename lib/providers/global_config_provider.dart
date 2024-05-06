@@ -14,10 +14,12 @@ class GlobalConfigProvider {
   static String lastUrlSegment = '';
   static bool develop = true;
   static BranchCatalogModel? branchCatalog;
-  static double? maxHeight;
-  static double? maxWidth;
+  static double maxHeight = 0;
+  static double maxWidth = 0;
   static List<SectionSizeModel> sectionSizes = [];
   static Color backgroundColor = const Color(0xFFF6F9FA);
+  static double sectionVerticalItemHeight = 200;
+  static double sectionHorizontalItemHeight = 130;
 
   static void generateSectionSizes() {
     List<SectionSizeModel> sizes = [];
@@ -31,7 +33,7 @@ class GlobalConfigProvider {
           totalHeight = 109.5;
           // ignore: unused_local_variable
           for (ItemModel product in category.products) {
-            totalHeight += 120;
+            totalHeight += sectionHorizontalItemHeight;
           }
         }
 
