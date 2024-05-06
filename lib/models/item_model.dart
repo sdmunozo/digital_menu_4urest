@@ -6,6 +6,7 @@ class ItemModel {
   String description;
   String icon;
   String price;
+  String isDisplayed;
   List<ModifiersGroupModel> modifiersGroups;
 
   ItemModel({
@@ -14,6 +15,7 @@ class ItemModel {
     this.description = '',
     this.icon = '',
     this.price = '0',
+    this.isDisplayed = 'False',
     this.modifiersGroups = const [],
   });
   factory ItemModel.fromJson(Map<String, dynamic> json) => ItemModel(
@@ -22,6 +24,9 @@ class ItemModel {
         description: json["description"],
         icon: json["icon"],
         price: (json["price"] ?? "").isEmpty ? "0" : json["price"],
+        isDisplayed: json.containsKey("isDisplayed")
+            ? json["isDisplayed"].toString()
+            : 'False',
         modifiersGroups: List<ModifiersGroupModel>.from(json["modifiersGroups"]
                 ?.map((x) => ModifiersGroupModel.fromJson(x)) ??
             []),
@@ -33,6 +38,7 @@ class ItemModel {
         "description": description,
         "icon": icon,
         "price": price,
+        "isDisplayed": isDisplayed,
         "modifiersGroups":
             List<dynamic>.from(modifiersGroups.map((x) => x.toJson())),
       };

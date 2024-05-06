@@ -28,12 +28,7 @@ class HorizontalSectionWidget extends StatelessWidget {
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: category.products.map((item) {
-                      return SectionVerticalItem(
-                        title: item.alias,
-                        description: item.description,
-                        image: item.icon,
-                        price: item.price,
-                      );
+                      return SectionVerticalItem(item: item);
                     }).toList(),
                   ),
                 ),

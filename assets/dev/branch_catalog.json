@@ -49,6 +49,7 @@
                                             "id": "3bdfb248-c54e-47d3-cb96-08dc68c793f7",
                                             "alias": "Doble",
                                             "description": "",
+                                            "isDisplayed" : "True",
                                             "icon": "",
                                             "price": "89"
                                         },

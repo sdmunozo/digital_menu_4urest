@@ -1,10 +1,10 @@
+import 'package:digital_menu_4urest/screens/sliver_home_screen.dart';
 import 'package:digital_menu_4urest/widgets/footer_4urest_widget.dart';
 import 'package:digital_menu_4urest/widgets/slogan_widget.dart';
 import 'package:digital_menu_4urest/widgets/social_media_widget.dart';
 import 'package:digital_menu_4urest/widgets/title_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:digital_menu_4urest/layout/main_layout.dart';
-import 'package:digital_menu_4urest/screens/home_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
@@ -41,7 +41,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const HomeScreen(),
+                    builder: (context) => const SliverHomeScreen(),
                   ),
                 );
               },

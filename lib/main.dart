@@ -1,6 +1,6 @@
 import 'package:digital_menu_4urest/providers/branch_catalog_provider.dart';
-import 'package:digital_menu_4urest/screens/home_screen.dart';
 import 'package:digital_menu_4urest/screens/not_found_screen.dart';
+import 'package:digital_menu_4urest/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:digital_menu_4urest/providers/global_config_provider.dart';
 import 'package:provider/provider.dart';
@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
             if (provider.isLoading) {
               return const Center(child: CircularProgressIndicator());
             }
-            return const HomeScreen();
+            return const WelcomeScreen();
           }),
         ),
       ),
