@@ -14,6 +14,22 @@ class SearchWidget extends StatefulWidget {
 
 class _SearchWidgetState extends State<SearchWidget> {
   final TextEditingController _controller = TextEditingController();
+  final FocusNode _focusNode = FocusNode();
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _focusNode.requestFocus();
+    });
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    _focusNode.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -63,6 +79,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                   ),
                   Expanded(
                     child: TextField(
+                      focusNode: _focusNode,
                       controller: _controller,
                       style: const TextStyle(fontSize: 12),
                       decoration: const InputDecoration(
@@ -99,14 +116,12 @@ class _SearchWidgetState extends State<SearchWidget> {
     query = removeDiacritics(query.toLowerCase());
 
     if (query.isEmpty) {
-      // Si la consulta está vacía, notifica con una lista vacía
       widget.onResultsFiltered([]);
       return;
     }
 
     var catalog = GlobalConfigProvider.branchCatalog?.catalogs[0];
     if (catalog == null) {
-      // Si no hay catálogo, devuelve una lista vacía
       widget.onResultsFiltered([]);
       return;
     }
