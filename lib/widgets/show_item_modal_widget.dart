@@ -5,10 +5,28 @@ import 'package:digital_menu_4urest/widgets/custom_divider_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class ShowItemModalWidget extends StatelessWidget {
-  const ShowItemModalWidget({super.key, required this.item});
-
+class ShowItemModalWidget extends StatefulWidget {
+  const ShowItemModalWidget(
+      {super.key, required this.item, required this.calledFrom});
   final ItemModel item;
+  final String calledFrom;
+
+  @override
+  State<ShowItemModalWidget> createState() => _ShowItemModalWidgetState();
+}
+
+class _ShowItemModalWidgetState extends State<ShowItemModalWidget> {
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    GlobalConfigProvider.updateActiveScreen("ShowItemScreen");
+
+    GlobalConfigProvider.recordClickEventMetric(
+      origin: widget.calledFrom,
+      clickedElement: "product",
+      destination: widget.item.id,
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +67,8 @@ class ShowItemModalWidget extends StatelessWidget {
                     height: (GlobalConfigProvider.maxHeight * 0.5),
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: CustomImageProvider.getNetworkImageIP(item.icon),
+                        image: CustomImageProvider.getNetworkImageIP(
+                            widget.item.icon),
                         fit: BoxFit.fitWidth,
                       ),
                     ),
@@ -63,7 +82,11 @@ class ShowItemModalWidget extends StatelessWidget {
                     radius: 20,
                     child: IconButton(
                       icon: const Icon(Icons.close, size: 20),
-                      onPressed: () => Navigator.of(context).pop(),
+                      onPressed: () {
+                        GlobalConfigProvider.updateActiveScreen(
+                            widget.calledFrom);
+                        Navigator.pop(context);
+                      },
                     ),
                   ),
                 ),
@@ -77,7 +100,7 @@ class ShowItemModalWidget extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(
                         vertical: 10.0, horizontal: 5),
                     child: Text(
-                      item.alias,
+                      widget.item.alias,
                       style: GoogleFonts.poppins(
                         fontWeight: FontWeight.bold,
                         fontSize: 25,
@@ -88,7 +111,7 @@ class ShowItemModalWidget extends StatelessWidget {
                     padding:
                         const EdgeInsets.only(left: 15.0, bottom: 5, right: 15),
                     child: Text(
-                      item.description,
+                      widget.item.description,
                       style: const TextStyle(
                         color: Color(0xff88888a),
                         fontSize: 14,
@@ -96,7 +119,7 @@ class ShowItemModalWidget extends StatelessWidget {
                     ),
                   ),
                   const CustomDividerWidget(),
-                  if (item.modifiersGroups.isNotEmpty) ...[
+                  if (widget.item.modifiersGroups.isNotEmpty) ...[
                     const Padding(
                       padding: EdgeInsets.symmetric(vertical: 8.0),
                       child: Text(
@@ -110,9 +133,9 @@ class ShowItemModalWidget extends StatelessWidget {
                     ListView.builder(
                       shrinkWrap: true,
                       physics: const NeverScrollableScrollPhysics(),
-                      itemCount: item.modifiersGroups.length,
+                      itemCount: widget.item.modifiersGroups.length,
                       itemBuilder: (context, index) {
-                        final group = item.modifiersGroups[index];
+                        final group = widget.item.modifiersGroups[index];
                         return ListTile(
                           title: Text(
                             group.alias,

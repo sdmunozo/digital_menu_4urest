@@ -1,4 +1,8 @@
+import 'dart:async';
+import 'dart:convert';
+
 import 'package:digital_menu_4urest/models/item_model.dart';
+import 'package:digital_menu_4urest/models/metrics/search_event_metric.dart';
 import 'package:digital_menu_4urest/providers/global_config_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -15,6 +19,7 @@ class SearchWidget extends StatefulWidget {
 class _SearchWidgetState extends State<SearchWidget> {
   final TextEditingController _controller = TextEditingController();
   final FocusNode _focusNode = FocusNode();
+  Timer? _debounce;
 
   @override
   void initState() {
@@ -28,6 +33,7 @@ class _SearchWidgetState extends State<SearchWidget> {
   void dispose() {
     _controller.dispose();
     _focusNode.dispose();
+    _debounce?.cancel();
     super.dispose();
   }
 
@@ -72,7 +78,10 @@ class _SearchWidgetState extends State<SearchWidget> {
                   IconButton(
                     icon: const Icon(Icons.arrow_back_ios_new,
                         color: Colors.black),
-                    onPressed: () => Navigator.pop(context),
+                    onPressed: () {
+                      GlobalConfigProvider.updateActiveScreen("HomeScreen");
+                      Navigator.pop(context);
+                    },
                   ),
                   const SizedBox(
                     width: 8,
@@ -86,7 +95,8 @@ class _SearchWidgetState extends State<SearchWidget> {
                         hintText: "Buscar Platillos o Bebidas",
                         border: InputBorder.none,
                       ),
-                      onChanged: (value) => _filterSearchResults(value),
+                      onChanged: (value) => _onSearchChanged(value),
+                      //onChanged: (value) => _filterSearchResults(value),
                     ),
                   ),
                   Container(
@@ -110,6 +120,20 @@ class _SearchWidgetState extends State<SearchWidget> {
         ),
       ),
     ]);
+  }
+
+  void _onSearchChanged(String query) {
+    if (_debounce?.isActive ?? false) _debounce!.cancel();
+    _debounce = Timer(const Duration(milliseconds: 750), () {
+      final searchEvent = SearchEventMetric(
+        searchTerm: query,
+      );
+
+      // Convierte el objeto a una cadena JSON
+      final searchEventJson = jsonEncode(searchEvent.toJson());
+      GlobalConfigProvider.logMessage(searchEventJson);
+      _filterSearchResults(query);
+    });
   }
 
   void _filterSearchResults(String query) {

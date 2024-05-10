@@ -15,25 +15,25 @@ class Api4uRest {
     try {
       final response = await _dio.get(path, queryParameters: queryParams);
       if (response.statusCode == 200) {
-        GlobalConfigProvider.logError(
+        GlobalConfigProvider.logMessage(
             'Respuesta 200: ${response.statusCode}, ${response.data}');
         return _parseResponse(response.data);
       } else {
         var responseData = jsonDecode(response.data);
-        GlobalConfigProvider.logError(
+        GlobalConfigProvider.logMessage(
             'Respuesta no exitosa: ${response.statusCode}, ${responseData['title']}: ${responseData['detail']}');
       }
     } on DioException catch (dioError) {
       if (dioError.response != null) {
         var responseData = jsonDecode(dioError.response!.data);
-        GlobalConfigProvider.logError(
+        GlobalConfigProvider.logMessage(
             'DioError en el GET: ${dioError.message}, ${responseData['title']}: ${responseData['detail']}');
       } else {
-        GlobalConfigProvider.logError(
+        GlobalConfigProvider.logMessage(
             'DioError en el GET: ${dioError.message}');
       }
     } catch (e) {
-      GlobalConfigProvider.logError('Error en el GET: $e');
+      GlobalConfigProvider.logMessage('Error en el GET: $e');
     }
   }
 
@@ -41,7 +41,7 @@ class Api4uRest {
     try {
       return data is String ? jsonDecode(data) : data;
     } catch (e) {
-      GlobalConfigProvider.logError('Error al parsear los datos: $e');
+      GlobalConfigProvider.logMessage('Error al parsear los datos: $e');
     }
   }
 }

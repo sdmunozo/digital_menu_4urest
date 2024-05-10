@@ -8,9 +8,11 @@ class SectionHorizontalItem extends StatelessWidget {
   const SectionHorizontalItem({
     super.key,
     required this.item,
+    required this.calledFrom,
   });
 
   final ItemModel item;
+  final String calledFrom;
 
   @override
   Widget build(BuildContext context) {
@@ -35,6 +37,7 @@ class SectionHorizontalItem extends StatelessWidget {
         context: context,
         builder: (BuildContext context) => ShowItemModalWidget(
           item: item,
+          calledFrom: calledFrom,
         ),
       ),
       child: SizedBox(

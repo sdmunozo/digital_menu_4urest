@@ -4,16 +4,25 @@ import 'package:flutter/material.dart';
 
 class Footer4urestWidget extends StatelessWidget {
   final bool isRow;
+  final String origin;
+  final String destination;
 
   const Footer4urestWidget({
     super.key,
     this.isRow = true,
+    required this.origin,
+    required this.destination,
   });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
+        GlobalConfigProvider.recordClickEventMetric(
+          origin: origin,
+          clickedElement: "website-4urest",
+          destination: destination,
+        );
         GlobalConfigProvider.launchUrlLink('https://landing.4urest.mx/');
       },
       child: isRow

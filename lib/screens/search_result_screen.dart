@@ -20,6 +20,12 @@ class _SearchResultScreenState extends State<SearchResultScreen> {
   bool _searchStarted = false;
 
   @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    GlobalConfigProvider.updateActiveScreen('SearchResultScreen');
+  }
+
+  @override
   Widget build(BuildContext context) {
     return MainLayout(
       child: Container(
@@ -46,7 +52,9 @@ class _SearchResultScreenState extends State<SearchResultScreen> {
                           itemCount: _filteredResults.length,
                           itemBuilder: (context, index) {
                             return SectionHorizontalItem(
-                                item: _filteredResults[index]);
+                              item: _filteredResults[index],
+                              calledFrom: "SearchResultScreen",
+                            );
                           },
                         ))
                   : const InitialSearchWidget(),

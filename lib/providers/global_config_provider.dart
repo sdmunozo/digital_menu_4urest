@@ -1,6 +1,10 @@
+import 'dart:async';
+
 import 'package:digital_menu_4urest/models/branch_catalog_model.dart';
 import 'package:digital_menu_4urest/models/category_model.dart';
 import 'package:digital_menu_4urest/models/item_model.dart';
+import 'package:digital_menu_4urest/models/metrics/click_event_metric.dart';
+import 'package:digital_menu_4urest/models/metrics/view_time_metric.dart';
 import 'package:digital_menu_4urest/models/section_size_model.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -20,6 +24,98 @@ class GlobalConfigProvider {
   static Color backgroundColor = const Color(0xFFF6F9FA);
   static double sectionVerticalItemHeight = 200;
   static double sectionHorizontalItemHeight = 130;
+  static int welcomeScreenViewTime = 0;
+  static int homeScreenViewTime = 0;
+  static int searchResultScreenViewTime = 0;
+  static int showItemScreenViewTime = 0;
+  static String activeScreen = '';
+  static Timer? _timer;
+  static Timer? _logTimer;
+
+  static void updateActiveScreen(String screenName) {
+    _recordViewTimeMetric();
+
+    if (activeScreen != screenName) {
+      activeScreen = screenName;
+    }
+
+    // Detener el timer actual
+    _timer?.cancel();
+    _logTimer?.cancel();
+
+    // Iniciar un nuevo timer
+    _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
+      switch (activeScreen) {
+        case 'WelcomeScreen':
+          welcomeScreenViewTime++;
+          break;
+        case 'HomeScreen':
+          homeScreenViewTime++;
+          break;
+        case 'SearchResultScreen':
+          searchResultScreenViewTime++;
+          break;
+        case 'ShowItemScreen':
+          showItemScreenViewTime++;
+          break;
+      }
+    });
+
+    // Iniciar un timer para el registro cada 5 segundos
+    _logTimer = Timer.periodic(const Duration(seconds: 5), (timer) {
+      _recordViewTimeMetric();
+    });
+  }
+
+  static void _recordViewTimeMetric() {
+    String? pageName;
+    int? viewTimeSeconds;
+
+    switch (activeScreen) {
+      case 'WelcomeScreen':
+        pageName = 'WelcomeScreen';
+        viewTimeSeconds = welcomeScreenViewTime;
+        break;
+      case 'HomeScreen':
+        pageName = 'HomeScreen';
+        viewTimeSeconds = homeScreenViewTime;
+        break;
+      case 'SearchResultScreen':
+        pageName = 'SearchResultScreen';
+        viewTimeSeconds = searchResultScreenViewTime;
+        break;
+      case 'ShowItemScreen':
+        pageName = 'ShowItemScreen';
+        viewTimeSeconds = showItemScreenViewTime;
+        break;
+    }
+
+    if (pageName != null && viewTimeSeconds != null) {
+      final metric = ViewTimeMetric(
+        pageName: pageName,
+        viewTimeSeconds: viewTimeSeconds,
+      );
+      logMessage(metric.toJson().toString());
+    }
+  }
+
+  static void dispose() {
+    _timer?.cancel();
+    _logTimer?.cancel();
+  }
+
+  static void recordClickEventMetric(
+      {required String origin,
+      required String clickedElement,
+      required String destination}) {
+    final metric = ClickEventMetric(
+      origin: origin,
+      clickedElement: clickedElement,
+      destination: destination,
+    );
+
+    GlobalConfigProvider.logMessage(metric.toJson().toString());
+  }
 
   static void generateSectionSizes() {
     List<SectionSizeModel> sizes = [];
@@ -74,7 +170,7 @@ class GlobalConfigProvider {
 
       return saveLastUrlSegment(segment);
     } catch (e) {
-      logError('Error initializing GlobalConfigProvider: $e');
+      logMessage('Error initializing GlobalConfigProvider: $e');
       return false;
     }
   }
@@ -96,16 +192,16 @@ class GlobalConfigProvider {
         return true;
       } else {
         lastUrlSegment = 'Invalid URL';
-        logError('Error GlobalConfigProvider - Invalid URL: $segment');
+        logMessage('Error GlobalConfigProvider - Invalid URL: $segment');
         return false;
       }
     } catch (e) {
-      logError('Error en saveLastUrlSegment: $e');
+      logMessage('Error en saveLastUrlSegment: $e');
       return false;
     }
   }
 
-  static void logError(String message) {
+  static void logMessage(String message) {
     if (develop) {
       // ignore: avoid_print
       print(message);
@@ -114,7 +210,7 @@ class GlobalConfigProvider {
 
   static void launchUrlLink(String url) async {
     if (!await launchUrl(Uri.parse(url))) {
-      logError('No se pudo lanzar $url');
+      logMessage('No se pudo lanzar $url');
     }
   }
 }

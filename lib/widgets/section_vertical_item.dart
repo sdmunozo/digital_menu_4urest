@@ -5,9 +5,14 @@ import 'package:digital_menu_4urest/widgets/show_item_modal_widget.dart';
 import 'package:flutter/material.dart';
 
 class SectionVerticalItem extends StatelessWidget {
-  const SectionVerticalItem({super.key, required this.item});
+  const SectionVerticalItem({
+    super.key,
+    required this.item,
+    required this.calledFrom,
+  });
 
   final ItemModel item;
+  final String calledFrom;
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +41,8 @@ class SectionVerticalItem extends StatelessWidget {
     return GestureDetector(
       onTap: () => showDialog(
         context: context,
-        builder: (BuildContext context) => ShowItemModalWidget(item: item),
+        builder: (BuildContext context) =>
+            ShowItemModalWidget(item: item, calledFrom: calledFrom),
       ),
       child: Container(
         margin: const EdgeInsets.only(left: 13),

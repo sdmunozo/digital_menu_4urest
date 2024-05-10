@@ -39,11 +39,11 @@ class BranchCatalogProvider extends ChangeNotifier {
     notifyListeners();
 
     try {
-      GlobalConfigProvider.logError(
+      GlobalConfigProvider.logMessage(
           '- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -');
-      GlobalConfigProvider.logError(
+      GlobalConfigProvider.logMessage(
           '- - - - - - - - - - MODO DESARROLLO - - - - - - - - - - - - - - -');
-      GlobalConfigProvider.logError(
+      GlobalConfigProvider.logMessage(
           '- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -');
       if (GlobalConfigProvider.develop) {
         final jsonString =
@@ -59,7 +59,7 @@ class BranchCatalogProvider extends ChangeNotifier {
       _isCatalogLoaded = true;
     } catch (e) {
       _hasError = true;
-      GlobalConfigProvider.logError('Error fetching branch catalog: $e');
+      GlobalConfigProvider.logMessage('Error fetching branch catalog: $e');
     } finally {
       _isLoading = false;
       notifyListeners();

@@ -12,21 +12,41 @@ class SocialMediaWidget extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        _buildCircularButton(FontAwesomeIcons.instagram,
-            GlobalConfigProvider.branchCatalog!.instagramLink),
+        _buildCircularButton(
+            iconData: FontAwesomeIcons.instagram,
+            url: GlobalConfigProvider.branchCatalog!.instagramLink,
+            origin: "welcome-screen",
+            destination: "brand-instagram"),
         const SizedBox(width: 20),
-        _buildCircularButton(FontAwesomeIcons.facebook,
-            GlobalConfigProvider.branchCatalog!.facebookLink),
+        _buildCircularButton(
+            iconData: FontAwesomeIcons.facebook,
+            url: GlobalConfigProvider.branchCatalog!.facebookLink,
+            origin: "welcome-screen",
+            destination: "brand-facebook"),
         const SizedBox(width: 20),
-        _buildCircularButton(FontAwesomeIcons.paperclip,
-            GlobalConfigProvider.branchCatalog!.websiteLink),
+        _buildCircularButton(
+            iconData: FontAwesomeIcons.paperclip,
+            url: GlobalConfigProvider.branchCatalog!.websiteLink,
+            origin: "welcome-screen",
+            destination: "brand-link"),
       ],
     );
   }
 
-  Widget _buildCircularButton(IconData iconData, String url) {
+  Widget _buildCircularButton(
+      {required IconData iconData,
+      required String url,
+      required String origin,
+      required String destination}) {
     return GestureDetector(
-      onTap: () => GlobalConfigProvider.launchUrlLink(url),
+      onTap: () {
+        GlobalConfigProvider.recordClickEventMetric(
+          origin: origin,
+          clickedElement: "social-media",
+          destination: destination,
+        );
+        GlobalConfigProvider.launchUrlLink(url);
+      },
       child: Container(
         width: 60,
         height: 60,

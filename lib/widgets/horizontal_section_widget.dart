@@ -28,7 +28,10 @@ class HorizontalSectionWidget extends StatelessWidget {
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: category.products.map((item) {
-                      return SectionVerticalItem(item: item);
+                      return SectionVerticalItem(
+                        item: item,
+                        calledFrom: "HomeScreen",
+                      );
                     }).toList(),
                   ),
                 ),

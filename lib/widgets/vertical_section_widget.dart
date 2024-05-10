@@ -24,6 +24,7 @@ class VerticalSectionWidget extends StatelessWidget {
           children: category.products.map((item) {
             return SectionHorizontalItem(
               item: item,
+              calledFrom: "HomeScreen",
             );
           }).toList(),
         ),
