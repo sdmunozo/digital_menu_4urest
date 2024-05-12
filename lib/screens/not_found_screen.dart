@@ -18,9 +18,10 @@ class NotFoundScreen extends StatelessWidget {
       body: Container(
         color: Colors.white,
         child: BuildNotFoundScreen(
-            urlWhatsApp: urlWhatsApp,
-            urlInstagram: urlInstagram,
-            urlWeb: urlWeb),
+          urlWhatsApp: urlWhatsApp,
+          urlInstagram: urlInstagram,
+          urlWeb: urlWeb,
+        ),
       ),
     );
   }
@@ -41,16 +42,16 @@ class BuildNotFoundScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MainLayout(
-        child: Column(
-      children: [
-        BuildNotFoundContent(
+      child: Column(
+        children: [
+          BuildNotFoundContent(
             urlWhatsApp: urlWhatsApp,
             urlInstagram: urlInstagram,
-            urlWeb: urlWeb)
-      ],
-    ));
-
-    //
+            urlWeb: urlWeb,
+          )
+        ],
+      ),
+    );
   }
 }
 
@@ -72,47 +73,46 @@ class BuildNotFoundContent extends StatelessWidget {
       child: Center(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
-          child: Expanded(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                CustomImageProvider.getImage(
-                    CustomImageProvider.png4uRestOriginal,
-                    width: 200),
-                const SizedBox(height: 40),
-                const Text(
-                  'Menú no encontrado',
-                  style: TextStyle(fontSize: 24, color: Colors.white),
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 20),
-                const Text(
-                  'Lo sentimos, el menú que buscas no existe. Visita nuestras redes sociales.',
-                  style: TextStyle(fontSize: 16, color: Colors.white),
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 20),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    CircularButtonWidget(
-                      iconData: FontAwesomeIcons.whatsapp,
-                      url: urlWhatsApp,
-                    ),
-                    const SizedBox(width: 20),
-                    CircularButtonWidget(
-                      iconData: FontAwesomeIcons.instagram,
-                      url: urlInstagram,
-                    ),
-                    const SizedBox(width: 20),
-                    CircularButtonWidget(
-                      iconData: FontAwesomeIcons.paperclip,
-                      url: urlWeb,
-                    ),
-                  ],
-                ),
-              ],
-            ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CustomImageProvider.getImage(
+                CustomImageProvider.png4uRestOriginal,
+                width: 200,
+              ),
+              const SizedBox(height: 40),
+              const Text(
+                'Menú no encontrado',
+                style: TextStyle(fontSize: 24, color: Colors.white),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 20),
+              const Text(
+                'Lo sentimos, el menú que buscas no existe. Visita nuestras redes sociales.',
+                style: TextStyle(fontSize: 16, color: Colors.white),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  CircularButtonWidget(
+                    iconData: FontAwesomeIcons.whatsapp,
+                    url: urlWhatsApp,
+                  ),
+                  const SizedBox(width: 20),
+                  CircularButtonWidget(
+                    iconData: FontAwesomeIcons.instagram,
+                    url: urlInstagram,
+                  ),
+                  const SizedBox(width: 20),
+                  CircularButtonWidget(
+                    iconData: FontAwesomeIcons.paperclip,
+                    url: urlWeb,
+                  ),
+                ],
+              ),
+            ],
           ),
         ),
       ),

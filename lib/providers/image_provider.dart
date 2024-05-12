@@ -2,16 +2,17 @@ import 'package:flutter/material.dart';
 
 class CustomImageProvider {
   static const String png4uRestOriginal = 'assets/tools/logos/WBlue_4uRest.png';
-  static String imageDefault = 'assets/tools/logos/4uRest-DM-3.png';
-  static String imageDefaultBackground =
+  static const String imageDefault = 'assets/tools/logos/4uRest-DM-3.png';
+  static const String imageDefaultBackground =
       'assets/tools/restaurant_background_op.png';
-  static String imageDefaultBackgroundTest = 'assets/temp/HomeScreen1.PNG';
+  static const String imageDefaultBackgroundTest =
+      'assets/temp/HomeScreen1.PNG';
 
   static ImageProvider<Object> getNetworkImageIP(String? url) {
     if (url != null && url.isNotEmpty) {
       return NetworkImage(url);
     } else {
-      return AssetImage(imageDefaultBackground);
+      return const AssetImage(imageDefaultBackground);
     }
   }
 
@@ -19,8 +20,8 @@ class CustomImageProvider {
     return Image.asset(
       path,
       errorBuilder: (context, error, stackTrace) {
-        return Image(
-          image: AssetImage(imageDefault),
+        return Image.asset(
+          imageDefault,
           width: width,
           height: height,
         );
@@ -28,28 +29,5 @@ class CustomImageProvider {
       width: width,
       height: height,
     );
-  }
-
-  static Image getNetworkImage(String? url, {double? width, double? height}) {
-    if (url != null && url.isNotEmpty) {
-      return Image.network(
-        url,
-        width: width,
-        height: height,
-        errorBuilder: (context, error, stackTrace) {
-          return Image(
-            image: AssetImage(imageDefault),
-            width: width,
-            height: height,
-          );
-        },
-      );
-    } else {
-      return Image.asset(
-        imageDefault,
-        width: width,
-        height: height,
-      );
-    }
   }
 }

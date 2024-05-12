@@ -1,4 +1,5 @@
 import 'package:digital_menu_4urest/providers/branch_catalog_provider.dart';
+import 'package:digital_menu_4urest/providers/event_metric_provider.dart';
 import 'package:digital_menu_4urest/screens/not_found_screen.dart';
 import 'package:digital_menu_4urest/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
@@ -34,6 +35,9 @@ class _MyAppState extends State<MyApp> {
       providers: [
         ChangeNotifierProvider(
           create: (_) => BranchCatalogProvider.instance..fetchBranchCatalog(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => EventMetricProvider(),
         ),
       ],
       child: MaterialApp(

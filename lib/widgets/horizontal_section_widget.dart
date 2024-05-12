@@ -21,7 +21,7 @@ class HorizontalSectionWidget extends StatelessWidget {
             child: Column(
               children: [
                 CategorySectionBoldTitle(
-                  title: category.name,
+                  title: category.alias,
                   description: category.description,
                 ),
                 Expanded(

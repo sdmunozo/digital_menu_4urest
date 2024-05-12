@@ -21,7 +21,7 @@ class SliverHomeScreenBLoC with ChangeNotifier {
     for (int i = 0; i < categories.length; i++) {
       if (i > 0) {}
 
-      tabs.add(CustomTabWidget(title: categories[i].name, isActive: (i == 0)));
+      tabs.add(CustomTabWidget(title: categories[i].alias, isActive: (i == 0)));
     }
 
     scrollController.addListener(onScrollListener);

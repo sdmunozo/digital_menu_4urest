@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:digital_menu_4urest/models/banner_model.dart';
 import 'package:digital_menu_4urest/models/catalog_model.dart';
 
 BranchCatalogModel branchCatalogResponseFromJson(String str) =>
@@ -19,6 +20,7 @@ class BranchCatalogModel {
   String brandLogo;
   String brandSlogan;
   String menuBackground;
+  List<BannerModel> banners;
   List<CatalogModel> catalogs;
 
   BranchCatalogModel({
@@ -32,6 +34,7 @@ class BranchCatalogModel {
     this.brandLogo = '',
     this.brandSlogan = '',
     this.menuBackground = '',
+    this.banners = const [],
     this.catalogs = const [],
   });
 
@@ -47,6 +50,8 @@ class BranchCatalogModel {
         brandLogo: json["brandLogo"] ?? '',
         brandSlogan: json["brandSlogan"] ?? '',
         menuBackground: json["menuBackground"] ?? '',
+        banners: List<BannerModel>.from(
+            json["banners"]?.map((x) => BannerModel.fromJson(x)) ?? []),
         catalogs: List<CatalogModel>.from(
             json["catalogs"]?.map((x) => CatalogModel.fromJson(x)) ?? []),
       );
@@ -62,6 +67,7 @@ class BranchCatalogModel {
         "brandLogo": brandLogo,
         "brandSlogan": brandSlogan,
         "menuBackground": menuBackground,
+        "banners": List<dynamic>.from(banners.map((x) => x.toJson())),
         "catalogs": List<dynamic>.from(catalogs.map((x) => x.toJson())),
       };
 }

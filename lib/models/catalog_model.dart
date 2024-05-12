@@ -2,33 +2,33 @@ import 'package:digital_menu_4urest/models/category_model.dart';
 
 class CatalogModel {
   String id;
-  String name;
+  String alias;
   String description;
-  String icon;
+  String image;
   List<CategoryModel> categories;
 
   CatalogModel({
     this.id = '',
-    this.name = '',
+    this.alias = '',
     this.description = '',
-    this.icon = '',
+    this.image = '',
     this.categories = const [],
   });
 
   factory CatalogModel.fromJson(Map<String, dynamic> json) => CatalogModel(
         id: json["id"],
-        name: json["name"],
+        alias: json["alias"],
         description: json["description"],
-        icon: json["icon"],
+        image: json["image"],
         categories: List<CategoryModel>.from(
             json["categories"]?.map((x) => CategoryModel.fromJson(x)) ?? []),
       );
 
   Map<String, dynamic> toJson() => {
         "id": id,
-        "name": name,
+        "alias": alias,
         "description": description,
-        "icon": icon,
+        "image": image,
         "categories": List<dynamic>.from(categories.map((x) => x.toJson())),
       };
 }

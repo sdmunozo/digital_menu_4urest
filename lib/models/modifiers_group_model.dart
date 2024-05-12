@@ -4,7 +4,7 @@ class ModifiersGroupModel {
   String id;
   String alias;
   String description;
-  String icon;
+  String image;
   String isSelectable;
   List<ItemModel> modifiers;
 
@@ -12,7 +12,7 @@ class ModifiersGroupModel {
     this.id = '',
     this.alias = '',
     this.description = '',
-    this.icon = '',
+    this.image = '',
     this.isSelectable = '0',
     this.modifiers = const [],
   });
@@ -22,7 +22,7 @@ class ModifiersGroupModel {
         id: json["id"],
         alias: json["alias"],
         description: json["description"],
-        icon: json["icon"],
+        image: json["image"],
         isSelectable: json["isSelectable"],
         modifiers: json["modifiers"] == null
             ? []
@@ -34,7 +34,7 @@ class ModifiersGroupModel {
         "id": id,
         "alias": alias,
         "description": description,
-        "icon": icon,
+        "image": image,
         "isSelectable": isSelectable,
         "modifiers": List<dynamic>.from(modifiers.map((x) => x.toJson())),
       };

@@ -68,7 +68,7 @@ class _ShowItemModalWidgetState extends State<ShowItemModalWidget> {
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         image: CustomImageProvider.getNetworkImageIP(
-                            widget.item.icon),
+                            widget.item.image),
                         fit: BoxFit.fitWidth,
                       ),
                     ),

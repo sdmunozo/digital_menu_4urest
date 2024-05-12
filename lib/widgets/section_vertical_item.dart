@@ -45,6 +45,7 @@ class SectionVerticalItem extends StatelessWidget {
             ShowItemModalWidget(item: item, calledFrom: calledFrom),
       ),
       child: Container(
+        color: GlobalConfigProvider.backgroundColor,
         margin: const EdgeInsets.only(left: 13),
         width: 118,
         height: GlobalConfigProvider.sectionVerticalItemHeight,
@@ -60,7 +61,7 @@ class SectionVerticalItem extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 image: DecorationImage(
-                  image: CustomImageProvider.getNetworkImageIP(item.icon),
+                  image: CustomImageProvider.getNetworkImageIP(item.image),
                   fit: BoxFit.fitWidth,
                 ),
               ),

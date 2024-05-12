@@ -4,7 +4,7 @@ class ItemModel {
   String id;
   String alias;
   String description;
-  String icon;
+  String image;
   String price;
   String isDisplayed;
   List<ModifiersGroupModel> modifiersGroups;
@@ -13,7 +13,7 @@ class ItemModel {
     this.id = '',
     this.alias = '',
     this.description = '',
-    this.icon = '',
+    this.image = '',
     this.price = '0',
     this.isDisplayed = 'False',
     this.modifiersGroups = const [],
@@ -22,7 +22,7 @@ class ItemModel {
         id: json["id"],
         alias: json["alias"],
         description: json["description"],
-        icon: json["icon"],
+        image: json["image"],
         price: (json["price"] ?? "").isEmpty ? "0" : json["price"],
         isDisplayed: json.containsKey("isDisplayed")
             ? json["isDisplayed"].toString()
@@ -36,7 +36,7 @@ class ItemModel {
         "id": id,
         "alias": alias,
         "description": description,
-        "icon": icon,
+        "image": image,
         "price": price,
         "isDisplayed": isDisplayed,
         "modifiersGroups":

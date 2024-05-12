@@ -17,7 +17,7 @@ class VerticalSectionWidget extends StatelessWidget {
           height: 7.5,
         ),
         CategorySectionHeader(
-          title: category.name,
+          title: category.image,
           description: category.description,
         ),
         Column(

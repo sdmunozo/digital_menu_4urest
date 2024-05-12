@@ -6,17 +6,19 @@ import 'package:digital_menu_4urest/models/item_model.dart';
 import 'package:digital_menu_4urest/models/metrics/click_event_metric.dart';
 import 'package:digital_menu_4urest/models/metrics/view_time_metric.dart';
 import 'package:digital_menu_4urest/models/section_size_model.dart';
+import 'package:digital_menu_4urest/providers/event_metric_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:uuid/uuid.dart';
 
 class GlobalConfigProvider {
+  static bool develop = false;
   static SharedPreferences? prefs;
   static String userId = '';
   static String sessionId = '';
   static String lastUrlSegment = '';
-  static bool develop = true;
   static BranchCatalogModel? branchCatalog;
   static double maxHeight = 0;
   static double maxWidth = 0;
@@ -31,6 +33,16 @@ class GlobalConfigProvider {
   static String activeScreen = '';
   static Timer? _timer;
   static Timer? _logTimer;
+  static bool _isEventMetricProviderInitialized = false;
+  static EventMetricProvider? eventMetricProvider;
+
+  static void initEventMetricProvider(BuildContext context) {
+    if (!_isEventMetricProviderInitialized) {
+      eventMetricProvider =
+          Provider.of<EventMetricProvider>(context, listen: false);
+      _isEventMetricProviderInitialized = true;
+    }
+  }
 
   static void updateActiveScreen(String screenName) {
     _recordViewTimeMetric();
@@ -95,7 +107,10 @@ class GlobalConfigProvider {
         pageName: pageName,
         viewTimeSeconds: viewTimeSeconds,
       );
-      logMessage(metric.toJson().toString());
+
+      if (!develop) {
+        eventMetricProvider?.addMetric(metric);
+      }
     }
   }
 
@@ -114,7 +129,9 @@ class GlobalConfigProvider {
       destination: destination,
     );
 
-    GlobalConfigProvider.logMessage(metric.toJson().toString());
+    if (!develop) {
+      eventMetricProvider?.addMetric(metric);
+    }
   }
 
   static void generateSectionSizes() {
@@ -133,8 +150,8 @@ class GlobalConfigProvider {
           }
         }
 
-        sizes.add(
-            SectionSizeModel(categoryName: category.name, height: totalHeight));
+        sizes.add(SectionSizeModel(
+            categoryName: category.alias, height: totalHeight));
       }
     }
     sectionSizes = sizes;

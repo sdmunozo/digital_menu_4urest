@@ -1,6 +1,9 @@
+import 'dart:async';
+
 import 'package:digital_menu_4urest/bloc/sliver_home_screen_bloc.dart';
 import 'package:digital_menu_4urest/layout/main_layout.dart';
 import 'package:digital_menu_4urest/providers/global_config_provider.dart';
+import 'package:digital_menu_4urest/providers/image_provider.dart';
 import 'package:digital_menu_4urest/widgets/custom_tab_widget.dart';
 import 'package:digital_menu_4urest/widgets/horizontal_section_widget.dart';
 import 'package:digital_menu_4urest/widgets/static_search_widget.dart';
@@ -230,9 +233,14 @@ class _DataBrandWidget extends StatelessWidget {
                 child: SizedBox(
                   height: 40,
                   width: 40,
-                  child: Image.asset(
-                    "assets/temp/mcdonalds_logo.png",
-                    fit: BoxFit.cover,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: CustomImageProvider.getNetworkImageIP(
+                            GlobalConfigProvider.branchCatalog!.brandLogo),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
                   ),
                 ),
               ),
@@ -279,18 +287,64 @@ class _BannerBackWidget extends StatelessWidget {
   }
 }
 
-class _BannerWidget extends StatelessWidget {
+class _BannerWidget extends StatefulWidget {
   const _BannerWidget();
 
   @override
+  _BannerWidgetState createState() => _BannerWidgetState();
+}
+
+class _BannerWidgetState extends State<_BannerWidget> {
+  final PageController _pageController = PageController();
+  int _currentPage = 0;
+  Timer? _timer;
+
+  @override
+  void initState() {
+    super.initState();
+    _timer = Timer.periodic(const Duration(seconds: 5), (Timer timer) {
+      if (_currentPage <
+          GlobalConfigProvider.branchCatalog!.banners.length - 1) {
+        _currentPage++;
+      } else {
+        _currentPage = 0;
+      }
+
+      _pageController.animateToPage(
+        _currentPage,
+        duration: const Duration(milliseconds: 10),
+        curve: Curves.linear,
+      );
+    });
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    _pageController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return Container(
-        height: 190,
-        width: GlobalConfigProvider.maxWidth,
-        decoration: const BoxDecoration(),
-        child: Image.asset(
-          "assets/temp/McDonalds_Banner_4.jpeg",
-          fit: BoxFit.cover,
-        ));
+    return SizedBox(
+      height: 190,
+      width: GlobalConfigProvider.maxWidth,
+      child: PageView.builder(
+        controller: _pageController,
+        itemCount: GlobalConfigProvider.branchCatalog!.banners.length,
+        itemBuilder: (context, index) {
+          return Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: CustomImageProvider.getNetworkImageIP(
+                    GlobalConfigProvider.branchCatalog!.banners[index].link),
+                fit: BoxFit.cover,
+              ),
+            ),
+          );
+        },
+      ),
+    );
   }
 }

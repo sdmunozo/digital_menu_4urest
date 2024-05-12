@@ -19,6 +19,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> with RouteAware {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
+    GlobalConfigProvider.initEventMetricProvider(context);
     GlobalConfigProvider.updateActiveScreen("WelcomeScreen");
   }
 
