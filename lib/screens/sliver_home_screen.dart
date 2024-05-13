@@ -109,7 +109,7 @@ class _HomeScreenDelegate extends SliverPersistentHeaderDelegate {
       const Positioned(
         top: 0,
         left: 0,
-        child: _BannerWidget(),
+        child: BannerWidget(),
       ),
       Positioned(
         top: 35,
@@ -287,6 +287,83 @@ class _BannerBackWidget extends StatelessWidget {
   }
 }
 
+class BannerWidget extends StatefulWidget {
+  const BannerWidget({super.key});
+
+  @override
+  // ignore: library_private_types_in_public_api
+  _BannerWidgetState createState() => _BannerWidgetState();
+}
+
+class _BannerWidgetState extends State<BannerWidget> {
+  final PageController _pageController = PageController();
+  int _currentPage = 0;
+  Timer? _timer;
+
+  @override
+  void initState() {
+    super.initState();
+    _timer = Timer.periodic(const Duration(seconds: 5), (Timer timer) {
+      if (_currentPage <
+          GlobalConfigProvider.branchCatalog!.banners.length - 1) {
+        _currentPage++;
+      } else {
+        _currentPage = 0;
+      }
+
+      _pageController.animateToPage(
+        _currentPage,
+        duration: const Duration(milliseconds: 200),
+        curve: Curves.easeInOut,
+      );
+    });
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    _pageController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.black,
+      height: 190,
+      width: GlobalConfigProvider.maxWidth,
+      child: PageView.builder(
+        controller: _pageController,
+        itemCount: GlobalConfigProvider.branchCatalog!.banners.length,
+        itemBuilder: (context, index) {
+          return AnimatedSwitcher(
+            duration: const Duration(milliseconds: 200),
+            switchInCurve: Curves.easeIn,
+            switchOutCurve: Curves.easeOut,
+            child: SizedBox(
+              key: ValueKey<String>(
+                  GlobalConfigProvider.branchCatalog!.banners[index].image),
+              height: 190,
+              width: GlobalConfigProvider.maxWidth,
+              child: FadeInImage(
+                placeholder: const AssetImage('assets/tools/loading.gif'),
+                image: CustomImageProvider.getNetworkImageIP(
+                    GlobalConfigProvider.branchCatalog!.banners[index].image),
+                fit: BoxFit.fill,
+                fadeInDuration: const Duration(milliseconds: 200),
+                fadeOutDuration: const Duration(milliseconds: 200),
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+}
+
+
+
+/*
 class _BannerWidget extends StatefulWidget {
   const _BannerWidget();
 
@@ -348,3 +425,4 @@ class _BannerWidgetState extends State<_BannerWidget> {
     );
   }
 }
+*/

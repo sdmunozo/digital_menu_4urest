@@ -60,7 +60,7 @@ class BranchCatalogProvider extends ChangeNotifier {
 
       // Agregar categoría de recomendaciones si hay recomendaciones
       if (_branchCatalog.recommendations.isNotEmpty) {
-        final uuid = Uuid();
+        const uuid = Uuid();
         final recommendationsCategory = CategoryModel(
           id: uuid.v4(),
           alias: "Recomendaciones",
