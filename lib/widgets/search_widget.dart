@@ -147,6 +147,57 @@ class _SearchWidgetState extends State<SearchWidget> {
       return;
     }
 
+    var filteredItems = <ItemModel>{};
+    for (var category in catalog.categories) {
+      for (var item in category.products) {
+        var itemAliasNormalized = removeDiacritics(item.alias.toLowerCase());
+        var itemDescriptionNormalized =
+            removeDiacritics(item.description.toLowerCase());
+
+        if (itemAliasNormalized.contains(query) ||
+            itemDescriptionNormalized.contains(query)) {
+          filteredItems.add(item);
+          continue;
+        }
+
+        for (var modGroup in item.modifiersGroups) {
+          for (var modItem in modGroup.modifiers) {
+            var modItemAliasNormalized =
+                removeDiacritics(modItem.alias.toLowerCase());
+            var modItemDescriptionNormalized =
+                removeDiacritics(modItem.description.toLowerCase());
+
+            if (modItemAliasNormalized.contains(query) ||
+                modItemDescriptionNormalized.contains(query)) {
+              filteredItems.add(item);
+              break;
+            }
+          }
+          if (filteredItems.contains(item)) {
+            break;
+          }
+        }
+      }
+    }
+    // Convierte el conjunto en una lista antes de enviarlo
+    widget.onResultsFiltered(filteredItems.toList());
+  }
+
+/*
+  void _filterSearchResults(String query) {
+    query = removeDiacritics(query.toLowerCase());
+
+    if (query.isEmpty) {
+      widget.onResultsFiltered([]);
+      return;
+    }
+
+    var catalog = GlobalConfigProvider.branchCatalog?.catalogs[0];
+    if (catalog == null) {
+      widget.onResultsFiltered([]);
+      return;
+    }
+
     var filteredItems = <ItemModel>[];
     for (var category in catalog.categories) {
       for (var item in category.products) {
@@ -181,6 +232,8 @@ class _SearchWidgetState extends State<SearchWidget> {
     }
     widget.onResultsFiltered(filteredItems);
   }
+
+  */
 
   String removeDiacritics(String str) {
     var withDia = 'ÁáÉéÍíÓóÚúÑñÜüÇç';
