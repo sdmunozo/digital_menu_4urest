@@ -1,19 +1,23 @@
 class BannerModel {
+  String id;
   String name;
-  String link;
+  String image;
 
   BannerModel({
+    this.id = '',
     this.name = '',
-    this.link = '',
+    this.image = '',
   });
 
   factory BannerModel.fromJson(Map<String, dynamic> json) => BannerModel(
+        id: json["id"] ?? '',
         name: json["name"] ?? '',
-        link: json["link"] ?? '',
+        image: json["image"] ?? '',
       );
 
   Map<String, dynamic> toJson() => {
+        "id": id,
         "name": name,
-        "link": link,
+        "image": image,
       };
 }

@@ -338,7 +338,7 @@ class _BannerWidgetState extends State<_BannerWidget> {
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: CustomImageProvider.getNetworkImageIP(
-                    GlobalConfigProvider.branchCatalog!.banners[index].link),
+                    GlobalConfigProvider.branchCatalog!.banners[index].image),
                 fit: BoxFit.cover,
               ),
             ),

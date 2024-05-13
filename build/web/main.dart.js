@@ -9502,8 +9502,9 @@ this.c=null},
 akZ:function akZ(){},
 al_:function al_(){},
 al0:function al0(){},
-m4:function m4(a,b){this.a=a
-this.b=b},
+m4:function m4(a,b,c){this.a=a
+this.b=b
+this.c=c},
 aFK(a){var s,r,q,p,o,n,m,l,k,j,i,h=J.at(a),g=h.h(a,"brandId")
 if(g==null)g=""
 s=h.h(a,"branchId")
@@ -46882,15 +46883,17 @@ $C:"$3",
 $R:3,
 $S:280}
 A.m4.prototype={
-cz(){return A.aA(["name",this.a,"link",this.b],t.N,t.z)}}
+cz(){return A.aA(["id",this.a,"name",this.b,"image",this.c],t.N,t.z)}}
 A.a_t.prototype={
 cz(){var s=this,r=s.z,q=t.z,p=s.Q,o=s.as
 return A.aA(["brandId",s.a,"branchId",s.b,"brandName",s.c,"branchName",s.d,"instagramLink",s.e,"facebookLink",s.f,"websiteLink",s.r,"brandLogo",s.w,"brandSlogan",s.x,"menuBackground",s.y,"banners",A.d0(new A.a5(r,new A.a_x(),A.Z(r).i("a5<1,@>")),!0,q),"catalogs",A.d0(new A.a5(p,new A.a_y(),A.Z(p).i("a5<1,@>")),!0,q),"recommendations",A.d0(new A.a5(o,new A.a_z(),A.Z(o).i("a5<1,@>")),!0,q)],t.N,q)}}
 A.a_u.prototype={
-$1(a){var s=J.at(a),r=s.h(a,"name")
-if(r==null)r=""
-s=s.h(a,"link")
-return new A.m4(r,s==null?"":s)},
+$1(a){var s,r=J.at(a),q=r.h(a,"id")
+if(q==null)q=""
+s=r.h(a,"name")
+if(s==null)s=""
+r=r.h(a,"image")
+return new A.m4(q,s,r==null?"":r)},
 $S:278}
 A.a_v.prototype={
 $1(a){return A.aFU(a)},
@@ -47241,7 +47244,7 @@ s.d.afY(r,B.al,B.Ds)},
 $S:53}
 A.ahf.prototype={
 $2(a,b){var s=null
-return A.cc(s,s,B.o,s,s,new A.cf(s,A.xu(B.io,A.xp($.eA.z[b].b),s),s,s,s,s,B.ab),s,s,s,s,s,s,s)},
+return A.cc(s,s,B.o,s,s,new A.cf(s,A.xu(B.io,A.xp($.eA.z[b].c),s),s,s,s,s,B.ab),s,s,s,s,s,s,s)},
 $S:217}
 A.Gx.prototype={
 bP(){this.d5()
