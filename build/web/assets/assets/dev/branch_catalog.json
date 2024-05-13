@@ -1,6 +1,6 @@
 {
-    "brandId": "21d02f9d-5e87-4efb-be17-08dc722fa4e4",
-    "branchId": "97deb3d3-cb2c-427f-f36a-08dc722fa5ae",
+    "brandId": "6d802784-bf50-48db-7880-08dc72e9a8ae",
+    "branchId": "a45099fb-7ee4-4533-46f5-08dc72e9a8d5",
     "brandName": "McDonalds",
     "branchName": "Macroplaza",
     "instagramLink": "",
@@ -12,13 +12,13 @@
     "banners": [],
     "catalogs": [
         {
-            "id": "226a7dec-03b9-425b-85cf-08dc723dc276",
+            "id": "9053820f-5c03-4acc-7f66-08dc72ea08ec",
             "alias": "Hamburguesas",
             "description": "",
             "image": "",
             "categories": [
                 {
-                    "id": "84f87b81-9469-4395-9838-08dc723dc30d",
+                    "id": "3c0758f3-0065-4208-ce9f-08dc72ea09ca",
                     "alias": "De Carne",
                     "description": "",
                     "image": "",
@@ -26,42 +26,42 @@
                     "items": [],
                     "products": [
                         {
-                            "id": "e12297ca-f428-4263-3916-08dc723dc368",
+                            "id": "7dc089b2-f155-4910-465b-08dc72ea0a26",
                             "alias": "Big Mac",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "f469395f-0d4a-4028-e618-08dc723dc3a1",
+                                    "id": "35c13610-b75b-4f52-8fd6-08dc72ea0aa0",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "3998ca19-44a8-4f81-2c2f-08dc723dc3c5",
+                                            "id": "15a7c189-91e3-4446-24c6-08dc72ea0aea",
                                             "alias": "Sencilla",
                                             "description": "",
                                             "image": "",
                                             "price": "79"
                                         },
                                         {
-                                            "id": "51ca4936-1d03-4042-2c30-08dc723dc3c5",
+                                            "id": "46b71998-fbc4-4c91-24c7-08dc72ea0aea",
                                             "alias": "Doble",
                                             "description": "",
                                             "image": "",
                                             "price": "89"
                                         },
                                         {
-                                            "id": "5fdd7bb0-5810-4ccd-2c31-08dc723dc3c5",
+                                            "id": "8585c2fd-418c-40e8-24c8-08dc72ea0aea",
                                             "alias": "Triple",
                                             "description": "",
                                             "image": "",
                                             "price": "99"
                                         },
                                         {
-                                            "id": "f8cd856a-7790-4c97-2c32-08dc723dc3c5",
+                                            "id": "ae3f3092-9710-4673-24c9-08dc72ea0aea",
                                             "alias": "Sencilla con Tocino",
                                             "description": "",
                                             "image": "",
@@ -72,28 +72,28 @@
                             ]
                         },
                         {
-                            "id": "edaded88-19b6-453e-3917-08dc723dc368",
+                            "id": "3a645bda-d9f9-4b1c-465c-08dc72ea0a26",
                             "alias": "Cuarto de libra con queso",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "aaaa542e-331d-4ce9-e619-08dc723dc3a1",
+                                    "id": "0bca0897-872d-4842-8fd7-08dc72ea0aa0",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "e30afeaa-8131-403b-2c33-08dc723dc3c5",
+                                            "id": "aeb58277-9253-45c8-24ca-08dc72ea0aea",
                                             "alias": "Sencilla",
                                             "description": "",
                                             "image": "",
                                             "price": "79"
                                         },
                                         {
-                                            "id": "64042f22-0c25-47a9-2c34-08dc723dc3c5",
+                                            "id": "bc83d0c7-d382-4d8a-24cb-08dc72ea0aea",
                                             "alias": "Doble con Queso",
                                             "description": "",
                                             "image": "",
@@ -104,28 +104,28 @@
                             ]
                         },
                         {
-                            "id": "502d3da5-66c2-429e-3918-08dc723dc368",
+                            "id": "215cec51-f3ba-40c8-465d-08dc72ea0a26",
                             "alias": "McNífica",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "4f124f46-60f1-46f0-e61a-08dc723dc3a1",
+                                    "id": "07c4c0d9-67e1-4ecf-8fd8-08dc72ea0aa0",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "610ef2e0-86e0-41fe-2c35-08dc723dc3c5",
+                                            "id": "7d496949-a543-409b-24cc-08dc72ea0aea",
                                             "alias": "Sencilla",
                                             "description": "",
                                             "image": "",
                                             "price": "79"
                                         },
                                         {
-                                            "id": "d1a12747-7c3b-45a7-2c36-08dc723dc3c5",
+                                            "id": "5297f411-20a1-4a05-24cd-08dc72ea0aea",
                                             "alias": "Doble",
                                             "description": "",
                                             "image": "",
@@ -136,42 +136,42 @@
                             ]
                         },
                         {
-                            "id": "a369c14c-eadd-402d-3919-08dc723dc368",
+                            "id": "dc169507-0c75-4142-465e-08dc72ea0a26",
                             "alias": "Hamburguesa",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "a9b3b80c-daec-4077-e61b-08dc723dc3a1",
+                                    "id": "dea54866-7898-4d48-8fd9-08dc72ea0aa0",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "60a0cfbc-6693-4498-2c37-08dc723dc3c5",
+                                            "id": "650734b9-541b-4098-24ce-08dc72ea0aea",
                                             "alias": "Sencilla",
                                             "description": "",
                                             "image": "",
                                             "price": "29"
                                         },
                                         {
-                                            "id": "388bd960-c66b-4acc-2c38-08dc723dc3c5",
+                                            "id": "ce9fa65c-6f2a-4bb6-24cf-08dc72ea0aea",
                                             "alias": "Con queso",
                                             "description": "",
                                             "image": "",
                                             "price": "39"
                                         },
                                         {
-                                            "id": "655d30a4-cc4f-4604-2c39-08dc723dc3c5",
+                                            "id": "070088d2-6ef5-483e-24d0-08dc72ea0aea",
                                             "alias": "Doble con queso",
                                             "description": "",
                                             "image": "",
                                             "price": "49"
                                         },
                                         {
-                                            "id": "e8a3f89e-6b97-46a3-2c3a-08dc723dc3c5",
+                                            "id": "75f10c1f-cb74-49c7-24d1-08dc72ea0aea",
                                             "alias": "Triple con queso",
                                             "description": "",
                                             "image": "",
@@ -182,28 +182,28 @@
                             ]
                         },
                         {
-                            "id": "237eded9-98d7-4031-391a-08dc723dc368",
+                            "id": "6d82d08d-a9b0-43a1-465f-08dc72ea0a26",
                             "alias": "Signature CBO",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "a43511a7-41d7-4f6d-e61c-08dc723dc3a1",
+                                    "id": "430b7d03-ca0b-4e1b-8fda-08dc72ea0aa0",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "ffb23eab-27c6-4426-2c3b-08dc723dc3c5",
+                                            "id": "c4c44156-273b-4c96-24d2-08dc72ea0aea",
                                             "alias": "Sencilla",
                                             "description": "",
                                             "image": "",
                                             "price": "89"
                                         },
                                         {
-                                            "id": "b7c521b3-1955-4813-2c3c-08dc723dc3c5",
+                                            "id": "ba71d88d-21a4-42ac-24d3-08dc72ea0aea",
                                             "alias": "Doble",
                                             "description": "",
                                             "image": "",
@@ -216,7 +216,7 @@
                     ]
                 },
                 {
-                    "id": "34059bc3-9f91-4874-9839-08dc723dc30d",
+                    "id": "d125052e-4269-45b8-cea0-08dc72ea09ca",
                     "alias": "De Pollo",
                     "description": "",
                     "image": "",
@@ -224,21 +224,21 @@
                     "items": [],
                     "products": [
                         {
-                            "id": "c9cef2ee-3ebf-4a55-391b-08dc723dc368",
+                            "id": "7ee0137e-59e6-44e7-4660-08dc72ea0a26",
                             "alias": "McPollo",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "c8f417d8-7905-4c8d-e61d-08dc723dc3a1",
+                                    "id": "b7fa63a9-be67-412b-8fdb-08dc72ea0aa0",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "0742a0c2-a7bc-4ffc-2c3d-08dc723dc3c5",
+                                            "id": "934e93e4-5b66-4d2c-24d4-08dc72ea0aea",
                                             "alias": "Sencilla",
                                             "description": "",
                                             "image": "",
@@ -249,28 +249,28 @@
                             ]
                         },
                         {
-                            "id": "5a5d9922-191a-471a-391c-08dc723dc368",
+                            "id": "29f61df0-63ac-45d8-4661-08dc72ea0a26",
                             "alias": "Pollo McCrispy Spicy",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "2c245bbb-381e-4e11-e61e-08dc723dc3a1",
+                                    "id": "a8b34247-805c-4277-8fdc-08dc72ea0aa0",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "12d3ddff-2a89-4d2b-2c3e-08dc723dc3c5",
+                                            "id": "4e536a3e-b273-4175-24d5-08dc72ea0aea",
                                             "alias": "Sencilla",
                                             "description": "",
                                             "image": "",
                                             "price": "89"
                                         },
                                         {
-                                            "id": "fd6d443d-d9ca-4253-2c3f-08dc723dc3c5",
+                                            "id": "36297af3-0900-4a28-24d6-08dc72ea0aea",
                                             "alias": "Deluxe",
                                             "description": "",
                                             "image": "",
@@ -281,42 +281,42 @@
                             ]
                         },
                         {
-                            "id": "4fbd16b6-8918-4186-391d-08dc723dc368",
+                            "id": "b7b91ce8-4af5-4a07-4662-08dc72ea0a26",
                             "alias": "McNuggets",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "7e4f3449-4efe-4109-e61f-08dc723dc3a1",
+                                    "id": "3a2254fe-18e5-4890-8fdd-08dc72ea0aa0",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "c9004e02-92a2-4477-2c40-08dc723dc3c5",
+                                            "id": "e4eaa493-c136-43e9-24d7-08dc72ea0aea",
                                             "alias": "4 Unidades",
                                             "description": "",
                                             "image": "",
                                             "price": "79"
                                         },
                                         {
-                                            "id": "ac09d478-2cc6-4b45-2c41-08dc723dc3c5",
+                                            "id": "2fde803d-323b-4dba-24d8-08dc72ea0aea",
                                             "alias": "10 Unidades",
                                             "description": "",
                                             "image": "",
                                             "price": "89"
                                         },
                                         {
-                                            "id": "a081bbf5-b608-4a1c-2c42-08dc723dc3c5",
+                                            "id": "d39c9683-a1f3-4716-24d9-08dc72ea0aea",
                                             "alias": "20 Unidades",
                                             "description": "",
                                             "image": "",
                                             "price": "99"
                                         },
                                         {
-                                            "id": "813264fd-b8e9-47df-2c43-08dc723dc3c5",
+                                            "id": "2b2e1547-b035-4bcb-24da-08dc72ea0aea",
                                             "alias": "40 Unidades",
                                             "description": "",
                                             "image": "",
@@ -329,7 +329,7 @@
                     ]
                 },
                 {
-                    "id": "7a8325f9-f97e-4655-983a-08dc723dc30d",
+                    "id": "eff7355a-cd22-4230-cea1-08dc72ea09ca",
                     "alias": "Bebidas",
                     "description": "",
                     "image": "",
@@ -337,21 +337,21 @@
                     "items": [],
                     "products": [
                         {
-                            "id": "c54ea5f4-8957-4d52-391e-08dc723dc368",
+                            "id": "3319e4cc-58bb-47ce-4663-08dc72ea0a26",
                             "alias": "Agua sin gas",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "cb9ae8b6-6f53-456e-e620-08dc723dc3a1",
+                                    "id": "93916f8b-9592-449a-8fde-08dc72ea0aa0",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "2ba1c951-653d-4e44-2c44-08dc723dc3c5",
+                                            "id": "31b7df66-a5f4-42c7-24db-08dc72ea0aea",
                                             "alias": "600 ml",
                                             "description": "",
                                             "image": "",
@@ -362,35 +362,35 @@
                             ]
                         },
                         {
-                            "id": "af980f68-a638-43ec-391f-08dc723dc368",
+                            "id": "fff9e5c0-d495-451e-4664-08dc72ea0a26",
                             "alias": "Vaso Refil",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "d6d7c6c0-8595-4542-e621-08dc723dc3a1",
+                                    "id": "ead1d548-d865-45b9-8fdf-08dc72ea0aa0",
                                     "alias": "Medidas",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "c6b61fa5-5ae8-427b-2c45-08dc723dc3c5",
+                                            "id": "e57ee7ed-a8d0-464e-24dc-08dc72ea0aea",
                                             "alias": "Chico",
                                             "description": "",
                                             "image": "",
                                             "price": "29"
                                         },
                                         {
-                                            "id": "00a1948f-b0a9-4297-2c46-08dc723dc3c5",
+                                            "id": "f22b0f80-cd6d-4d6b-24dd-08dc72ea0aea",
                                             "alias": "Mediano",
                                             "description": "",
                                             "image": "",
                                             "price": "39"
                                         },
                                         {
-                                            "id": "db54415b-b53f-434a-2c47-08dc723dc3c5",
+                                            "id": "f5fffb64-8b8f-4208-24de-08dc72ea0aea",
                                             "alias": "Grande",
                                             "description": "",
                                             "image": "",
@@ -401,28 +401,28 @@
                             ]
                         },
                         {
-                            "id": "974cea96-9e7f-4407-3920-08dc723dc368",
+                            "id": "1d768e34-ef0d-458f-4665-08dc72ea0a26",
                             "alias": "Café Refil",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "10cec251-77a8-45f0-e622-08dc723dc3a1",
+                                    "id": "01b9c847-eded-4bd4-8fe0-08dc72ea0aa0",
                                     "alias": "Medidas",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "a5176aff-2ccd-4bb9-2c48-08dc723dc3c5",
+                                            "id": "7034c673-5148-44b3-24df-08dc72ea0aea",
                                             "alias": "Chico",
                                             "description": "",
                                             "image": "",
                                             "price": "29"
                                         },
                                         {
-                                            "id": "bf5199bd-86bb-47e2-2c49-08dc723dc3c5",
+                                            "id": "91892461-325e-4710-24e0-08dc72ea0aea",
                                             "alias": "Grande",
                                             "description": "",
                                             "image": "",
@@ -433,28 +433,28 @@
                             ]
                         },
                         {
-                            "id": "348adfd3-3fbc-4b83-3921-08dc723dc368",
+                            "id": "40696391-0685-4fe3-4666-08dc72ea0a26",
                             "alias": "100% Jugo Natural",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "073a748f-9781-40f5-e623-08dc723dc3a1",
+                                    "id": "32486d35-f6c6-499b-8fe1-08dc72ea0aa0",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "89bee3bf-f723-45cd-2c4a-08dc723dc3c5",
+                                            "id": "e496ac6a-0fe8-4098-24e1-08dc72ea0aea",
                                             "alias": "Naranja 237ml",
                                             "description": "",
                                             "image": "",
                                             "price": "29"
                                         },
                                         {
-                                            "id": "a1164cf2-c313-4bf0-2c4b-08dc723dc3c5",
+                                            "id": "8380f85d-3f8e-4e53-24e2-08dc72ea0aea",
                                             "alias": "Manzana 237ml",
                                             "description": "",
                                             "image": "",
@@ -467,7 +467,7 @@
                     ]
                 },
                 {
-                    "id": "fda0d7f4-c82e-40da-983b-08dc723dc30d",
+                    "id": "883dcfd5-8394-4565-cea2-08dc72ea09ca",
                     "alias": "Postres",
                     "description": "",
                     "image": "",
@@ -475,42 +475,42 @@
                     "items": [],
                     "products": [
                         {
-                            "id": "121dd0b0-0128-4a5b-3922-08dc723dc368",
+                            "id": "17cc001b-48c8-4271-4667-08dc72ea0a26",
                             "alias": "McFlurry",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "52e4e295-b93c-42cc-e624-08dc723dc3a1",
+                                    "id": "96c811b9-d850-409d-8fe2-08dc72ea0aa0",
                                     "alias": "Sabores",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "7cdade6b-103e-4665-2c4c-08dc723dc3c5",
+                                            "id": "dc3ed827-5d3e-461e-24e3-08dc72ea0aea",
                                             "alias": "Pingüinos",
                                             "description": "",
                                             "image": "",
                                             "price": "36"
                                         },
                                         {
-                                            "id": "b5642111-e6bd-4408-2c4d-08dc723dc3c5",
+                                            "id": "11404f28-f189-417c-24e4-08dc72ea0aea",
                                             "alias": "Fresa Mix",
                                             "description": "",
                                             "image": "",
                                             "price": "36"
                                         },
                                         {
-                                            "id": "0292df5e-f7f8-40d5-2c4e-08dc723dc3c5",
+                                            "id": "0721305e-01fc-4e75-24e5-08dc72ea0aea",
                                             "alias": "Caramelo Mix",
                                             "description": "",
                                             "image": "",
                                             "price": "36"
                                         },
                                         {
-                                            "id": "ef5fd712-4643-460c-2c4f-08dc723dc3c5",
+                                            "id": "4b169f97-339a-42ef-24e6-08dc72ea0aea",
                                             "alias": "Oreo",
                                             "description": "",
                                             "image": "",
@@ -521,42 +521,42 @@
                             ]
                         },
                         {
-                            "id": "a6a18c49-a893-49e3-3923-08dc723dc368",
+                            "id": "4a923bae-a9da-4d87-4668-08dc72ea0a26",
                             "alias": "Malteada",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "5b3d3d5b-4fd8-4327-e625-08dc723dc3a1",
+                                    "id": "7bef1098-b9f1-4ba1-8fe3-08dc72ea0aa0",
                                     "alias": "Sabores",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "4fbc69cb-2b53-4397-2c50-08dc723dc3c5",
+                                            "id": "f1513afb-5c1d-4b16-24e7-08dc72ea0aea",
                                             "alias": "Chocolate",
                                             "description": "",
                                             "image": "",
                                             "price": "36"
                                         },
                                         {
-                                            "id": "9ccc1f2c-3ca2-4917-2c51-08dc723dc3c5",
+                                            "id": "71c93982-5fd9-4ea4-24e8-08dc72ea0aea",
                                             "alias": "Caramelo",
                                             "description": "",
                                             "image": "",
                                             "price": "36"
                                         },
                                         {
-                                            "id": "2f5631a7-63ea-4c38-2c52-08dc723dc3c5",
+                                            "id": "b4090b9f-42f7-4f1b-24e9-08dc72ea0aea",
                                             "alias": "Fresa",
                                             "description": "",
                                             "image": "",
                                             "price": "36"
                                         },
                                         {
-                                            "id": "f562ada2-f89d-431c-2c53-08dc723dc3c5",
+                                            "id": "f393735b-3a84-47de-24ea-08dc72ea0aea",
                                             "alias": "Vainilla",
                                             "description": "",
                                             "image": "",
@@ -567,35 +567,35 @@
                             ]
                         },
                         {
-                            "id": "53c61ab1-308d-404a-3924-08dc723dc368",
+                            "id": "0d82917a-1e87-490a-4669-08dc72ea0a26",
                             "alias": "Sundae",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "6c02e9d5-5506-441d-e626-08dc723dc3a1",
+                                    "id": "eca34790-0026-4e42-8fe4-08dc72ea0aa0",
                                     "alias": "Sabores",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "1c6d7b47-e4bd-4ffb-2c54-08dc723dc3c5",
+                                            "id": "33ce33ea-d7ef-4e8c-24eb-08dc72ea0aea",
                                             "alias": "Chocolate",
                                             "description": "",
                                             "image": "",
                                             "price": "24"
                                         },
                                         {
-                                            "id": "f0bb7852-c7e5-4e22-2c55-08dc723dc3c5",
+                                            "id": "9c9d6641-b8f5-4d53-24ec-08dc72ea0aea",
                                             "alias": "Caramelo",
                                             "description": "",
                                             "image": "",
                                             "price": "24"
                                         },
                                         {
-                                            "id": "ae4989f5-ae62-4ef5-2c56-08dc723dc3c5",
+                                            "id": "09fef420-67cf-43e6-24ed-08dc72ea0aea",
                                             "alias": "Fresa",
                                             "description": "",
                                             "image": "",
@@ -606,28 +606,28 @@
                             ]
                         },
                         {
-                            "id": "c3d6f0f8-9b65-4d6c-3925-08dc723dc368",
+                            "id": "bccd4ae9-b5fd-4b1e-466a-08dc72ea0a26",
                             "alias": "Pay",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "800a523c-75d8-4e3a-e627-08dc723dc3a1",
+                                    "id": "96507562-f0c1-46de-8fe5-08dc72ea0aa0",
                                     "alias": "Sabores",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "0bc2ce47-a09d-46bc-2c57-08dc723dc3c5",
+                                            "id": "998208ae-fd00-4bf6-24ee-08dc72ea0aea",
                                             "alias": "Manzana",
                                             "description": "",
                                             "image": "",
                                             "price": "25"
                                         },
                                         {
-                                            "id": "a1331638-75f5-4d7e-2c58-08dc723dc3c5",
+                                            "id": "a267d0b7-926a-49b7-24ef-08dc72ea0aea",
                                             "alias": "Queso",
                                             "description": "",
                                             "image": "",
@@ -640,7 +640,7 @@
                     ]
                 },
                 {
-                    "id": "27903888-1064-428b-983c-08dc723dc30d",
+                    "id": "ba60d595-0ab1-4665-cea3-08dc72ea09ca",
                     "alias": "Desayunos",
                     "description": "",
                     "image": "",
@@ -648,21 +648,21 @@
                     "items": [],
                     "products": [
                         {
-                            "id": "cda10005-7f3a-4c54-3926-08dc723dc368",
+                            "id": "e254fa30-f874-4035-466b-08dc72ea0a26",
                             "alias": "Hotcakes con Salchicha",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "9b429311-6393-409c-e628-08dc723dc3a1",
+                                    "id": "f4428801-60b6-48dc-8fe6-08dc72ea0aa0",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "73f8181a-b95a-4a40-2c59-08dc723dc3c5",
+                                            "id": "d179f78f-6463-49f5-24f0-08dc72ea0aea",
                                             "alias": "Platillo",
                                             "description": "",
                                             "image": "",
@@ -673,21 +673,21 @@
                             ]
                         },
                         {
-                            "id": "ae775cd7-edbc-44bc-3927-08dc723dc368",
+                            "id": "dafca0fd-6296-43f3-466c-08dc72ea0a26",
                             "alias": "Desayuno Deluxe",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "f083af0d-6652-4051-e629-08dc723dc3a1",
+                                    "id": "0b0e5e7e-5a72-4487-8fe7-08dc72ea0aa0",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "811c294b-db47-4d02-2c5a-08dc723dc3c5",
+                                            "id": "8647a519-0f9a-4675-24f1-08dc72ea0aea",
                                             "alias": "Platillo",
                                             "description": "",
                                             "image": "",
@@ -698,21 +698,21 @@
                             ]
                         },
                         {
-                            "id": "49ce577b-101f-481b-3928-08dc723dc368",
+                            "id": "79dd00eb-fef0-4c27-466d-08dc72ea0a26",
                             "alias": "Desayuno Especial Mexicano",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "953aea7b-6752-4870-e62a-08dc723dc3a1",
+                                    "id": "d7adc4f1-c9f8-4ab1-8fe8-08dc72ea0aa0",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "e88c11ff-6300-48b8-2c5b-08dc723dc3c5",
+                                            "id": "9817ccb6-d711-45e8-24f2-08dc72ea0aea",
                                             "alias": "Platillo",
                                             "description": "",
                                             "image": "",
@@ -723,21 +723,21 @@
                             ]
                         },
                         {
-                            "id": "03841b2c-bf53-43bb-3929-08dc723dc368",
+                            "id": "fc0489ec-4d36-459f-466e-08dc72ea0a26",
                             "alias": "Desayuno Especial",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "00c40a3f-4485-4f82-e62b-08dc723dc3a1",
+                                    "id": "2898b06c-0887-4e0d-8fe9-08dc72ea0aa0",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "9c324327-b3eb-49d7-2c5c-08dc723dc3c5",
+                                            "id": "9fdced80-0a27-427b-24f3-08dc72ea0aea",
                                             "alias": "Platillo",
                                             "description": "",
                                             "image": "",
@@ -748,21 +748,21 @@
                             ]
                         },
                         {
-                            "id": "1b87603a-a5c1-4848-392a-08dc723dc368",
+                            "id": "f94b725a-9f5a-4e0b-466f-08dc72ea0a26",
                             "alias": "McMuffin Huevo Tocino",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "6c086e37-0209-49ea-e62c-08dc723dc3a1",
+                                    "id": "d5153736-6f34-464c-8fea-08dc72ea0aa0",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "375987af-7e9a-4a51-2c5d-08dc723dc3c5",
+                                            "id": "cb10f67e-530e-4587-24f4-08dc72ea0aea",
                                             "alias": "Pieza",
                                             "description": "",
                                             "image": "",
@@ -773,21 +773,21 @@
                             ]
                         },
                         {
-                            "id": "4bac5061-2cb7-4e23-392b-08dc723dc368",
+                            "id": "49d53265-d268-4970-4670-08dc72ea0a26",
                             "alias": "McMolletes",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "a4284d3e-84de-4bae-e62d-08dc723dc3a1",
+                                    "id": "c5eba853-d4fe-40fb-8feb-08dc72ea0aa0",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "f55f15cf-6d02-4ce3-2c5e-08dc723dc3c5",
+                                            "id": "9bec675a-0e87-439c-24f5-08dc72ea0aea",
                                             "alias": "Pieza",
                                             "description": "",
                                             "image": "",
@@ -798,21 +798,21 @@
                             ]
                         },
                         {
-                            "id": "d21e120b-75a8-46b6-392c-08dc723dc368",
+                            "id": "7060275f-3c41-480b-4671-08dc72ea0a26",
                             "alias": "McMuffin Huevo Salchicha",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "ba59a151-128b-47aa-e62e-08dc723dc3a1",
+                                    "id": "015b782c-3c20-4b8f-8fec-08dc72ea0aa0",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "d4a51565-a4a3-406e-2c5f-08dc723dc3c5",
+                                            "id": "49b0b9e8-e4a1-4c72-24f6-08dc72ea0aea",
                                             "alias": "Pieza",
                                             "description": "",
                                             "image": "",
@@ -823,21 +823,21 @@
                             ]
                         },
                         {
-                            "id": "4d756d65-975b-4ca7-392d-08dc723dc368",
+                            "id": "4baed452-c49d-41c4-4672-08dc72ea0a26",
                             "alias": "McMuffin a la Mexicana",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "2b0685d3-0403-41c0-e62f-08dc723dc3a1",
+                                    "id": "86902ec1-1792-400e-8fed-08dc72ea0aa0",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "110a0921-1dea-4bff-2c60-08dc723dc3c5",
+                                            "id": "4bb98957-f750-4f01-24f7-08dc72ea0aea",
                                             "alias": "Pieza",
                                             "description": "",
                                             "image": "",
@@ -848,21 +848,21 @@
                             ]
                         },
                         {
-                            "id": "832f0105-375b-4ca6-392e-08dc723dc368",
+                            "id": "ff92afd7-465b-4f87-4673-08dc72ea0a26",
                             "alias": "Papa Hashbrown",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "ab684419-388d-4233-e630-08dc723dc3a1",
+                                    "id": "38600bbd-a962-424e-8fee-08dc72ea0aa0",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "d34b3fcb-93aa-44a9-2c61-08dc723dc3c5",
+                                            "id": "9839a7c7-a99b-4624-24f8-08dc72ea0aea",
                                             "alias": "Pieza",
                                             "description": "",
                                             "image": "",
@@ -873,21 +873,21 @@
                             ]
                         },
                         {
-                            "id": "72784650-ada9-4c2a-392f-08dc723dc368",
+                            "id": "cae2bc25-3312-4a81-4674-08dc72ea0a26",
                             "alias": "McBurrito a la Mexicana",
                             "description": "",
                             "image": "",
                             "price": "0",
                             "modifiersGroups": [
                                 {
-                                    "id": "5a0cd4d6-03e6-4d13-e631-08dc723dc3a1",
+                                    "id": "3b2a77e8-ec16-4786-8fef-08dc72ea0aa0",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "4bda0506-b982-4df0-2c62-08dc723dc3c5",
+                                            "id": "9bf783be-9904-43eb-24f9-08dc72ea0aea",
                                             "alias": "Pieza",
                                             "description": "",
                                             "image": "",
@@ -900,6 +900,16 @@
                     ]
                 }
             ]
+        }
+    ],
+    "recommendations": [
+        {
+            "id": "12bdf072-5d64-49f3-df87-08dc72eac641",
+            "productId": "7060275f-3c41-480b-4671-08dc72ea0a26"
+        },
+        {
+            "id": "174076a1-0063-4cf8-df88-08dc72eac641",
+            "productId": "dafca0fd-6296-43f3-466c-08dc72ea0a26"
         }
     ]
 }

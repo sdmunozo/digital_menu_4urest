@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:digital_menu_4urest/models/banner_model.dart';
 import 'package:digital_menu_4urest/models/catalog_model.dart';
+import 'package:digital_menu_4urest/models/recommendations_model.dart';
 
 BranchCatalogModel branchCatalogResponseFromJson(String str) =>
     BranchCatalogModel.fromJson(json.decode(str));
@@ -22,6 +23,7 @@ class BranchCatalogModel {
   String menuBackground;
   List<BannerModel> banners;
   List<CatalogModel> catalogs;
+  List<RecommendationsModel> recommendations;
 
   BranchCatalogModel({
     this.brandId = '',
@@ -36,6 +38,7 @@ class BranchCatalogModel {
     this.menuBackground = '',
     this.banners = const [],
     this.catalogs = const [],
+    this.recommendations = const [],
   });
 
   factory BranchCatalogModel.fromJson(Map<String, dynamic> json) =>
@@ -54,6 +57,9 @@ class BranchCatalogModel {
             json["banners"]?.map((x) => BannerModel.fromJson(x)) ?? []),
         catalogs: List<CatalogModel>.from(
             json["catalogs"]?.map((x) => CatalogModel.fromJson(x)) ?? []),
+        recommendations: List<RecommendationsModel>.from(json["recommendations"]
+                ?.map((x) => RecommendationsModel.fromJson(x)) ??
+            []),
       );
 
   Map<String, dynamic> toJson() => {
@@ -69,5 +75,7 @@ class BranchCatalogModel {
         "menuBackground": menuBackground,
         "banners": List<dynamic>.from(banners.map((x) => x.toJson())),
         "catalogs": List<dynamic>.from(catalogs.map((x) => x.toJson())),
+        "recommendations":
+            List<dynamic>.from(recommendations.map((x) => x.toJson())),
       };
 }

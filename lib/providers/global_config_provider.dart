@@ -24,6 +24,7 @@ class GlobalConfigProvider {
   static double maxWidth = 0;
   static List<SectionSizeModel> sectionSizes = [];
   static Color backgroundColor = const Color(0xFFF6F9FA);
+  static double headerTopHeightHomeScreen = 143;
   static double sectionVerticalItemHeight = 200;
   static double sectionHorizontalItemHeight = 130;
   static int welcomeScreenViewTime = 0;

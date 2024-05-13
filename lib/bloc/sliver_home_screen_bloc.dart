@@ -59,7 +59,7 @@ class SliverHomeScreenBLoC with ChangeNotifier {
   void onScrollListener() {
     double currentOffset = scrollController.offset;
     double maxScrollExtent = scrollController.position.maxScrollExtent;
-    double accumulatedHeight = 0;
+    double accumulatedHeight = GlobalConfigProvider.headerTopHeightHomeScreen;
 
     if (listen) {
       if (currentOffset >= maxScrollExtent) {
