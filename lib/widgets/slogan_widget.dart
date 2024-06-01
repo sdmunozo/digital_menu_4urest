@@ -11,7 +11,7 @@ class SloganWidget extends StatelessWidget {
     return Column(
       children: [
         Text(
-          GlobalConfigProvider.branchCatalog!.brandSlogan,
+          GlobalConfigProvider.branchCatalog!.brand.slogan,
           style: TextStyle(
             color: Colors.white.withOpacity(0.8),
             fontSize: 25,

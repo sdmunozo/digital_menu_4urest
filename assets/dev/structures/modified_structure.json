@@ -1,0 +1,101 @@
+{
+  "Brand": {
+    "Id": "GUID", // "brandId": "d2eb8fda-0dbd-4aa5-11bc-08dc73860c20",
+    "Name": "string", // "brandName": "McDonalds",
+    "Logo": "string", // "brandLogo": "https://api4urest.blob.core.windows.net/brands/f39fb3a3-91e8-4723-b2c2-1d6abf485a96.jpeg",
+    "Slogan": "string", // "brandSlogan": "me encanta",
+    "Instagram": "string", // "instagramLink": "https://www.instagram.com/mcdonaldsmx/",
+    "Facebook": "string", // "facebookLink": "https://www.facebook.com/McDonaldsMexico/",
+    "Website": "string", // "websiteLink": "https://www.mcdonalds.com.mx/",
+    "MenuBackground": "string", // "menuBackground": "https://api4urest.blob.core.windows.net/brands/62839e0e-c140-4fd7-abb6-e47511bdb7d3.png",
+    "Branches": [
+      {
+        "Id": "GUID", // "branchId": "5568f4d3-3588-4750-42fa-08dc73860c45",
+        "Name": "string", // "branchName": "Macroplaza",
+        "NormalizedDigitalMenu": "string",
+        "DigitalMenuLink": "string",
+        "QrCodePath": "string",
+        "WhatsApp": "string", // "brandWhatsApp": "+8131081423",
+        "Catalogs": [
+          {
+            "Id": "GUID", // "id": "8e20345f-b4b9-457f-582c-08dc73861b63",
+            "Alias": "string", // "alias": "Menú",
+            "Description": "string", // "description": "",
+            "Image": "string", // "image": "",
+            "Categories": [
+              {
+                "Id": "GUID", // "id": "34a03c7e-b5ab-4698-69c3-08dc73861bc3",
+                "Alias": "string", // "alias": "100% Carne",
+                "Description": "string", // "description": "Disfruta de nuestras jugosas hamburguesas de carne de res, preparadas con los ingredientes más frescos y sabores que encantan.",
+                "Image": "string", // "image": "",
+                "Sort": "integer",
+                "SectionType": "string", // "sectionType": "vertical",
+                "Products": [
+                  {
+                    "Id": "GUID", // "id": "a045c9c2-7875-4d96-2c0e-08dc73861c2a",
+                    "Alias": "string", // "alias": "Big Mac",
+                    "Description": "string", // "description": "Dos jugosas carnes de res, salsa especial, lechuga, queso, pepinillos y cebolla en un pan con ajonjolí.",
+                    "Image": "string", // "image": "https://api4urest.blob.core.windows.net/products/1f316a9e-c7d9-45d7-8aed-8904c3bacc21.png",
+                    "Sort": "integer",
+                    "Price": "decimal", // "price": "0.00",
+                    "ModifiersGroups": [
+                      {
+                        "Id": "GUID", // "id": "37abb3cc-0c55-4f58-2d04-08dc73861d1e",
+                        "Alias": "string", // "alias": "Presentación",
+                        "Description": "string", // "description": "",
+                        "Image": "string", //  "image": "",
+                        "IsScheduleActive": "boolean",
+                        "Sort": "integer", // "sort": "1",
+                        "MinModifiers": "integer", // "minModifiers": "1",
+                        "MaxModifiers": "integer", // "maxModifiers": "1",
+                        "Status": "string", // "status": "active",
+                        "Modifiers": [
+                          {
+                            "Id": "GUID", // "id": "d179a765-85a8-46e3-c374-08dc73861d5a",
+                            "Alias": "string", // "alias": "Sencilla",
+                            "Description": "string", // "description": "",
+                            "Image": "string", //  "image": "https://api4urest.blob.core.windows.net/products/7096a826-91af-4b61-94c2-2391d428267b.png",
+                            "Sort": "integer", // "sort": "1",
+                            "MinModifier": "integer",
+                            "MaxModifier": "integer",
+                            "Price": "decimal", // "price": "79"
+                            "Status": "string" // "status": "active",
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "Recommendations": [
+          {
+            "Id": "GUID", // "id": "814522d7-a096-4c06-364c-08dc738d3574",
+            "ProductId": "GUID" // "productId": "533a5116-22ae-4062-2c11-08dc73861c22"},
+          }
+        ],
+        "Banners": [
+          {
+            "Id": "GUID", // "id": "f828d159-f9e3-4626-b6f7-08dc738ef1b3",
+            "Name": "string", // "name": "Banner 1",
+            "Image": "string" // "image": "https://api4urest.blob.core.windows.net/banners/8f8d7abc-e38b-4b5b-b932-9ddcc7489d2b.jpg"
+          }
+        ],
+        "PaymentMethods": [
+          {
+            "Id": "GUID", // "id": "f828d159-f9e3-4626-b6f7-08dc738ef1b3",
+            "Method": "string" // "method": "Transferencia" 
+          }
+        ],
+        "DeliveryTypes": [
+          {
+            "Id": "GUID", // "id": "f828d159-f9e3-4626-b6f7-08dc738ef1b3",
+            "Type": "string" // "type": "Para llevar"
+          }
+        ]
+      }
+    ]
+  }
+}

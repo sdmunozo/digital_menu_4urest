@@ -1,0 +1,110 @@
+{
+    "Brand": {
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "Name": "BrandName",
+      "UrlNormalizedName": "brandname",
+      "Logo": "logo.png",
+      "Slogan": "Brand Slogan",
+      "Instagram": "brand_instagram",
+      "Facebook": "brand_facebook",
+      "Website": "brand_website",
+      "CatalogsBackground": "background.png",
+      "Branches": [
+        {
+          "Id": "00000000-0000-0000-0000-000000000000",
+          "Name": "BranchName",
+          "UrlNormalizedName": "branchname",
+          "NormalizedDigitalMenu": "normalized_menu",
+          "DigitalMenuLink": "menu_link",
+          "QrCodePath": "qrcode.png",
+          "BrandId": "00000000-0000-0000-0000-000000000000",
+          "Catalogs": [
+            {
+              "Id": "00000000-0000-0000-0000-000000000000",
+              "Name": "CatalogName",
+              "Description": "CatalogDescription",
+              "IsActive": true,
+              "IsScheduleActive": false,
+              "Sort": -1,
+              "BranchId": "00000000-0000-0000-0000-000000000000",
+              "Icon": "icon.png",
+              "Categories": [
+                {
+                  "Id": "00000000-0000-0000-0000-000000000000",
+                  "Name": "CategoryName",
+                  "Description": "CategoryDescription",
+                  "IsActive": true,
+                  "IsScheduleActive": false,
+                  "Sort": -1,
+                  "CatalogId": "00000000-0000-0000-0000-000000000000",
+                  "Icon": "category_icon.png",
+                  "Items": [
+                    {
+                      "Id": "00000000-0000-0000-0000-000000000000",
+                      "Name": "ItemName",
+                      "Alias": "ItemAlias",
+                      "Description": "ItemDescription",
+                      "IsActive": true,
+                      "IsScheduleActive": false,
+                      "Sort": -1,
+                      "CategoryId": "00000000-0000-0000-0000-000000000000",
+                      "Icon": "item_icon.png",
+                      "Price": 0,
+                      "Category": {},
+                      "PricePerItemPerPlatforms": []
+                    }
+                  ],
+                  "Products": [
+                    {
+                      "Id": "00000000-0000-0000-0000-000000000000",
+                      "Name": "ProductName",
+                      "Alias": "ProductAlias",
+                      "Description": "ProductDescription",
+                      "IsActive": true,
+                      "IsScheduleActive": false,
+                      "Sort": -1,
+                      "CategoryId": "00000000-0000-0000-0000-000000000000",
+                      "Icon": "product_icon.png",
+                      "Price": 0,
+                      "ModifiersGroups": [
+                        {
+                          "Id": "00000000-0000-0000-0000-000000000000",
+                          "ProductId": "00000000-0000-0000-0000-000000000000",
+                          "Name": "ModifiersGroupName",
+                          "Description": "ModifiersGroupDescription",
+                          "IsActive": true,
+                          "IsScheduleActive": false,
+                          "Sort": -1,
+                          "Alias": "ModifiersGroupAlias",
+                          "Icon": "modifiers_group_icon.png",
+                          "isSelectable": false,
+                          "MinModifiers": -1,
+                          "MaxModifiers": -1,
+                          "Modifiers": [
+                            {
+                              "Id": "00000000-0000-0000-0000-000000000000",
+                              "ModifiersGroupId": "00000000-0000-0000-0000-000000000000",
+                              "Name": "ModifierName",
+                              "Alias": "ModifierAlias",
+                              "Description": "ModifierDescription",
+                              "IsActive": true,
+                              "IsScheduleActive": false,
+                              "Sort": -1,
+                              "Icon": "modifier_icon.png",
+                              "MinModifier": -1,
+                              "MaxModifier": -1,
+                              "Price": 0
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }

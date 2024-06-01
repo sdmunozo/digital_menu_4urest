@@ -14,7 +14,7 @@ class TitleWidget extends StatelessWidget {
           children: [
             Center(
               child: Text(
-                GlobalConfigProvider.branchCatalog!.brandName,
+                GlobalConfigProvider.branchCatalog!.brand.name,
                 textAlign: TextAlign.center,
                 style: const TextStyle(fontSize: 45, color: Colors.white),
               ),
@@ -22,7 +22,7 @@ class TitleWidget extends StatelessWidget {
             const SizedBox(height: 10),
             Center(
               child: Text(
-                GlobalConfigProvider.branchCatalog!.branchName,
+                GlobalConfigProvider.branchCatalog!.brand.branches[0].name,
                 textAlign: TextAlign.center,
                 style: const TextStyle(fontSize: 35, color: Colors.white),
               ),

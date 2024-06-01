@@ -1,0 +1,245 @@
+{
+  "Brand": {
+    "Id": "GUID",
+    "Name": "string",
+    "UrlNormalizedName": "string",
+    "Logo": "string",
+    "Slogan": "string",
+    "Instagram": "string",
+    "Facebook": "string",
+    "Website": "string",
+    "MenuBackground": "string",
+    "User": {
+      "Id": "string",
+      "UserName": "string",
+      "NormalizedUserName": "string",
+      "Email": "string",
+      "NormalizedEmail": "string",
+      "EmailConfirmed": "boolean",
+      "PasswordHash": "string",
+      "SecurityStamp": "string",
+      "ConcurrencyStamp": "string",
+      "PhoneNumber": "string",
+      "PhoneNumberConfirmed": "boolean",
+      "TwoFactorEnabled": "boolean",
+      "LockoutEnd": "datetime",
+      "LockoutEnabled": "boolean",
+      "AccessFailedCount": "integer",
+      "FirstName": "string",
+      "LastName": "string",
+      "DisableTutorial": "boolean",
+      "ReferralLink": "string",
+      "ReferredBy": "string",
+      "Brands": [
+        {
+          
+        }
+      ]
+    },
+    "Branches": [
+      {
+        "Id": "GUID",
+        "Name": "string",
+        "UrlNormalizedName": "string",
+        "NormalizedDigitalMenu": "string",
+        "DigitalMenuLink": "string",
+        "QrCodePath": "string",
+        "BrandId": "GUID",
+        "Catalogs": [
+          {
+            "Id": "GUID",
+            "Name": "string",
+            "Alias": "string",
+            "Description": "string",
+            "Image": "string",
+            "IsActive": "boolean",
+            "IsScheduleActive": "boolean",
+            "Sort": "integer",
+            "BranchId": "GUID",
+            "Categories": [
+              {
+                "Id": "GUID",
+                "Name": "string",
+                "Alias": "string",
+                "Description": "string",
+                "Image": "string",
+                "IsActive": "boolean",
+                "IsScheduleActive": "boolean",
+                "Sort": "integer",
+                "CatalogId": "GUID",
+                "SectionType": "string",
+                "Items": [
+                  {
+                    "Id": "GUID",
+                    "Name": "string",
+                    "Alias": "string",
+                    "Description": "string",
+                    "Image": "string",
+                    "IsActive": "boolean",
+                    "IsScheduleActive": "boolean",
+                    "Sort": "integer",
+                    "CategoryId": "GUID",
+                    "Price": "decimal"
+                  }
+                ],
+                "Products": [
+                  {
+                    "Id": "GUID",
+                    "Name": "string",
+                    "Alias": "string",
+                    "Description": "string",
+                    "Image": "string",
+                    "IsActive": "boolean",
+                    "IsScheduleActive": "boolean",
+                    "Sort": "integer",
+                    "CategoryId": "GUID",
+                    "Price": "decimal",
+                    "ModifiersGroups": [
+                      {
+                        "Id": "GUID",
+                        "Name": "string",
+                        "Alias": "string",
+                        "Description": "string",
+                        "Image": "string",
+                        "IsActive": "boolean",
+                        "IsScheduleActive": "boolean",
+                        "Sort": "integer",
+                        "ProductId": "GUID",
+                        "isSelectable": "boolean",
+                        "MinModifiers": "integer",
+                        "MaxModifiers": "integer",
+                        "Modifiers": [
+                          {
+                            "Id": "GUID",
+                            "Name": "string",
+                            "Alias": "string",
+                            "Description": "string",
+                            "Image": "string",
+                            "IsActive": "boolean",
+                            "IsScheduleActive": "boolean",
+                            "Sort": "integer",
+                            "ModifiersGroupId": "GUID",
+                            "MinModifier": "integer",
+                            "MaxModifier": "integer",
+                            "Price": "decimal"
+                          }
+                        ],
+                        "Status": "string"
+                      }
+                    ],
+                    "Recommendations": [
+                      {
+                        "Id": "GUID",
+                        "BranchId": "GUID",
+                        "ProductId": "GUID"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "Recommendations": [
+          {
+            "Id": "GUID",
+            "BranchId": "GUID",
+            "ProductId": "GUID"
+          }
+        ],
+        "Banners": [
+          {
+            "Id": "GUID",
+            "Name": "string",
+            "Description": "string",
+            "IsActive": "boolean",
+            "IsScheduleActive": "boolean",
+            "BranchId": "GUID",
+            "Image": "string"
+          }
+        ],
+        "Feedback": [
+          {
+            "Id": "GUID",
+            "Score": "integer",
+            "Comment": "string",
+            "BranchId": "GUID",
+            "SessionId": "string",
+            "CreatedAt": "datetime"
+          }
+        ],
+        "DeviceTracking": [
+          {
+            "Id": "GUID",
+            "BranchId": "GUID",
+            "SessionId": "string",
+            "UserAgent": "string",
+            "Platform": "string",
+            "Vendor": "string",
+            "Language": "string",
+            "Browser": "string",
+            "BrowserVersion": "string",
+            "OS": "string",
+            "PixelRatio": "double",
+            "ScreenWidth": "integer",
+            "ScreenHeight": "integer",
+            "Orientation": "string",
+            "CreatedAt": "datetime"
+          }
+        ],
+        "WhatsApp": "string",
+        "PaymentMethods": [
+          {
+            "Id": "GUID",
+            "Method": "string",
+            "BranchId": "GUID"
+          }
+        ],
+        "DeliveryTypes": [
+          {
+            "Id": "GUID",
+            "Type": "string",
+            "BranchId": "GUID"
+          }
+        ],
+        "DigitalMenuJson": "string",
+        "Brand": {
+          
+        }
+      }
+    ],
+    "Platforms": [
+      {
+        "Id": "GUID",
+        "Name": "string",
+        "Alias": "string",
+        "IsActive": "boolean",
+        "IsScheduleActive": "boolean",
+        "Sort": "integer",
+        "Image": "string",
+        "BrandId": "GUID",
+        "PricePerModifierPerPlatforms": [
+          {
+            "Id": "GUID",
+            "ModifierId": "GUID",
+            "PlatformId": "GUID",
+            "Price": "double",
+            "IsActive": "boolean"
+          }
+        ],
+        "PricePerItemPerPlatforms": [
+          {
+            "Id": "GUID",
+            "ItemId": "GUID",
+            "PlatformId": "GUID",
+            "Price": "double",
+            "IsActive": "boolean"
+          }
+        ],
+        "Brand": {
+          
+        }
+      }
+    ]
+  }
+}

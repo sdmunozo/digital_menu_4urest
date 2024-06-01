@@ -1,0 +1,850 @@
+{
+    "catalogs": [
+        {
+            "categories": [
+                {
+                    "products": [
+                        {
+                            
+                            
+                            
+                            
+                            
+                            "modifiersGroups": [
+                                {
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    "modifiers": [
+                                        {
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                        },
+                                        {
+                                            "id": "55cf059f-13ec-43b6-c375-08dc73861d5a",
+                                            "alias": "Doble",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "89"
+                                        },
+                                        {
+                                            "id": "88026310-7655-4688-c376-08dc73861d5a",
+                                            "alias": "Triple",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "99"
+                                        },
+                                        {
+                                            "id": "f61673c9-1499-4920-c377-08dc73861d5a",
+                                            "alias": "Sencilla con Tocino",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "89"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "337de0ae-1779-4e0f-b87b-50f760ba43a3",
+                                    "alias": "Papas",
+                                    "description": "",
+                                    "image": "",
+                                    "status": "active",
+                                    "sort": "2",
+                                    "minModifiers": "1",
+                                    "maxModifiers": "1",
+                                    "modifiers": [
+                                        {
+                                            "id": "9cc5be5e-f41a-49b5-9eb0-6c1f7fb01acb",
+                                            "alias": "Papas Chicas",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "29"
+                                        },
+                                        {
+                                            "id": "456b87aa-a1e9-462f-81bb-c64e5562f813",
+                                            "alias": "Papas Medianas",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "2",
+                                            "image": "",
+                                            "price": "39"
+                                        },
+                                        {
+                                            "id": "01f172d2-1ace-4398-8fcb-c1963cbaaf07",
+                                            "alias": "Papas Grandes",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "3",
+                                            "image": "",
+                                            "price": "49"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "eeaeb77f-f897-4229-bb4e-c71aa04e5989",
+                                    "alias": "Bebidas",
+                                    "description": "",
+                                    "image": "",
+                                    "status": "active",
+                                    "sort": "3",
+                                    "minModifiers": "1",
+                                    "maxModifiers": "1",
+                                    "modifiers": [
+                                        {
+                                            "id": "398ad9d4-02b0-47bc-821d-90d4d717d731",
+                                            "alias": "Bebida Chica",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "19"
+                                        },
+                                        {
+                                            "id": "d88d37c4-3d00-4080-81cf-417ebf6fd5df",
+                                            "alias": "Bebida Mediana",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "2",
+                                            "image": "",
+                                            "price": "29"
+                                        },
+                                        {
+                                            "id": "133136c0-c10d-4a4c-8427-7d75a8fac820",
+                                            "alias": "Bebida Grande",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "3",
+                                            "image": "",
+                                            "price": "39"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "e43bbfa2-412f-4f0d-bb3a-cbf9ee4c806f",
+                                    "alias": "Extras",
+                                    "description": "",
+                                    "image": "",
+                                    "status": "active",
+                                    "sort": "4",
+                                    "minModifiers": "0",
+                                    "maxModifiers": "2",
+                                    "modifiers": [
+                                        {
+                                            "id": "fa3ab674-3848-4e88-9407-11fe7c9f7108",
+                                            "alias": "Extra Queso",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "9"
+                                        },
+                                        {
+                                            "id": "797d7225-e8d7-4c6c-9dc8-b0a8555f4012",
+                                            "alias": "Extra Bacon",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "2",
+                                            "image": "",
+                                            "price": "19"
+                                        },
+                                        {
+                                            "id": "33dc2c2a-3cf2-427e-9b6d-466d64afec95",
+                                            "alias": "Extra Cebolla",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "3",
+                                            "image": "",
+                                            "price": "5"
+                                        }
+                                    ]
+                                }                                
+                            ]
+                        },
+                        {
+                            "id": "77aa9dd4-7295-47a4-2c0f-08dc73861c2a",
+                            "alias": "Cuarto de libra con queso",
+                            "description": "Carne de res 100% fresca, con queso derretido, cebolla, pepinillos, ketchup y mostaza.",
+                            "image": "https://api4urest.blob.core.windows.net/products/fe6706ff-08d0-47a5-a576-2e8c6b9a19a6.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "3b014034-b812-40f6-2d05-08dc73861d1e",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "image": "",
+                                    "status": "active",
+                                    "sort": "1",
+                                    "minModifiers": "1",
+                                    "maxModifiers": "1",
+                                    "modifiers": [
+                                        {
+                                            "id": "58ad8568-acc2-4069-c378-08dc73861d5a",
+                                            "alias": "Sencilla",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "79"
+                                        },
+                                        {
+                                            "id": "9eb95340-7d23-4163-c379-08dc73861d5a",
+                                            "alias": "Doble con Queso",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "89"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "337de0ae-1779-4e0f-b87b-50f760ba43a3",
+                                    "alias": "Papas",
+                                    "description": "",
+                                    "image": "",
+                                    "status": "active",
+                                    "sort": "2",
+                                    "minModifiers": "1",
+                                    "maxModifiers": "1",
+                                    "modifiers": [
+                                        {
+                                            "id": "9cc5be5e-f41a-49b5-9eb0-6c1f7fb01acb",
+                                            "alias": "Papas Chicas",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "29"
+                                        },
+                                        {
+                                            "id": "456b87aa-a1e9-462f-81bb-c64e5562f813",
+                                            "alias": "Papas Medianas",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "2",
+                                            "image": "",
+                                            "price": "39"
+                                        },
+                                        {
+                                            "id": "01f172d2-1ace-4398-8fcb-c1963cbaaf07",
+                                            "alias": "Papas Grandes",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "3",
+                                            "image": "",
+                                            "price": "49"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "eeaeb77f-f897-4229-bb4e-c71aa04e5989",
+                                    "alias": "Bebidas",
+                                    "description": "",
+                                    "image": "",
+                                    "status": "active",
+                                    "sort": "3",
+                                    "minModifiers": "1",
+                                    "maxModifiers": "1",
+                                    "modifiers": [
+                                        {
+                                            "id": "398ad9d4-02b0-47bc-821d-90d4d717d731",
+                                            "alias": "Bebida Chica",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "19"
+                                        },
+                                        {
+                                            "id": "d88d37c4-3d00-4080-81cf-417ebf6fd5df",
+                                            "alias": "Bebida Mediana",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "2",
+                                            "image": "",
+                                            "price": "29"
+                                        },
+                                        {
+                                            "id": "133136c0-c10d-4a4c-8427-7d75a8fac820",
+                                            "alias": "Bebida Grande",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "3",
+                                            "image": "",
+                                            "price": "39"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "e43bbfa2-412f-4f0d-bb3a-cbf9ee4c806f",
+                                    "alias": "Extras",
+                                    "description": "",
+                                    "image": "",
+                                    "status": "active",
+                                    "sort": "4",
+                                    "minModifiers": "0",
+                                    "maxModifiers": "3",
+                                    "modifiers": [
+                                        {
+                                            "id": "fa3ab674-3848-4e88-9407-11fe7c9f7108",
+                                            "alias": "Extra Queso",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "9"
+                                        },
+                                        {
+                                            "id": "797d7225-e8d7-4c6c-9dc8-b0a8555f4012",
+                                            "alias": "Extra Bacon",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "2",
+                                            "image": "",
+                                            "price": "19"
+                                        },
+                                        {
+                                            "id": "33dc2c2a-3cf2-427e-9b6d-466d64afec95",
+                                            "alias": "Extra Cebolla",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "3",
+                                            "image": "",
+                                            "price": "5"
+                                        }
+                                    ]
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "id": "4e265827-c6b7-40aa-2c10-08dc73861c2a",
+                            "alias": "McNífica",
+                            "description": "Carne de res jugosa con lechuga, tomate, queso cheddar y nuestra salsa especial.",
+                            "image": "https://api4urest.blob.core.windows.net/products/205839a8-6145-440f-9b17-dbf2a61119a2.png",
+                            "price": "0.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "2ca1972f-08e0-404c-2d06-08dc73861d1e",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "image": "",
+                                    "status": "active",
+                                    "sort": "1",
+                                    "minModifiers": "1",
+                                    "maxModifiers": "1",
+                                    "modifiers": [
+                                        {
+                                            "id": "bc833fcd-f5d5-454b-c37a-08dc73861d5a",
+                                            "alias": "Sencilla",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "79"
+                                        },
+                                        {
+                                            "id": "8e6452d4-3577-45ac-c37b-08dc73861d5a",
+                                            "alias": "Doble",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "89"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "337de0ae-1779-4e0f-b87b-50f760ba43a3",
+                                    "alias": "Papas",
+                                    "description": "",
+                                    "image": "",
+                                    "status": "active",
+                                    "sort": "2",
+                                    "minModifiers": "1",
+                                    "maxModifiers": "1",
+                                    "modifiers": [
+                                        {
+                                            "id": "9cc5be5e-f41a-49b5-9eb0-6c1f7fb01acb",
+                                            "alias": "Papas Chicas",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "29"
+                                        },
+                                        {
+                                            "id": "456b87aa-a1e9-462f-81bb-c64e5562f813",
+                                            "alias": "Papas Medianas",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "2",
+                                            "image": "",
+                                            "price": "39"
+                                        },
+                                        {
+                                            "id": "01f172d2-1ace-4398-8fcb-c1963cbaaf07",
+                                            "alias": "Papas Grandes",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "3",
+                                            "image": "",
+                                            "price": "49"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "eeaeb77f-f897-4229-bb4e-c71aa04e5989",
+                                    "alias": "Bebidas",
+                                    "description": "",
+                                    "image": "",
+                                    "status": "active",
+                                    "sort": "3",
+                                    "minModifiers": "1",
+                                    "maxModifiers": "1",
+                                    "modifiers": [
+                                        {
+                                            "id": "398ad9d4-02b0-47bc-821d-90d4d717d731",
+                                            "alias": "Bebida Chica",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "19"
+                                        },
+                                        {
+                                            "id": "d88d37c4-3d00-4080-81cf-417ebf6fd5df",
+                                            "alias": "Bebida Mediana",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "2",
+                                            "image": "",
+                                            "price": "29"
+                                        },
+                                        {
+                                            "id": "133136c0-c10d-4a4c-8427-7d75a8fac820",
+                                            "alias": "Bebida Grande",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "3",
+                                            "image": "",
+                                            "price": "39"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "e43bbfa2-412f-4f0d-bb3a-cbf9ee4c806f",
+                                    "alias": "Extras",
+                                    "description": "",
+                                    "image": "",
+                                    "status": "active",
+                                    "sort": "4",
+                                    "minModifiers": "0",
+                                    "maxModifiers": "3",
+                                    "modifiers": [
+                                        {
+                                            "id": "fa3ab674-3848-4e88-9407-11fe7c9f7108",
+                                            "alias": "Extra Queso",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "9"
+                                        },
+                                        {
+                                            "id": "797d7225-e8d7-4c6c-9dc8-b0a8555f4012",
+                                            "alias": "Extra Bacon",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "2",
+                                            "image": "",
+                                            "price": "19"
+                                        },
+                                        {
+                                            "id": "33dc2c2a-3cf2-427e-9b6d-466d64afec95",
+                                            "alias": "Extra Cebolla",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "3",
+                                            "image": "",
+                                            "price": "5"
+                                        }
+                                    ]
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "id": "533a5116-22ae-4062-2c11-08dc73861c2a",
+                            "alias": "Hamburguesa",
+                            "description": "Carne de res con pepinillos, cebolla, ketchup y mostaza en un pan suave.",
+                            "image": "https://api4urest.blob.core.windows.net/products/7096a826-91af-4b61-94c2-2391d428267b.png",
+                            "price": "89.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "f737a038-31d3-42d0-2d07-08dc73861d1e",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "image": "",
+                                    "status": "active",
+                                    "sort": "1",
+                                    "minModifiers": "1",
+                                    "maxModifiers": "1",
+                                    "modifiers": [
+                                        {
+                                            "id": "f66d2f0f-9236-45f0-c37c-08dc73861d5a",
+                                            "alias": "Sencilla",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "0"
+                                        },
+                                        {
+                                            "id": "f0fec2aa-126e-4816-c37d-08dc73861d5a",
+                                            "alias": "Con queso",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "15"
+                                        },
+                                        {
+                                            "id": "84d2b6b8-e949-421e-c37e-08dc73861d5a",
+                                            "alias": "Doble con queso",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "30"
+                                        },
+                                        {
+                                            "id": "46190fd8-7f41-47a2-c37f-08dc73861d5a",
+                                         "image": "https://api4urest.blob.core.windows.net/products/7096a826-91af-4b61-94c2-2391d428267b.png",    "alias": "Triple con queso",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "40"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "337de0ae-1779-4e0f-b87b-50f760ba43a3",
+                                    "alias": "Papas",
+                                    "description": "",
+                                    "image": "",
+                                    "status": "active",
+                                    "sort": "2",
+                                    "minModifiers": "1",
+                                    "maxModifiers": "1",
+                                    "modifiers": [
+                                        {
+                                            "id": "9cc5be5e-f41a-49b5-9eb0-6c1f7fb01acb",
+                                            "alias": "Papas Chicas",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "0"
+                                        },
+                                        {
+                                            "id": "456b87aa-a1e9-462f-81bb-c64e5562f813",
+                                            "alias": "Papas Medianas",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "2",
+                                            "image": "",
+                                            "price": "15"
+                                        },
+                                        {
+                                            "id": "01f172d2-1ace-4398-8fcb-c1963cbaaf07",
+                                            "alias": "Papas Grandes",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "3",
+                                            "image": "",
+                                            "price": "20"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "eeaeb77f-f897-4229-bb4e-c71aa04e5989",
+                                    "alias": "Bebidas",
+                                    "description": "",
+                                    "image": "",
+                                    "status": "active",
+                                    "sort": "3",
+                                    "minModifiers": "1",
+                                    "maxModifiers": "1",
+                                    "modifiers": [
+                                        {
+                                            "id": "398ad9d4-02b0-47bc-821d-90d4d717d731",
+                                            "alias": "Bebida Chica",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "0"
+                                        },
+                                        {
+                                            "id": "d88d37c4-3d00-4080-81cf-417ebf6fd5df",
+                                            "alias": "Bebida Mediana",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "2",
+                                            "image": "",
+                                            "price": "29"
+                                        },
+                                        {
+                                            "id": "133136c0-c10d-4a4c-8427-7d75a8fac820",
+                                            "alias": "Bebida Grande",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "3",
+                                            "image": "",
+                                            "price": "39"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "e43bbfa2-412f-4f0d-bb3a-cbf9ee4c806f",
+                                    "alias": "Extras",
+                                    "description": "",
+                                    "image": "",
+                                    "status": "active",
+                                    "sort": "4",
+                                    "minModifiers": "0",
+                                    "maxModifiers": "3",
+                                    "modifiers": [
+                                        {
+                                            "id": "fa3ab674-3848-4e88-9407-11fe7c9f7108",
+                                            "alias": "Extra Queso",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "9"
+                                        },
+                                        {
+                                            "id": "797d7225-e8d7-4c6c-9dc8-b0a8555f4012",
+                                            "alias": "Extra Bacon",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "2",
+                                            "image": "",
+                                            "price": "19"
+                                        },
+                                        {
+                                            "id": "33dc2c2a-3cf2-427e-9b6d-466d64afec95",
+                                            "alias": "Extra Cebolla",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "3",
+                                            "image": "",
+                                            "price": "5"
+                                        }
+                                    ]
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "id": "533a5116-22ae-4062-2c11-08dc73861c22",
+                            "alias": "Hamburguesa",
+                            "description": "Carne de res con pepinillos, cebolla, ketchup y mostaza en un pan suave.",
+                            "image": "",
+                            "price": "89.00",
+                            "modifiersGroups": [
+                                {
+                                    "id": "f737a038-31d3-42d0-2d07-08dc73861d1e",
+                                    "alias": "Presentación",
+                                    "description": "",
+                                    "image": "",
+                                    "status": "active",
+                                    "sort": "1",
+                                    "minModifiers": "1",
+                                    "maxModifiers": "1",
+                                    "modifiers": [
+                                        {
+                                            "id": "f66d2f0f-9236-45f0-c37c-08dc73861d5a",
+                                            "alias": "Sencilla",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                           
+                                            "price": "0"
+                                        },
+                                        {
+                                            "id": "f0fec2aa-126e-4816-c37d-08dc73861d5a",
+                                            "alias": "Con queso",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "15"
+                                        },
+                                        {
+                                            "id": "84d2b6b8-e949-421e-c37e-08dc73861d5a",
+                                            "alias": "Doble con queso",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "30"
+                                        },
+                                        {
+                                            "id": "46190fd8-7f41-47a2-c37f-08dc73861d5a",
+                                            "alias": "Triple con queso",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "40"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "337de0ae-1779-4e0f-b87b-50f760ba43a3",
+                                    "alias": "Papas",
+                                    "description": "",
+                                    "image": "",
+                                    "status": "active",
+                                    "sort": "2",
+                                    "minModifiers": "1",
+                                    "maxModifiers": "1",
+                                    "modifiers": [
+                                        {
+                                            "id": "9cc5be5e-f41a-49b5-9eb0-6c1f7fb01acb",
+                                            "alias": "Papas Chicas",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "0"
+                                        },
+                                        {
+                                            "id": "456b87aa-a1e9-462f-81bb-c64e5562f813",
+                                            "alias": "Papas Medianas",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "2",
+                                            "image": "",
+                                            "price": "15"
+                                        },
+                                        {
+                                            "id": "01f172d2-1ace-4398-8fcb-c1963cbaaf07",
+                                            "alias": "Papas Grandes",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "3",
+                                            "image": "",
+                                            "price": "20"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "eeaeb77f-f897-4229-bb4e-c71aa04e5989",
+                                    "alias": "Bebidas",
+                                    "description": "",
+                                    "image": "",
+                                    "status": "active",
+                                    "sort": "3",
+                                    "minModifiers": "1",
+                                    "maxModifiers": "1",
+                                    "modifiers": [
+                                        {
+                                            "id": "398ad9d4-02b0-47bc-821d-90d4d717d731",
+                                            "alias": "Bebida Chica",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "0"
+                                        },
+                                        {
+                                            "id": "d88d37c4-3d00-4080-81cf-417ebf6fd5df",
+                                            "alias": "Bebida Mediana",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "2",
+                                            "image": "",
+                                            "price": "29"
+                                        },
+                                        {
+                                            "id": "133136c0-c10d-4a4c-8427-7d75a8fac820",
+                                            "alias": "Bebida Grande",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "3",
+                                            "image": "",
+                                            "price": "39"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "e43bbfa2-412f-4f0d-bb3a-cbf9ee4c806f",
+                                    "alias": "Extras",
+                                    "description": "",
+                                    "image": "",
+                                    "status": "active",
+                                    "sort": "4",
+                                    "minModifiers": "0",
+                                    "maxModifiers": "3",
+                                    "modifiers": [
+                                        {
+                                            "id": "fa3ab674-3848-4e88-9407-11fe7c9f7108",
+                                            "alias": "Extra Queso",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "1",
+                                            "image": "",
+                                            "price": "9"
+                                        },
+                                        {
+                                            "id": "797d7225-e8d7-4c6c-9dc8-b0a8555f4012",
+                                            "alias": "Extra Bacon",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "2",
+                                            "image": "",
+                                            "price": "19"
+                                        },
+                                        {
+                                            "id": "33dc2c2a-3cf2-427e-9b6d-466d64afec95",
+                                            "alias": "Extra Cebolla",
+                                            "description": "",
+                                            "status": "active",
+                                            "sort": "3",
+                                            "image": "",
+                                            "price": "5"
+                                        }
+                                    ]
+                                }
+                                
+                            ]
+                        }
+                    ]
+                    
+                } ]
+        }
+    ]
+}

@@ -1,10 +1,12 @@
 import 'dart:async';
-
 import 'package:digital_menu_4urest/models/branch_catalog_model.dart';
 import 'package:digital_menu_4urest/models/category_model.dart';
-import 'package:digital_menu_4urest/models/item_model.dart';
+import 'package:digital_menu_4urest/models/digital_menu/base_model_category.dart';
+import 'package:digital_menu_4urest/models/digital_menu/base_model_digital_menu.dart';
+import 'package:digital_menu_4urest/models/digital_menu/base_model_product.dart';
 import 'package:digital_menu_4urest/models/metrics/click_event_metric.dart';
 import 'package:digital_menu_4urest/models/metrics/view_time_metric.dart';
+import 'package:digital_menu_4urest/models/product_model.dart';
 import 'package:digital_menu_4urest/models/section_size_model.dart';
 import 'package:digital_menu_4urest/providers/event_metric_provider.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +21,7 @@ class GlobalConfigProvider {
   static String userId = '';
   static String sessionId = '';
   static String lastUrlSegment = '';
-  static BranchCatalogModel? branchCatalog;
+  static BaseModelDigitalMenu? branchCatalog;
   static double maxHeight = 0;
   static double maxWidth = 0;
   static List<SectionSizeModel> sectionSizes = [];
@@ -138,7 +140,8 @@ class GlobalConfigProvider {
   static void generateSectionSizes() {
     List<SectionSizeModel> sizes = [];
     if (branchCatalog != null) {
-      for (CategoryModel category in branchCatalog!.catalogs[0].categories) {
+      for (BaseModelCategory category
+          in branchCatalog!.brand.branches[0].catalogs[0].categories) {
         double totalHeight;
 
         if (category.sectionType == 'horizontal') {
@@ -146,7 +149,7 @@ class GlobalConfigProvider {
         } else {
           totalHeight = 109.5;
           // ignore: unused_local_variable
-          for (ItemModel product in category.products) {
+          for (BaseModelProduct product in category.products) {
             totalHeight += sectionHorizontalItemHeight;
           }
         }
@@ -193,7 +196,7 @@ class GlobalConfigProvider {
     }
   }
 
-  static void setBranchCatalog(BranchCatalogModel? catalog) {
+  static void setBranchCatalog(BaseModelDigitalMenu? catalog) {
     branchCatalog = catalog;
   }
 

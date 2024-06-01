@@ -42,7 +42,7 @@ class MainLayout extends StatelessWidget {
                         image: DecorationImage(
                           image: CustomImageProvider.getNetworkImageIP(
                               GlobalConfigProvider
-                                  .branchCatalog?.menuBackground),
+                                  .branchCatalog?.brand.menuBackground),
                           fit: BoxFit.cover,
                         ),
                       ),

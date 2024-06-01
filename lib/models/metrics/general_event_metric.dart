@@ -18,7 +18,7 @@ class GeneralEventMetric {
     this.eventTimestamp,
     this.status = MetricStatus.pending,
   }) {
-    branchId ??= GlobalConfigProvider.branchCatalog!.branchId;
+    branchId ??= GlobalConfigProvider.branchCatalog!.brand.branches[0].id;
     userId ??= GlobalConfigProvider.sessionId;
     sessionId ??= GlobalConfigProvider.sessionId;
     eventTimestamp ??= DateTime.now();

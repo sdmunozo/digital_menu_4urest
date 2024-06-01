@@ -1,67 +1,99 @@
 {
-    "brandId": "6d802784-bf50-48db-7880-08dc72e9a8ae",
-    "branchId": "a45099fb-7ee4-4533-46f5-08dc72e9a8d5",
+    "brandId": "d2eb8fda-0dbd-4aa5-11bc-08dc73860c20",
+    "branchId": "5568f4d3-3588-4750-42fa-08dc73860c45",
     "brandName": "McDonalds",
     "branchName": "Macroplaza",
-    "instagramLink": "",
-    "facebookLink": "",
-    "websiteLink": "",
-    "brandLogo": "",
-    "brandSlogan": "",
-    "menuBackground": "",
-    "banners": [],
+    "instagramLink": "https://www.instagram.com/mcdonaldsmx/",
+    "facebookLink": "https://www.facebook.com/McDonaldsMexico/",
+    "websiteLink": "https://www.mcdonalds.com.mx/",
+    "brandLogo": "https://api4urest.blob.core.windows.net/brands/f39fb3a3-91e8-4723-b2c2-1d6abf485a96.jpeg",
+    "brandSlogan": "me encanta",
+    "menuBackground": "https://api4urest.blob.core.windows.net/brands/62839e0e-c140-4fd7-abb6-e47511bdb7d3.png",
+    "banners": [
+        {
+            "id": "f828d159-f9e3-4626-b6f7-08dc738ef1b3",
+            "name": "Banner 1",
+            "image": "https://api4urest.blob.core.windows.net/banners/8f8d7abc-e38b-4b5b-b932-9ddcc7489d2b.jpg"
+        },
+        {
+            "id": "5fe72329-e9df-4914-b6f8-08dc738ef1b3",
+            "name": "Banner 2",
+            "image": "https://api4urest.blob.core.windows.net/banners/c2ca5a76-6c79-4ef2-81d1-182e42892434.png"
+        },
+        {
+            "id": "105829b1-93a1-4110-b6f9-08dc738ef1b3",
+            "name": "Banner 3",
+            "image": "https://api4urest.blob.core.windows.net/banners/d562136c-29e6-46da-b2ae-5e38c91e1d21.png"
+        },
+        {
+            "id": "b422f1a4-e237-44cf-b6fa-08dc738ef1b3",
+            "name": "Banner 4",
+            "image": "https://api4urest.blob.core.windows.net/banners/f699b071-4d17-44e7-9a0a-41030d19e4bd.jpg"
+        },
+        {
+            "id": "7b455944-259f-47be-b6fb-08dc738ef1b3",
+            "name": "Banner 5",
+            "image": "https://api4urest.blob.core.windows.net/banners/ea05d253-3bd2-413e-ac6c-1ada9daf44fb.png"
+        },
+        {
+            "id": "03917e77-c8cc-4b44-b6fc-08dc738ef1b3",
+            "name": "Banner 6",
+            "image": "https://api4urest.blob.core.windows.net/banners/0fbc3bca-761f-4c66-99e2-bd4c74b06109.jpg"
+        }
+    ],
     "catalogs": [
         {
-            "id": "9053820f-5c03-4acc-7f66-08dc72ea08ec",
-            "alias": "Hamburguesas",
+            "id": "8e20345f-b4b9-457f-582c-08dc73861b63",
+            "alias": "Menú",
             "description": "",
             "image": "",
             "categories": [
                 {
-                    "id": "3c0758f3-0065-4208-ce9f-08dc72ea09ca",
-                    "alias": "De Carne",
-                    "description": "",
+                    "id": "34a03c7e-b5ab-4698-69c3-08dc73861bc3",
+                    "alias": "100% Carne",
+                    "description": "Disfruta de nuestras jugosas hamburguesas de carne de res, preparadas con los ingredientes más frescos y sabores que encantan.",
                     "image": "",
                     "sectionType": "vertical",
                     "items": [],
                     "products": [
                         {
-                            "id": "7dc089b2-f155-4910-465b-08dc72ea0a26",
+                            "id": "a045c9c2-7875-4d96-2c0e-08dc73861c2a",
                             "alias": "Big Mac",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Dos jugosas carnes de res, salsa especial, lechuga, queso, pepinillos y cebolla en un pan con ajonjolí.",
+                            "image": "https://api4urest.blob.core.windows.net/products/1f316a9e-c7d9-45d7-8aed-8904c3bacc21.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "35c13610-b75b-4f52-8fd6-08dc72ea0aa0",
+                                    "id": "37abb3cc-0c55-4f58-2d04-08dc73861d1e",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "15a7c189-91e3-4446-24c6-08dc72ea0aea",
+                                            "id": "d179a765-85a8-46e3-c374-08dc73861d5a",
                                             "alias": "Sencilla",
                                             "description": "",
                                             "image": "",
                                             "price": "79"
                                         },
                                         {
-                                            "id": "46b71998-fbc4-4c91-24c7-08dc72ea0aea",
+                                            "id": "55cf059f-13ec-43b6-c375-08dc73861d5a",
                                             "alias": "Doble",
                                             "description": "",
                                             "image": "",
                                             "price": "89"
                                         },
                                         {
-                                            "id": "8585c2fd-418c-40e8-24c8-08dc72ea0aea",
+                                            "id": "88026310-7655-4688-c376-08dc73861d5a",
                                             "alias": "Triple",
                                             "description": "",
+                                            "isDisplayed":"False",
                                             "image": "",
                                             "price": "99"
                                         },
                                         {
-                                            "id": "ae3f3092-9710-4673-24c9-08dc72ea0aea",
+                                            "id": "f61673c9-1499-4920-c377-08dc73861d5a",
                                             "alias": "Sencilla con Tocino",
                                             "description": "",
                                             "image": "",
@@ -72,28 +104,28 @@
                             ]
                         },
                         {
-                            "id": "3a645bda-d9f9-4b1c-465c-08dc72ea0a26",
+                            "id": "77aa9dd4-7295-47a4-2c0f-08dc73861c2a",
                             "alias": "Cuarto de libra con queso",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Carne de res 100% fresca, con queso derretido, cebolla, pepinillos, ketchup y mostaza.",
+                            "image": "https://api4urest.blob.core.windows.net/products/fe6706ff-08d0-47a5-a576-2e8c6b9a19a6.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "0bca0897-872d-4842-8fd7-08dc72ea0aa0",
+                                    "id": "3b014034-b812-40f6-2d05-08dc73861d1e",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "aeb58277-9253-45c8-24ca-08dc72ea0aea",
+                                            "id": "58ad8568-acc2-4069-c378-08dc73861d5a",
                                             "alias": "Sencilla",
                                             "description": "",
                                             "image": "",
                                             "price": "79"
                                         },
                                         {
-                                            "id": "bc83d0c7-d382-4d8a-24cb-08dc72ea0aea",
+                                            "id": "9eb95340-7d23-4163-c379-08dc73861d5a",
                                             "alias": "Doble con Queso",
                                             "description": "",
                                             "image": "",
@@ -104,28 +136,28 @@
                             ]
                         },
                         {
-                            "id": "215cec51-f3ba-40c8-465d-08dc72ea0a26",
+                            "id": "4e265827-c6b7-40aa-2c10-08dc73861c2a",
                             "alias": "McNífica",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Carne de res jugosa con lechuga, tomate, queso cheddar y nuestra salsa especial.",
+                            "image": "https://api4urest.blob.core.windows.net/products/205839a8-6145-440f-9b17-dbf2a61119a2.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "07c4c0d9-67e1-4ecf-8fd8-08dc72ea0aa0",
+                                    "id": "2ca1972f-08e0-404c-2d06-08dc73861d1e",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "7d496949-a543-409b-24cc-08dc72ea0aea",
+                                            "id": "bc833fcd-f5d5-454b-c37a-08dc73861d5a",
                                             "alias": "Sencilla",
                                             "description": "",
                                             "image": "",
                                             "price": "79"
                                         },
                                         {
-                                            "id": "5297f411-20a1-4a05-24cd-08dc72ea0aea",
+                                            "id": "8e6452d4-3577-45ac-c37b-08dc73861d5a",
                                             "alias": "Doble",
                                             "description": "",
                                             "image": "",
@@ -136,42 +168,42 @@
                             ]
                         },
                         {
-                            "id": "dc169507-0c75-4142-465e-08dc72ea0a26",
+                            "id": "533a5116-22ae-4062-2c11-08dc73861c2a",
                             "alias": "Hamburguesa",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Carne de res con pepinillos, cebolla, ketchup y mostaza en un pan suave.",
+                            "image": "https://api4urest.blob.core.windows.net/products/7096a826-91af-4b61-94c2-2391d428267b.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "dea54866-7898-4d48-8fd9-08dc72ea0aa0",
+                                    "id": "f737a038-31d3-42d0-2d07-08dc73861d1e",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "650734b9-541b-4098-24ce-08dc72ea0aea",
+                                            "id": "f66d2f0f-9236-45f0-c37c-08dc73861d5a",
                                             "alias": "Sencilla",
                                             "description": "",
                                             "image": "",
                                             "price": "29"
                                         },
                                         {
-                                            "id": "ce9fa65c-6f2a-4bb6-24cf-08dc72ea0aea",
+                                            "id": "f0fec2aa-126e-4816-c37d-08dc73861d5a",
                                             "alias": "Con queso",
                                             "description": "",
                                             "image": "",
                                             "price": "39"
                                         },
                                         {
-                                            "id": "070088d2-6ef5-483e-24d0-08dc72ea0aea",
+                                            "id": "84d2b6b8-e949-421e-c37e-08dc73861d5a",
                                             "alias": "Doble con queso",
                                             "description": "",
                                             "image": "",
                                             "price": "49"
                                         },
                                         {
-                                            "id": "75f10c1f-cb74-49c7-24d1-08dc72ea0aea",
+                                            "id": "46190fd8-7f41-47a2-c37f-08dc73861d5a",
                                             "alias": "Triple con queso",
                                             "description": "",
                                             "image": "",
@@ -182,28 +214,28 @@
                             ]
                         },
                         {
-                            "id": "6d82d08d-a9b0-43a1-465f-08dc72ea0a26",
+                            "id": "b4f2bb31-ef84-4ac6-2c12-08dc73861c2a",
                             "alias": "Signature CBO",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Carne de res premium con cebolla caramelizada, bacon crujiente y queso cheddar blanco en pan artesanal.",
+                            "image": "https://api4urest.blob.core.windows.net/products/40de3d29-60dc-407d-9b5e-2a6615b2da7f.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "430b7d03-ca0b-4e1b-8fda-08dc72ea0aa0",
+                                    "id": "5f9fb20a-ec96-4748-2d08-08dc73861d1e",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "c4c44156-273b-4c96-24d2-08dc72ea0aea",
+                                            "id": "ef800886-5829-45bf-c380-08dc73861d5a",
                                             "alias": "Sencilla",
                                             "description": "",
                                             "image": "",
                                             "price": "89"
                                         },
                                         {
-                                            "id": "ba71d88d-21a4-42ac-24d3-08dc72ea0aea",
+                                            "id": "346a9cfb-fed7-4259-c381-08dc73861d5a",
                                             "alias": "Doble",
                                             "description": "",
                                             "image": "",
@@ -216,29 +248,29 @@
                     ]
                 },
                 {
-                    "id": "d125052e-4269-45b8-cea0-08dc72ea09ca",
+                    "id": "f559582b-3d6b-4945-69c4-08dc73861bc3",
                     "alias": "De Pollo",
-                    "description": "",
+                    "description": "Variedad de deliciosos platillos de pollo, preparados con la mejor calidad y el sabor que amas.",
                     "image": "",
                     "sectionType": "vertical",
                     "items": [],
                     "products": [
                         {
-                            "id": "7ee0137e-59e6-44e7-4660-08dc72ea0a26",
+                            "id": "d628f6bb-00b1-4367-2c13-08dc73861c2a",
                             "alias": "McPollo",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Pechuga de pollo crujiente con lechuga y mayonesa en un pan suave.",
+                            "image": "https://api4urest.blob.core.windows.net/products/f8a6e0cf-ad46-4443-bf10-a48b0af70016.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "b7fa63a9-be67-412b-8fdb-08dc72ea0aa0",
+                                    "id": "fa3c2cf5-a665-4c56-2d09-08dc73861d1e",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "934e93e4-5b66-4d2c-24d4-08dc72ea0aea",
+                                            "id": "2720c831-f094-4428-c382-08dc73861d5a",
                                             "alias": "Sencilla",
                                             "description": "",
                                             "image": "",
@@ -249,28 +281,28 @@
                             ]
                         },
                         {
-                            "id": "29f61df0-63ac-45d8-4661-08dc72ea0a26",
+                            "id": "3254b1d1-557e-4913-2c14-08dc73861c2a",
                             "alias": "Pollo McCrispy Spicy",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Pollo empanizado picante con lechuga y mayonesa en un pan suave.",
+                            "image": "https://api4urest.blob.core.windows.net/products/a6aedc4e-87a6-4bba-b9a4-2174c0e00da8.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "a8b34247-805c-4277-8fdc-08dc72ea0aa0",
+                                    "id": "8a5c078f-b8b4-43c0-2d0a-08dc73861d1e",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "4e536a3e-b273-4175-24d5-08dc72ea0aea",
+                                            "id": "af226223-e6d7-4223-c383-08dc73861d5a",
                                             "alias": "Sencilla",
                                             "description": "",
                                             "image": "",
                                             "price": "89"
                                         },
                                         {
-                                            "id": "36297af3-0900-4a28-24d6-08dc72ea0aea",
+                                            "id": "5a3e985d-1da5-4dd4-c384-08dc73861d5a",
                                             "alias": "Deluxe",
                                             "description": "",
                                             "image": "",
@@ -281,42 +313,42 @@
                             ]
                         },
                         {
-                            "id": "b7b91ce8-4af5-4a07-4662-08dc72ea0a26",
+                            "id": "7da5ae56-0d15-4eff-2c15-08dc73861c2a",
                             "alias": "McNuggets",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Trozos de pollo rebozados y crujientes, perfectos para compartir y disfrutar.",
+                            "image": "https://api4urest.blob.core.windows.net/products/df5d2b0d-e680-450a-9b75-5f7691c154e6.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "3a2254fe-18e5-4890-8fdd-08dc72ea0aa0",
+                                    "id": "54e3954e-5d81-4c64-2d0b-08dc73861d1e",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "e4eaa493-c136-43e9-24d7-08dc72ea0aea",
+                                            "id": "c5ed245b-1262-4876-c385-08dc73861d5a",
                                             "alias": "4 Unidades",
                                             "description": "",
                                             "image": "",
                                             "price": "79"
                                         },
                                         {
-                                            "id": "2fde803d-323b-4dba-24d8-08dc72ea0aea",
+                                            "id": "6bba1ec4-9eac-44ba-c386-08dc73861d5a",
                                             "alias": "10 Unidades",
                                             "description": "",
                                             "image": "",
                                             "price": "89"
                                         },
                                         {
-                                            "id": "d39c9683-a1f3-4716-24d9-08dc72ea0aea",
+                                            "id": "362f6de0-fef9-4773-c387-08dc73861d5a",
                                             "alias": "20 Unidades",
                                             "description": "",
                                             "image": "",
                                             "price": "99"
                                         },
                                         {
-                                            "id": "2b2e1547-b035-4bcb-24da-08dc72ea0aea",
+                                            "id": "07eb2abb-bd32-4b36-c388-08dc73861d5a",
                                             "alias": "40 Unidades",
                                             "description": "",
                                             "image": "",
@@ -329,29 +361,29 @@
                     ]
                 },
                 {
-                    "id": "eff7355a-cd22-4230-cea1-08dc72ea09ca",
+                    "id": "c6647eca-b46b-423f-69c5-08dc73861bc3",
                     "alias": "Bebidas",
-                    "description": "",
+                    "description": "Refresca tu día con nuestra amplia selección de bebidas frías y calientes.",
                     "image": "",
                     "sectionType": "vertical",
                     "items": [],
                     "products": [
                         {
-                            "id": "3319e4cc-58bb-47ce-4663-08dc72ea0a26",
+                            "id": "1f2e2a23-7b71-490e-2c16-08dc73861c2a",
                             "alias": "Agua sin gas",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Agua purificada, ideal para hidratarse en cualquier momento.",
+                            "image": "https://api4urest.blob.core.windows.net/products/e7e9b65a-4004-4dc8-a62f-aa9ce2414e2b.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "93916f8b-9592-449a-8fde-08dc72ea0aa0",
+                                    "id": "4ab25b62-8c50-450c-2d0c-08dc73861d1e",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "31b7df66-a5f4-42c7-24db-08dc72ea0aea",
+                                            "id": "e6d2b329-05f7-4338-c389-08dc73861d5a",
                                             "alias": "600 ml",
                                             "description": "",
                                             "image": "",
@@ -362,35 +394,35 @@
                             ]
                         },
                         {
-                            "id": "fff9e5c0-d495-451e-4664-08dc72ea0a26",
+                            "id": "eb8322d9-81a3-4c35-2c17-08dc73861c2a",
                             "alias": "Vaso Refil",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Disfruta de tus bebidas favoritas de la familia Coca Cola con opción de rellenar tu vaso.",
+                            "image": "https://api4urest.blob.core.windows.net/products/ee1edd39-7b75-41a3-880b-935df34909c5.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "ead1d548-d865-45b9-8fdf-08dc72ea0aa0",
+                                    "id": "4fc0b5fe-498b-4b81-2d0d-08dc73861d1e",
                                     "alias": "Medidas",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "e57ee7ed-a8d0-464e-24dc-08dc72ea0aea",
+                                            "id": "586eeae3-c551-47f2-c38a-08dc73861d5a",
                                             "alias": "Chico",
                                             "description": "",
                                             "image": "",
                                             "price": "29"
                                         },
                                         {
-                                            "id": "f22b0f80-cd6d-4d6b-24dd-08dc72ea0aea",
+                                            "id": "54019bf5-7abf-48cc-c38b-08dc73861d5a",
                                             "alias": "Mediano",
                                             "description": "",
                                             "image": "",
                                             "price": "39"
                                         },
                                         {
-                                            "id": "f5fffb64-8b8f-4208-24de-08dc72ea0aea",
+                                            "id": "f633984d-5cac-484e-c38c-08dc73861d5a",
                                             "alias": "Grande",
                                             "description": "",
                                             "image": "",
@@ -401,28 +433,28 @@
                             ]
                         },
                         {
-                            "id": "1d768e34-ef0d-458f-4665-08dc72ea0a26",
+                            "id": "23d2d7fe-1f39-4d55-2c18-08dc73861c2a",
                             "alias": "Café Refil",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Café caliente y aromático con opción de rellenar tu taza.",
+                            "image": "https://api4urest.blob.core.windows.net/products/784169ee-5bfe-416b-9480-20c71daf2647.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "01b9c847-eded-4bd4-8fe0-08dc72ea0aa0",
+                                    "id": "d05db777-c789-43aa-2d0e-08dc73861d1e",
                                     "alias": "Medidas",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "7034c673-5148-44b3-24df-08dc72ea0aea",
+                                            "id": "3447b81c-fec4-4feb-c38d-08dc73861d5a",
                                             "alias": "Chico",
                                             "description": "",
                                             "image": "",
                                             "price": "29"
                                         },
                                         {
-                                            "id": "91892461-325e-4710-24e0-08dc72ea0aea",
+                                            "id": "c2380f5a-1919-48ae-c38e-08dc73861d5a",
                                             "alias": "Grande",
                                             "description": "",
                                             "image": "",
@@ -433,28 +465,28 @@
                             ]
                         },
                         {
-                            "id": "40696391-0685-4fe3-4666-08dc72ea0a26",
+                            "id": "f301d5da-3635-4158-2c19-08dc73861c2a",
                             "alias": "100% Jugo Natural",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Jugo natural, lleno de sabor y vitaminas.",
+                            "image": "https://api4urest.blob.core.windows.net/products/8e14b0cc-4099-43d1-a208-d4cf18a57f71.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "32486d35-f6c6-499b-8fe1-08dc72ea0aa0",
+                                    "id": "69c7cf38-4ab1-4607-2d0f-08dc73861d1e",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "e496ac6a-0fe8-4098-24e1-08dc72ea0aea",
+                                            "id": "36a1be12-e2c8-48d1-c38f-08dc73861d5a",
                                             "alias": "Naranja 237ml",
                                             "description": "",
                                             "image": "",
                                             "price": "29"
                                         },
                                         {
-                                            "id": "8380f85d-3f8e-4e53-24e2-08dc72ea0aea",
+                                            "id": "fc725818-ddd2-4faf-c390-08dc73861d5a",
                                             "alias": "Manzana 237ml",
                                             "description": "",
                                             "image": "",
@@ -467,50 +499,50 @@
                     ]
                 },
                 {
-                    "id": "883dcfd5-8394-4565-cea2-08dc72ea09ca",
+                    "id": "e0b5e63f-6893-4e1f-69c6-08dc73861bc3",
                     "alias": "Postres",
-                    "description": "",
+                    "description": "Deléitate con nuestra variedad de postres, perfectos para cualquier antojo dulce.",
                     "image": "",
                     "sectionType": "vertical",
                     "items": [],
                     "products": [
                         {
-                            "id": "17cc001b-48c8-4271-4667-08dc72ea0a26",
+                            "id": "9b55bbb6-263b-4992-2c1a-08dc73861c2a",
                             "alias": "McFlurry",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Helado cremoso con trozos de tus toppings favoritos.",
+                            "image": "https://api4urest.blob.core.windows.net/products/3c695848-4c85-4118-9286-3c7786099c3c.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "96c811b9-d850-409d-8fe2-08dc72ea0aa0",
+                                    "id": "3487f4a5-1c5e-4bd0-2d10-08dc73861d1e",
                                     "alias": "Sabores",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "dc3ed827-5d3e-461e-24e3-08dc72ea0aea",
+                                            "id": "4d5ded4a-39bb-4c00-c391-08dc73861d5a",
                                             "alias": "Pingüinos",
                                             "description": "",
                                             "image": "",
                                             "price": "36"
                                         },
                                         {
-                                            "id": "11404f28-f189-417c-24e4-08dc72ea0aea",
+                                            "id": "ec7fae26-eb52-4777-c392-08dc73861d5a",
                                             "alias": "Fresa Mix",
                                             "description": "",
                                             "image": "",
                                             "price": "36"
                                         },
                                         {
-                                            "id": "0721305e-01fc-4e75-24e5-08dc72ea0aea",
+                                            "id": "19ccf700-56be-44d4-c393-08dc73861d5a",
                                             "alias": "Caramelo Mix",
                                             "description": "",
                                             "image": "",
                                             "price": "36"
                                         },
                                         {
-                                            "id": "4b169f97-339a-42ef-24e6-08dc72ea0aea",
+                                            "id": "e5daad22-2aa5-4ba3-c394-08dc73861d5a",
                                             "alias": "Oreo",
                                             "description": "",
                                             "image": "",
@@ -521,42 +553,42 @@
                             ]
                         },
                         {
-                            "id": "4a923bae-a9da-4d87-4668-08dc72ea0a26",
+                            "id": "2624456c-22d3-43f4-2c1b-08dc73861c2a",
                             "alias": "Malteada",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Bebida cremosa y dulce, disponible en varios sabores.",
+                            "image": "https://api4urest.blob.core.windows.net/products/ad0361aa-fddc-4ad9-962b-6bf3e94711f6.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "7bef1098-b9f1-4ba1-8fe3-08dc72ea0aa0",
+                                    "id": "c00377a4-3370-4c0c-2d11-08dc73861d1e",
                                     "alias": "Sabores",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "f1513afb-5c1d-4b16-24e7-08dc72ea0aea",
+                                            "id": "a7f2a897-9213-4922-c395-08dc73861d5a",
                                             "alias": "Chocolate",
                                             "description": "",
                                             "image": "",
                                             "price": "36"
                                         },
                                         {
-                                            "id": "71c93982-5fd9-4ea4-24e8-08dc72ea0aea",
+                                            "id": "19cefe86-f125-42be-c396-08dc73861d5a",
                                             "alias": "Caramelo",
                                             "description": "",
                                             "image": "",
                                             "price": "36"
                                         },
                                         {
-                                            "id": "b4090b9f-42f7-4f1b-24e9-08dc72ea0aea",
+                                            "id": "7f79b3f1-b194-4983-c397-08dc73861d5a",
                                             "alias": "Fresa",
                                             "description": "",
                                             "image": "",
                                             "price": "36"
                                         },
                                         {
-                                            "id": "f393735b-3a84-47de-24ea-08dc72ea0aea",
+                                            "id": "85d2f0b9-43d2-48b2-c398-08dc73861d5a",
                                             "alias": "Vainilla",
                                             "description": "",
                                             "image": "",
@@ -567,35 +599,35 @@
                             ]
                         },
                         {
-                            "id": "0d82917a-1e87-490a-4669-08dc72ea0a26",
+                            "id": "24f43adb-9a36-4de4-2c1c-08dc73861c2a",
                             "alias": "Sundae",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Helado suave con cobertura de chocolate, caramelo o fresa.",
+                            "image": "https://api4urest.blob.core.windows.net/products/cac58daa-d334-4f47-b85e-369973cec9e6.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "eca34790-0026-4e42-8fe4-08dc72ea0aa0",
+                                    "id": "7466feb4-1e21-4ba0-2d12-08dc73861d1e",
                                     "alias": "Sabores",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "33ce33ea-d7ef-4e8c-24eb-08dc72ea0aea",
+                                            "id": "c6ff02c0-b249-4fab-c399-08dc73861d5a",
                                             "alias": "Chocolate",
                                             "description": "",
                                             "image": "",
                                             "price": "24"
                                         },
                                         {
-                                            "id": "9c9d6641-b8f5-4d53-24ec-08dc72ea0aea",
+                                            "id": "eeebf6e9-a19b-430f-c39a-08dc73861d5a",
                                             "alias": "Caramelo",
                                             "description": "",
                                             "image": "",
                                             "price": "24"
                                         },
                                         {
-                                            "id": "09fef420-67cf-43e6-24ed-08dc72ea0aea",
+                                            "id": "078dd9ca-4625-456b-c39b-08dc73861d5a",
                                             "alias": "Fresa",
                                             "description": "",
                                             "image": "",
@@ -606,28 +638,28 @@
                             ]
                         },
                         {
-                            "id": "bccd4ae9-b5fd-4b1e-466a-08dc72ea0a26",
+                            "id": "894d8ea9-5e45-494b-2c1d-08dc73861c2a",
                             "alias": "Pay",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Delicioso pastelito con relleno de manzana o piña, servido caliente.",
+                            "image": "https://api4urest.blob.core.windows.net/products/46afa86c-db50-43ec-a2eb-11de66d46f46.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "96507562-f0c1-46de-8fe5-08dc72ea0aa0",
+                                    "id": "c7983525-df4b-4097-2d13-08dc73861d1e",
                                     "alias": "Sabores",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "998208ae-fd00-4bf6-24ee-08dc72ea0aea",
+                                            "id": "73dd166c-dfa0-4985-c39c-08dc73861d5a",
                                             "alias": "Manzana",
                                             "description": "",
                                             "image": "",
                                             "price": "25"
                                         },
                                         {
-                                            "id": "a267d0b7-926a-49b7-24ef-08dc72ea0aea",
+                                            "id": "5f86980c-c486-42b4-c39d-08dc73861d5a",
                                             "alias": "Queso",
                                             "description": "",
                                             "image": "",
@@ -640,29 +672,29 @@
                     ]
                 },
                 {
-                    "id": "ba60d595-0ab1-4665-cea3-08dc72ea09ca",
+                    "id": "0fd38b98-1290-4ed6-69c7-08dc73861bc3",
                     "alias": "Desayunos",
-                    "description": "",
+                    "description": "Comienza tu día con nuestros desayunos variados y deliciosos.",
                     "image": "",
                     "sectionType": "vertical",
                     "items": [],
                     "products": [
                         {
-                            "id": "e254fa30-f874-4035-466b-08dc72ea0a26",
+                            "id": "44c92566-a62e-4d7a-2c1e-08dc73861c2a",
                             "alias": "Hotcakes con Salchicha",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Tres esponjosos hotcakes con una salchicha jugosa y jarabe de maple.",
+                            "image": "https://api4urest.blob.core.windows.net/products/adef7cfb-42b5-4b69-a052-be19c2f7c8ed.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "f4428801-60b6-48dc-8fe6-08dc72ea0aa0",
+                                    "id": "e96f3767-1cbf-476d-2d14-08dc73861d1e",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "d179f78f-6463-49f5-24f0-08dc72ea0aea",
+                                            "id": "55e65380-9a2d-4b00-c39e-08dc73861d5a",
                                             "alias": "Platillo",
                                             "description": "",
                                             "image": "",
@@ -673,21 +705,21 @@
                             ]
                         },
                         {
-                            "id": "dafca0fd-6296-43f3-466c-08dc72ea0a26",
+                            "id": "0731861a-9d35-4437-2c1f-08dc73861c2a",
                             "alias": "Desayuno Deluxe",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Completo desayuno con hotcakes, huevos revueltos, salchicha, papa hashbrown y un panecillo.",
+                            "image": "https://api4urest.blob.core.windows.net/products/00a28674-7a1b-4e6d-b59a-a4645e030cc6.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "0b0e5e7e-5a72-4487-8fe7-08dc72ea0aa0",
+                                    "id": "01af8049-ab8e-4649-2d15-08dc73861d1e",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "8647a519-0f9a-4675-24f1-08dc72ea0aea",
+                                            "id": "d48a88fe-0970-46f3-c39f-08dc73861d5a",
                                             "alias": "Platillo",
                                             "description": "",
                                             "image": "",
@@ -698,21 +730,21 @@
                             ]
                         },
                         {
-                            "id": "79dd00eb-fef0-4c27-466d-08dc72ea0a26",
+                            "id": "bf925abb-68e3-4b7a-2c20-08dc73861c2a",
                             "alias": "Desayuno Especial Mexicano",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Huevos a la mexicana, frijoles, tortilla y salchicha, todo en un solo plato.",
+                            "image": "https://api4urest.blob.core.windows.net/products/2d6f21c6-4b45-46ff-8c8a-13fcead706e8.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "d7adc4f1-c9f8-4ab1-8fe8-08dc72ea0aa0",
+                                    "id": "8840a425-e858-4e44-2d16-08dc73861d1e",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "9817ccb6-d711-45e8-24f2-08dc72ea0aea",
+                                            "id": "8a10ebef-4eb5-44fb-c3a0-08dc73861d5a",
                                             "alias": "Platillo",
                                             "description": "",
                                             "image": "",
@@ -723,21 +755,21 @@
                             ]
                         },
                         {
-                            "id": "fc0489ec-4d36-459f-466e-08dc72ea0a26",
+                            "id": "6ee00da7-bfda-456f-2c21-08dc73861c2a",
                             "alias": "Desayuno Especial",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Huevos revueltos con salchicha, papa hashbrown y un panecillo.",
+                            "image": "https://api4urest.blob.core.windows.net/products/3052bd15-eb52-4524-9a08-f5cd5fb48d80.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "2898b06c-0887-4e0d-8fe9-08dc72ea0aa0",
+                                    "id": "8003f3ac-1ada-4edc-2d17-08dc73861d1e",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "9fdced80-0a27-427b-24f3-08dc72ea0aea",
+                                            "id": "f7796dc6-4c2d-44d7-c3a1-08dc73861d5a",
                                             "alias": "Platillo",
                                             "description": "",
                                             "image": "",
@@ -748,21 +780,21 @@
                             ]
                         },
                         {
-                            "id": "f94b725a-9f5a-4e0b-466f-08dc72ea0a26",
+                            "id": "51e243ce-93fa-4ba6-2c22-08dc73861c2a",
                             "alias": "McMuffin Huevo Tocino",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Panecillo inglés con huevo, bacon y queso derretido.",
+                            "image": "https://api4urest.blob.core.windows.net/products/965b1d8c-3865-4680-bf9e-50fd74a8b72f.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "d5153736-6f34-464c-8fea-08dc72ea0aa0",
+                                    "id": "de19ae9b-f10a-4eb2-2d18-08dc73861d1e",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "cb10f67e-530e-4587-24f4-08dc72ea0aea",
+                                            "id": "16e3b254-dc3d-4d83-c3a2-08dc73861d5a",
                                             "alias": "Pieza",
                                             "description": "",
                                             "image": "",
@@ -773,21 +805,21 @@
                             ]
                         },
                         {
-                            "id": "49d53265-d268-4970-4670-08dc72ea0a26",
+                            "id": "266b59a7-40b8-4353-2c23-08dc73861c2a",
                             "alias": "McMolletes",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Panecillos con frijoles, queso derretido y pico de gallo.",
+                            "image": "https://api4urest.blob.core.windows.net/products/fb58d0d8-fe06-4e94-bc34-0183e6118217.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "c5eba853-d4fe-40fb-8feb-08dc72ea0aa0",
+                                    "id": "3ea37b87-3a6f-4642-2d19-08dc73861d1e",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "9bec675a-0e87-439c-24f5-08dc72ea0aea",
+                                            "id": "f7ea7bb4-3f34-4d41-c3a3-08dc73861d5a",
                                             "alias": "Pieza",
                                             "description": "",
                                             "image": "",
@@ -798,21 +830,21 @@
                             ]
                         },
                         {
-                            "id": "7060275f-3c41-480b-4671-08dc72ea0a26",
+                            "id": "71607bad-dea5-4d17-2c24-08dc73861c2a",
                             "alias": "McMuffin Huevo Salchicha",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Panecillo inglés con huevo, salchicha y queso.",
+                            "image": "https://api4urest.blob.core.windows.net/products/1f80ec2d-2990-4384-84b3-1c53b37d4b17.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "015b782c-3c20-4b8f-8fec-08dc72ea0aa0",
+                                    "id": "cb7fd86d-f491-44a5-2d1a-08dc73861d1e",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "49b0b9e8-e4a1-4c72-24f6-08dc72ea0aea",
+                                            "id": "8d06c2ca-abe0-4dda-c3a4-08dc73861d5a",
                                             "alias": "Pieza",
                                             "description": "",
                                             "image": "",
@@ -823,21 +855,21 @@
                             ]
                         },
                         {
-                            "id": "4baed452-c49d-41c4-4672-08dc72ea0a26",
+                            "id": "c3dd39c0-b94d-447b-2c25-08dc73861c2a",
                             "alias": "McMuffin a la Mexicana",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Panecillo inglés con huevo, salchicha, frijoles y salsa mexicana.",
+                            "image": "https://api4urest.blob.core.windows.net/products/016e2e3a-f574-4ab1-a770-811a12abbf5c.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "86902ec1-1792-400e-8fed-08dc72ea0aa0",
+                                    "id": "bc32c6f6-2012-4963-2d1b-08dc73861d1e",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "4bb98957-f750-4f01-24f7-08dc72ea0aea",
+                                            "id": "50d990e3-fd4d-432b-c3a5-08dc73861d5a",
                                             "alias": "Pieza",
                                             "description": "",
                                             "image": "",
@@ -848,21 +880,21 @@
                             ]
                         },
                         {
-                            "id": "ff92afd7-465b-4f87-4673-08dc72ea0a26",
+                            "id": "dd1198df-784d-439b-2c26-08dc73861c2a",
                             "alias": "Papa Hashbrown",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Papa hashbrown crujiente y dorada, perfecta para acompañar tu desayuno.",
+                            "image": "https://api4urest.blob.core.windows.net/products/e4a0c00f-7540-4707-bdff-e8bff9afbc2f.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "38600bbd-a962-424e-8fee-08dc72ea0aa0",
+                                    "id": "3e29fc4a-7154-44ab-2d1c-08dc73861d1e",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "9839a7c7-a99b-4624-24f8-08dc72ea0aea",
+                                            "id": "4cd31ef8-8900-411e-c3a6-08dc73861d5a",
                                             "alias": "Pieza",
                                             "description": "",
                                             "image": "",
@@ -873,21 +905,21 @@
                             ]
                         },
                         {
-                            "id": "cae2bc25-3312-4a81-4674-08dc72ea0a26",
+                            "id": "aa9dd384-529e-400b-2c27-08dc73861c2a",
                             "alias": "McBurrito a la Mexicana",
-                            "description": "",
-                            "image": "",
-                            "price": "0",
+                            "description": "Tortilla de harina rellena de huevo, salchicha, frijoles y salsa.",
+                            "image": "https://api4urest.blob.core.windows.net/products/516a17cc-0b6d-44cd-be5f-9133ce1592b9.png",
+                            "price": "0.00",
                             "modifiersGroups": [
                                 {
-                                    "id": "3b2a77e8-ec16-4786-8fef-08dc72ea0aa0",
+                                    "id": "3c2ab380-dad1-4ffa-2d1d-08dc73861d1e",
                                     "alias": "Presentación",
                                     "description": "",
                                     "image": "",
                                     "isSelectable": "False",
                                     "modifiers": [
                                         {
-                                            "id": "9bf783be-9904-43eb-24f9-08dc72ea0aea",
+                                            "id": "e0def96b-e9ee-4f71-c3a7-08dc73861d5a",
                                             "alias": "Pieza",
                                             "description": "",
                                             "image": "",
@@ -904,12 +936,44 @@
     ],
     "recommendations": [
         {
-            "id": "12bdf072-5d64-49f3-df87-08dc72eac641",
-            "productId": "7060275f-3c41-480b-4671-08dc72ea0a26"
+            "id": "814522d7-a096-4c06-364c-08dc738d3574",
+            "productId": "3254b1d1-557e-4913-2c14-08dc73861c2a"
         },
         {
-            "id": "174076a1-0063-4cf8-df88-08dc72eac641",
-            "productId": "dafca0fd-6296-43f3-466c-08dc72ea0a26"
+            "id": "982b465b-f585-46fe-3643-08dc738d3574",
+            "productId": "aa9dd384-529e-400b-2c27-08dc73861c2a"
+        },
+        {
+            "id": "23ea6656-e798-4928-3644-08dc738d3574",
+            "productId": "51e243ce-93fa-4ba6-2c22-08dc73861c2a"
+        },
+        {
+            "id": "ca935b25-4630-46a9-3645-08dc738d3574",
+            "productId": "bf925abb-68e3-4b7a-2c20-08dc73861c2a"
+        },
+        {
+            "id": "3b294ac7-4abe-448b-3646-08dc738d3574",
+            "productId": "b4f2bb31-ef84-4ac6-2c12-08dc73861c2a"
+        },
+        {
+            "id": "d431781b-01fc-4f1e-3647-08dc738d3574",
+            "productId": "a045c9c2-7875-4d96-2c0e-08dc73861c2a"
+        },
+        {
+            "id": "c24b36ec-cd36-48c9-3648-08dc738d3574",
+            "productId": "77aa9dd4-7295-47a4-2c0f-08dc73861c2a"
+        },
+        {
+            "id": "1e5ccd97-0262-472e-3649-08dc738d3574",
+            "productId": "7da5ae56-0d15-4eff-2c15-08dc73861c2a"
+        },
+        {
+            "id": "9a2d9d52-55d8-4c69-364a-08dc738d3574",
+            "productId": "9b55bbb6-263b-4992-2c1a-08dc73861c2a"
+        },
+        {
+            "id": "83db1046-4187-4c0b-364b-08dc738d3574",
+            "productId": "3254b1d1-557e-4913-2c14-08dc73861c2a"
         }
     ]
 }

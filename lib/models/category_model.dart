@@ -1,12 +1,12 @@
-import 'package:digital_menu_4urest/models/item_model.dart';
+import 'package:digital_menu_4urest/models/product_model.dart';
 
 class CategoryModel {
   String id;
   String alias;
   String description;
   String image;
-  List<ItemModel> items;
-  List<ItemModel> products;
+  List<ProductModel> items;
+  List<ProductModel> products;
   String sectionType;
 
   CategoryModel({
@@ -24,10 +24,10 @@ class CategoryModel {
         alias: json["alias"],
         description: json["description"],
         image: json["image"],
-        items: List<ItemModel>.from(
-            json["items"]?.map((x) => ItemModel.fromJson(x)) ?? []),
-        products: List<ItemModel>.from(
-            json["products"]?.map((x) => ItemModel.fromJson(x)) ?? []),
+        items: List<ProductModel>.from(
+            json["items"]?.map((x) => ProductModel.fromJson(x)) ?? []),
+        products: List<ProductModel>.from(
+            json["products"]?.map((x) => ProductModel.fromJson(x)) ?? []),
         sectionType: json.containsKey("sectionType")
             ? json["sectionType"].toString()
             : 'vertical',

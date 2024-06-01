@@ -1,4 +1,4 @@
-import 'package:digital_menu_4urest/models/modifiers_group_model.dart';
+/*import 'package:digital_menu_4urest/models/modifiers_group_model.dart';
 
 class ItemModel {
   String id;
@@ -43,3 +43,4 @@ class ItemModel {
             List<dynamic>.from(modifiersGroups.map((x) => x.toJson())),
       };
 }
+*/

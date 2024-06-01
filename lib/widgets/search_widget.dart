@@ -1,12 +1,12 @@
 import 'dart:async';
-import 'package:digital_menu_4urest/models/item_model.dart';
+import 'package:digital_menu_4urest/models/digital_menu/base_model_product.dart';
 import 'package:digital_menu_4urest/models/metrics/search_event_metric.dart';
 import 'package:digital_menu_4urest/providers/global_config_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SearchWidget extends StatefulWidget {
-  final Function(List<ItemModel>) onResultsFiltered;
+  final Function(List<BaseModelProduct>) onResultsFiltered;
   const SearchWidget({super.key, required this.onResultsFiltered});
 
   @override
@@ -141,13 +141,14 @@ class _SearchWidgetState extends State<SearchWidget> {
       return;
     }
 
-    var catalog = GlobalConfigProvider.branchCatalog?.catalogs[0];
+    var catalog =
+        GlobalConfigProvider.branchCatalog?.brand.branches[0].catalogs[0];
     if (catalog == null) {
       widget.onResultsFiltered([]);
       return;
     }
 
-    var filteredItems = <ItemModel>{};
+    var filteredItems = <BaseModelProduct>{};
     for (var category in catalog.categories) {
       for (var item in category.products) {
         var itemAliasNormalized = removeDiacritics(item.alias.toLowerCase());

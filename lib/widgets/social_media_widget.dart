@@ -14,19 +14,19 @@ class SocialMediaWidget extends StatelessWidget {
       children: [
         _buildCircularButton(
             iconData: FontAwesomeIcons.instagram,
-            url: GlobalConfigProvider.branchCatalog!.instagramLink,
+            url: GlobalConfigProvider.branchCatalog!.brand.instagram,
             origin: "welcome-screen",
             destination: "brand-instagram"),
         const SizedBox(width: 20),
         _buildCircularButton(
             iconData: FontAwesomeIcons.facebook,
-            url: GlobalConfigProvider.branchCatalog!.facebookLink,
+            url: GlobalConfigProvider.branchCatalog!.brand.facebook,
             origin: "welcome-screen",
             destination: "brand-facebook"),
         const SizedBox(width: 20),
         _buildCircularButton(
             iconData: FontAwesomeIcons.paperclip,
-            url: GlobalConfigProvider.branchCatalog!.websiteLink,
+            url: GlobalConfigProvider.branchCatalog!.brand.website,
             origin: "welcome-screen",
             destination: "brand-link"),
       ],

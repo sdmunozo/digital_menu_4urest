@@ -4,6 +4,8 @@ import 'package:digital_menu_4urest/bloc/sliver_home_screen_bloc.dart';
 import 'package:digital_menu_4urest/layout/main_layout.dart';
 import 'package:digital_menu_4urest/providers/global_config_provider.dart';
 import 'package:digital_menu_4urest/providers/image_provider.dart';
+import 'package:digital_menu_4urest/providers/orders/order_summary_controller.dart';
+import 'package:digital_menu_4urest/screens/order_summary_screen.dart';
 import 'package:digital_menu_4urest/widgets/custom_tab_widget.dart';
 import 'package:digital_menu_4urest/widgets/horizontal_section_widget.dart';
 import 'package:digital_menu_4urest/widgets/static_search_widget.dart';
@@ -11,6 +13,7 @@ import 'package:digital_menu_4urest/widgets/vertical_section_widget.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 import 'package:flutter/rendering.dart';
+import 'package:get/get.dart';
 
 class SliverHomeScreen extends StatefulWidget {
   const SliverHomeScreen({super.key});
@@ -22,6 +25,8 @@ class SliverHomeScreen extends StatefulWidget {
 class _SliverHomeScreenState extends State<SliverHomeScreen>
     with TickerProviderStateMixin {
   final _bloc = SliverHomeScreenBLoC();
+  final OrderSummaryController orderController =
+      Get.put(OrderSummaryController());
 
   @override
   void initState() {
@@ -45,47 +50,165 @@ class _SliverHomeScreenState extends State<SliverHomeScreen>
   Widget build(BuildContext context) {
     GlobalConfigProvider.generateSectionSizes();
     return MainLayout(
-        child: Container(
-      color: GlobalConfigProvider.backgroundColor,
-      child: CustomScrollView(
-        controller: _bloc.scrollController,
-        slivers: [
-          SliverPersistentHeader(
-            delegate: _HomeScreenDelegate(bloc: _bloc),
-            pinned: true,
+        child: Stack(
+      children: [
+        Container(
+          color: GlobalConfigProvider.backgroundColor,
+          child: CustomScrollView(
+            controller: _bloc.scrollController,
+            slivers: [
+              SliverPersistentHeader(
+                delegate: _HomeScreenDelegate(bloc: _bloc),
+                pinned: true,
+              ),
+              SliverToBoxAdapter(
+                child: AnimatedBuilder(
+                  animation: _bloc,
+                  builder: (_, __) => Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Flexible(
+                        child: ShrinkWrappingViewport(
+                          offset: ViewportOffset.zero(),
+                          slivers: [
+                            SliverList(
+                              delegate: SliverChildBuilderDelegate(
+                                (context, index) {
+                                  final category = GlobalConfigProvider
+                                      .branchCatalog!
+                                      .brand
+                                      .branches[0]
+                                      .catalogs[0]
+                                      .categories[index];
+                                  return category.sectionType == "vertical"
+                                      ? VerticalSectionWidget(
+                                          category: category)
+                                      : HorizontalSectionWidget(
+                                          category: category);
+                                },
+                                childCount: GlobalConfigProvider
+                                    .branchCatalog!
+                                    .brand
+                                    .branches[0]
+                                    .catalogs[0]
+                                    .categories
+                                    .length,
+                              ),
+                            ),
+                            const SliverToBoxAdapter(
+                              child: Column(
+                                children: [
+                                  SizedBox(height: 80),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              )
+            ],
           ),
-          SliverToBoxAdapter(
-            child: AnimatedBuilder(
-              animation: _bloc,
-              builder: (_, __) => Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Flexible(
-                    child: ShrinkWrappingViewport(
-                      offset: ViewportOffset.zero(),
-                      slivers: [
-                        SliverList(
-                          delegate: SliverChildBuilderDelegate(
-                            (context, index) {
-                              final category = GlobalConfigProvider
-                                  .branchCatalog!.catalogs[0].categories[index];
-                              return category.sectionType == "vertical"
-                                  ? VerticalSectionWidget(category: category)
-                                  : HorizontalSectionWidget(category: category);
-                            },
-                            childCount: GlobalConfigProvider
-                                .branchCatalog!.catalogs[0].categories.length,
+        ),
+        Obx(() {
+          if (orderController.totalProducts > 0) {
+            return Positioned(
+              bottom: 0,
+              left: 0,
+              right: 0,
+              child: Container(
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(20),
+                    topRight: Radius.circular(20),
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black26,
+                      blurRadius: 30,
+                      offset: Offset(0, -5),
+                    ),
+                  ],
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 15.0),
+                  child: SizedBox(
+                    height: 75,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              '\$${orderController.totalAmount.toStringAsFixed(2)}',
+                              style: const TextStyle(
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
+                        ),
+                        ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => OrderSummaryScreen(),
+                              ),
+                            );
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.blue,
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 20, vertical: 10),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(5.0),
+                            child: Row(
+                              children: [
+                                const Text(
+                                  'Ver Carrito',
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                const SizedBox(width: 10),
+                                CircleAvatar(
+                                  radius: 15,
+                                  backgroundColor: Colors.white,
+                                  child: Text(
+                                    '${orderController.totalProducts}',
+                                    style: const TextStyle(
+                                      fontSize: 18,
+                                      color: Colors.blue,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ],
                     ),
-                  )
-                ],
+                  ),
+                ),
               ),
-            ),
-          )
-        ],
-      ),
+            );
+          } else {
+            return const SizedBox.shrink();
+          }
+        })
+      ],
     ));
   }
 }
@@ -219,7 +342,7 @@ class _DataBrandWidget extends StatelessWidget {
               child: Align(
                 alignment: Alignment.center,
                 child: Text(
-                  "${GlobalConfigProvider.branchCatalog!.brandName} - ${GlobalConfigProvider.branchCatalog!.branchName}",
+                  "${GlobalConfigProvider.branchCatalog!.brand.name} - ${GlobalConfigProvider.branchCatalog!.brand.branches[0].name}",
                   textAlign: TextAlign.center,
                   style: const TextStyle(fontSize: 20, color: Colors.black),
                   overflow: TextOverflow.ellipsis, // Overflow ellipsis
@@ -237,7 +360,7 @@ class _DataBrandWidget extends StatelessWidget {
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         image: CustomImageProvider.getNetworkImageIP(
-                            GlobalConfigProvider.branchCatalog!.brandLogo),
+                            GlobalConfigProvider.branchCatalog!.brand.logo),
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -305,7 +428,8 @@ class _BannerWidgetState extends State<BannerWidget> {
     super.initState();
     _timer = Timer.periodic(const Duration(seconds: 5), (Timer timer) {
       if (_currentPage <
-          GlobalConfigProvider.branchCatalog!.banners.length - 1) {
+          GlobalConfigProvider.branchCatalog!.brand.branches[0].banners.length -
+              1) {
         _currentPage++;
       } else {
         _currentPage = 0;
@@ -334,21 +458,23 @@ class _BannerWidgetState extends State<BannerWidget> {
       width: GlobalConfigProvider.maxWidth,
       child: PageView.builder(
         controller: _pageController,
-        itemCount: GlobalConfigProvider.branchCatalog!.banners.length,
+        itemCount: GlobalConfigProvider
+            .branchCatalog!.brand.branches[0].banners.length,
         itemBuilder: (context, index) {
           return AnimatedSwitcher(
             duration: const Duration(milliseconds: 200),
             switchInCurve: Curves.easeIn,
             switchOutCurve: Curves.easeOut,
             child: SizedBox(
-              key: ValueKey<String>(
-                  GlobalConfigProvider.branchCatalog!.banners[index].image),
+              key: ValueKey<String>(GlobalConfigProvider
+                  .branchCatalog!.brand.branches[0].banners[index].image),
               height: 190,
               width: GlobalConfigProvider.maxWidth,
               child: FadeInImage(
                 placeholder: const AssetImage('assets/tools/loading.gif'),
                 image: CustomImageProvider.getNetworkImageIP(
-                    GlobalConfigProvider.branchCatalog!.banners[index].image),
+                    GlobalConfigProvider
+                        .branchCatalog!.brand.branches[0].banners[index].image),
                 fit: BoxFit.fill,
                 fadeInDuration: const Duration(milliseconds: 200),
                 fadeOutDuration: const Duration(milliseconds: 200),

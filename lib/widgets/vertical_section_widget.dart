@@ -1,4 +1,4 @@
-import 'package:digital_menu_4urest/models/category_model.dart';
+import 'package:digital_menu_4urest/models/digital_menu/base_model_category.dart';
 import 'package:digital_menu_4urest/widgets/category_section_header.dart';
 import 'package:digital_menu_4urest/widgets/custom_divider_widget.dart';
 import 'package:digital_menu_4urest/widgets/section_horizontal_item.dart';
@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 class VerticalSectionWidget extends StatelessWidget {
   const VerticalSectionWidget({super.key, required this.category});
 
-  final CategoryModel category;
+  final BaseModelCategory category;
 
   @override
   Widget build(BuildContext context) {

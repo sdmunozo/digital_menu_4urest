@@ -1,5 +1,6 @@
 import 'package:digital_menu_4urest/layout/main_layout.dart';
-import 'package:digital_menu_4urest/models/item_model.dart';
+import 'package:digital_menu_4urest/models/digital_menu/base_model_product.dart';
+import 'package:digital_menu_4urest/models/product_model.dart';
 import 'package:digital_menu_4urest/providers/global_config_provider.dart';
 import 'package:digital_menu_4urest/widgets/no_results_found_widget.dart';
 import 'package:digital_menu_4urest/widgets/initial_search_widget.dart';
@@ -16,7 +17,7 @@ class SearchResultScreen extends StatefulWidget {
 }
 
 class _SearchResultScreenState extends State<SearchResultScreen> {
-  List<ItemModel> _filteredResults = [];
+  List<BaseModelProduct> _filteredResults = [];
   bool _searchStarted = false;
 
   @override

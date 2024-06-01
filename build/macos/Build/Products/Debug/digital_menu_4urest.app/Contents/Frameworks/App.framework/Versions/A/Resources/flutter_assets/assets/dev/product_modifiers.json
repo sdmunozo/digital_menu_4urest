@@ -1,0 +1,93 @@
+{
+  "id": "7dc089b2-f155-4910-465b-08dc72ea0a26",
+  "alias": "Big Mac",
+  "description": "",
+  "image": "",
+  "price": "0",
+  "modifiersGroups": [
+    {
+      "id": "35c13610-b75b-4f52-8fd6-08dc72ea0aa0",
+      "alias": "Presentación",
+      "status": "active",
+      "sort": 1,
+      "min_modifiers": 1,
+      "max_modifiers": 1,
+      "modifiers": [
+        {
+          "id": "15a7c189-91e3-4446-24c6-08dc72ea0aea",
+          "alias": "Sencilla",
+          "status": "active",
+          "sort": 1,
+          "image": "",
+          "price": "79"
+        },
+        {
+          "id": "46b71998-fbc4-4c91-24c7-08dc72ea0aea",
+          "alias": "Doble",
+          "status": "active",
+          "sort": 3,
+          "image": "",
+          "price": "89"
+        },
+        {
+          "id": "8585c2fd-418c-40e8-24c8-08dc72ea0aea",
+          "alias": "Triple",
+          "status": "active",
+          "sort": 2,
+          "image": "",
+          "price": "99"
+        },
+        {
+          "id": "ae3f3092-9710-4673-24c9-08dc72ea0aea",
+          "alias": "Sencilla con Tocino",
+          "status": "active",
+          "sort": 4,
+          "image": "",
+          "price": "89"
+        }
+      ]
+    },
+    {
+      "id": "45c13610-b75b-4f52-8fd6-08dc72ea0aa1",
+      "alias": "Acompañamientos",
+      "status": "active",
+      "sort": 2,
+      "min_modifiers": 0,
+      "max_modifiers": 5,
+      "modifiers": [
+        {
+          "id": "25a7c189-91e3-4446-24c6-08dc72ea0aea",
+          "alias": "Papas Fritas",
+          "status": "active",
+          "sort": 1,
+          "image": "",
+          "price": "29"
+        },
+        {
+          "id": "36b71998-fbc4-4c91-24c7-08dc72ea0aea",
+          "alias": "Ensalada",
+          "status": "active",
+          "sort": 3,
+          "image": "",
+          "price": "35"
+        },
+        {
+          "id": "48c5c2fd-418c-40e8-24c8-08dc72ea0aea",
+          "alias": "Nuggets",
+          "status": "active",
+          "sort": 2,
+          "image": "",
+          "price": "45"
+        },
+        {
+          "id": "5e3f3092-9710-4673-24c9-08dc72ea0aea",
+          "alias": "Aros de Cebolla",
+          "status": "active",
+          "sort": 4,
+          "image": "",
+          "price": "39"
+        }
+      ]
+    }
+  ]
+}

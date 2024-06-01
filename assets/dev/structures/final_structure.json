@@ -1,0 +1,101 @@
+{
+    "Brand": {
+      "Id": "GUID",
+      "Name": "string",
+      "Logo": "string",
+      "Slogan": "string",
+      "Instagram": "string",
+      "Facebook": "string",
+      "Website": "string",
+      "MenuBackground": "string",
+      "Branches": [
+        {
+          "Id": "GUID",
+          "Name": "string",
+          "NormalizedDigitalMenu": "string",
+          "DigitalMenuLink": "string",
+          "QrCodePath": "string",
+          "WhatsApp": "string",
+          "Catalogs": [
+            {
+              "Id": "GUID",
+              "Alias": "string",
+              "Description": "string",
+              "Image": "string",
+              "Categories": [
+                {
+                  "Id": "GUID",
+                  "Alias": "string",
+                  "Description": "string",
+                  "Image": "string",
+                  "Sort": "integer",
+                  "SectionType": "string",
+                  "Products": [
+                    {
+                      "Id": "GUID",
+                      "Alias": "string",
+                      "Description": "string",
+                      "Image": "string",
+                      "Sort": "integer",
+                      "Price": "decimal",
+                      "ModifiersGroups": [
+                        {
+                          "Id": "GUID",
+                          "Alias": "string",
+                          "Description": "string",
+                          "Image": "string",
+                          "IsScheduleActive": "boolean",
+                          "Sort": "integer",
+                          "MinModifiers": "integer",
+                          "MaxModifiers": "integer",
+                          "Status": "string",
+                          "Modifiers": [
+                            {
+                              "Id": "GUID",
+                              "Alias": "string",
+                              "Description": "string",
+                              "Image": "string",
+                              "Sort": "integer",
+                              "MinModifier": "integer",
+                              "MaxModifier": "integer",
+                              "Price": "decimal",
+                              "Status": "string"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "Recommendations": [
+            {
+              "Id": "GUID",
+              "ProductId": "GUID"
+            }
+          ],
+          "Banners": [
+            {
+              "Id": "GUID",
+              "Name": "string",
+              "Image": "string"
+            }
+          ],
+          "PaymentMethods": [
+            {
+              "Id": "GUID",
+              "Method": "string"
+            }
+          ],
+          "DeliveryTypes": [
+            {
+              "Id": "GUID",
+              "Type": "string"
+            }
+          ]
+        }
+      ]
+    }
+  }

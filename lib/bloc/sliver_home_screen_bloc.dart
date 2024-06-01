@@ -1,4 +1,6 @@
 import 'package:digital_menu_4urest/models/category_model.dart';
+import 'package:digital_menu_4urest/models/digital_menu/base_model_category.dart';
+import 'package:digital_menu_4urest/models/digital_menu/base_model_digital_menu.dart';
 import 'package:digital_menu_4urest/providers/global_config_provider.dart';
 import 'package:digital_menu_4urest/widgets/custom_tab_widget.dart';
 import 'package:digital_menu_4urest/widgets/horizontal_section_widget.dart';
@@ -13,8 +15,8 @@ class SliverHomeScreenBLoC with ChangeNotifier {
   double headerHeight = 143.0;
   bool listen = true;
 
-  List<CategoryModel> categories =
-      GlobalConfigProvider.branchCatalog!.catalogs[0].categories;
+  List<BaseModelCategory> categories = GlobalConfigProvider
+      .branchCatalog!.brand.branches[0].catalogs[0].categories;
 
   void init(TickerProvider ticker) {
     tabController = TabController(length: categories.length, vsync: ticker);

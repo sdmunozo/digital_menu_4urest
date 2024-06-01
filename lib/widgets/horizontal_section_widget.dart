@@ -1,4 +1,5 @@
 import 'package:digital_menu_4urest/models/category_model.dart';
+import 'package:digital_menu_4urest/models/digital_menu/base_model_category.dart';
 import 'package:digital_menu_4urest/providers/global_config_provider.dart';
 import 'package:digital_menu_4urest/widgets/category_section_bold_title.dart';
 import 'package:digital_menu_4urest/widgets/custom_divider_widget.dart';
@@ -8,7 +9,7 @@ import 'package:flutter/material.dart';
 class HorizontalSectionWidget extends StatelessWidget {
   const HorizontalSectionWidget({super.key, required this.category});
 
-  final CategoryModel category;
+  final BaseModelCategory category;
 
   @override
   Widget build(BuildContext context) {
