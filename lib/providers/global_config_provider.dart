@@ -1,12 +1,9 @@
 import 'dart:async';
-import 'package:digital_menu_4urest/models/branch_catalog_model.dart';
-import 'package:digital_menu_4urest/models/category_model.dart';
 import 'package:digital_menu_4urest/models/digital_menu/base_model_category.dart';
 import 'package:digital_menu_4urest/models/digital_menu/base_model_digital_menu.dart';
 import 'package:digital_menu_4urest/models/digital_menu/base_model_product.dart';
 import 'package:digital_menu_4urest/models/metrics/click_event_metric.dart';
 import 'package:digital_menu_4urest/models/metrics/view_time_metric.dart';
-import 'package:digital_menu_4urest/models/product_model.dart';
 import 'package:digital_menu_4urest/models/section_size_model.dart';
 import 'package:digital_menu_4urest/providers/event_metric_provider.dart';
 import 'package:flutter/material.dart';

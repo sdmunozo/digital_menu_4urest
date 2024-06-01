@@ -57,8 +57,8 @@ class _MyAppState extends State<MyApp> {
             if (provider.isLoading) {
               return const Center(child: CircularProgressIndicator());
             }
-            return const SliverHomeScreen();
-            //return const WelcomeScreen();
+            //return const SliverHomeScreen();
+            return const WelcomeScreen();
             //return AddressSearchWidget();
           }),
         ),
