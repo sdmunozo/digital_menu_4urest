@@ -100,11 +100,10 @@ class _ModifierRadioWidgetState extends State<ModifierRadioWidget> {
                     color: Colors.black, fontWeight: FontWeight.w600),
               ),
               const Spacer(),
-              Text(
-                (widget.modifier.price != 0)
-                    ? "+\$${widget.modifier.price.toStringAsFixed(2)}"
-                    : '',
-              ),
+              if (widget.modifier.price > 0) ...[
+                Text("+\$${widget.modifier.price.toStringAsFixed(2)}"),
+                const SizedBox(width: 5),
+              ],
               const SizedBox(width: 5),
               Radio<String>(
                 value: widget.modifier.id,

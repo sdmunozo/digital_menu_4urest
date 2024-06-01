@@ -54,6 +54,57 @@ class SingleItemScreen extends StatelessWidget {
 //expandedHeight: (GlobalConfigProvider.maxHeight * 0.5),
                     pinned: true,
                     flexibleSpace: FlexibleSpaceBar(
+                      titlePadding: const EdgeInsets.only(
+                          left: 50, right: 16, bottom: 16),
+                      title: Row(
+                        children: [
+                          Flexible(
+                            child: Container(
+                              padding: const EdgeInsets.only(right: 40),
+                              child: Text(
+                                product.alias,
+                                style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 15,
+                                  shadows: [
+                                    const Shadow(
+                                      color: Colors.white,
+                                      offset: Offset(0, 0),
+                                      blurRadius: 20,
+                                    ),
+                                  ],
+                                ),
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      background: product.image.isEmpty
+                          ? Container()
+                          : Stack(
+                              children: [
+                                ClipRRect(
+                                  borderRadius: const BorderRadius.only(
+                                    topLeft: Radius.circular(20),
+                                    topRight: Radius.circular(20),
+                                  ),
+                                  child: Container(
+                                    height:
+                                        (GlobalConfigProvider.maxHeight * 0.5),
+                                    decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                        image: NetworkImage(product.image),
+                                        fit: BoxFit.contain,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                    ),
+                    /*FlexibleSpaceBar(
                       title: Text(
                         product.alias,
                         style: GoogleFonts.poppins(
@@ -90,7 +141,7 @@ class SingleItemScreen extends StatelessWidget {
                                 ),
                               ],
                             ),
-                    ),
+                    ),*/
                   ),
                   SliverToBoxAdapter(
                     child: Padding(

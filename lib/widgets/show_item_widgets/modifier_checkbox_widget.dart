@@ -100,7 +100,10 @@ class ModifierCheckboxWidget extends StatelessWidget {
                     color: Colors.black, fontWeight: FontWeight.w600),
               ),
               const Spacer(),
-              Text("+\$${modifier.price.toStringAsFixed(2)}"),
+              if (modifier.price > 0) ...[
+                Text("+\$${modifier.price.toStringAsFixed(2)}"),
+                const SizedBox(width: 5),
+              ],
               const SizedBox(width: 5),
               GetBuilder<ProductController>(
                 builder: (controller) {
