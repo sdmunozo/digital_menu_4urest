@@ -255,7 +255,7 @@ class OrderSummaryScreen extends StatelessWidget {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Text(
-                            'Enviar por WhatsApp',
+                            'Enviar pedido',
                             style: TextStyle(
                               fontSize: 18,
                               color: Colors.white,

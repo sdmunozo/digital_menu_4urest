@@ -1,6 +1,7 @@
 import 'package:digital_menu_4urest/providers/branch_catalog_provider.dart';
 import 'package:digital_menu_4urest/providers/event_metric_provider.dart';
 import 'package:digital_menu_4urest/providers/orders/order_summary_controller.dart';
+import 'package:digital_menu_4urest/providers/whatsapp_provider.dart';
 import 'package:digital_menu_4urest/screens/not_found_screen.dart';
 import 'package:digital_menu_4urest/screens/sliver_home_screen.dart';
 import 'package:digital_menu_4urest/screens/welcome_screen.dart';
@@ -44,6 +45,7 @@ class _MyAppState extends State<MyApp> {
         ChangeNotifierProvider(
           create: (_) => EventMetricProvider(),
         ),
+        ChangeNotifierProvider(create: (_) => WhatsAppProvider()),
       ],
       child: MaterialApp(
         title: 'Menu Digital',
