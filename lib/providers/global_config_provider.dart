@@ -13,7 +13,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:uuid/uuid.dart';
 
 class GlobalConfigProvider {
-  static bool develop = true;
+  static bool develop = false;
   static SharedPreferences? prefs;
   static String userId = '';
   static String sessionId = '';
