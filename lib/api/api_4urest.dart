@@ -5,7 +5,7 @@ import 'package:dio/dio.dart';
 
 class Api4uRest {
   static final Dio _dio = Dio()
-    ..options.baseUrl = 'https://netship20240323121328.azurewebsites.net/api'
+    ..options.baseUrl = 'https://api.4urest.mx/api'
     ..options.headers = {
       'Content-Type': 'application/json',
     };
